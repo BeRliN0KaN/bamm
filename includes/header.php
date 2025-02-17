@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Bamboo</title>
+  <title>A.X.W INTERNATIONAL CO.,LTD.</title>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,6 +11,7 @@
   <meta name="author" content="" />
   <meta name="keywords" content="" />
   <meta name="description" content="" />
+  <link href="images/84ee959880fd31268694c3302e16944.png" rel="icon">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
   <link rel="stylesheet" type="text/css" href="style.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
