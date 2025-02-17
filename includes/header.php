@@ -152,67 +152,7 @@
                             </li>
                             <li class="nav-item dropdown me-5">
                                 <a class="nav-link text-titlecase fw-bold dropdown-toggle pe-0" data-bs-toggle="dropdown" href="#"
-                                    role="button" aria-expanded="false">Pages<iconify-icon
-                                        icon="material-symbols:arrow-drop-down"></iconify-icon></a>
-                                <ul class="dropdown-menu">
-                                    <li class="text-decoration-none">
-                                        <a href="about.html" class="dropdown-item text-titlecase fw-bold">About
-                                            <span class="badge bg-primary text-black">Free</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="blog.html" class="dropdown-item text-titlecase fw-bold">Blog
-                                            <span class="badge bg-primary text-black">Free</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="blog-single.html" class="dropdown-item text-titlecase fw-bold">Blog-Single
-                                            <span class="badge bg-primary text-black">Free</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="booking.html" class="dropdown-item text-titlecase fw-bold">Booking
-                                            <span class="badge bg-primary text-black">Free</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="services.html" class="dropdown-item text-titlecase fw-bold">Services
-                                            <span class="badge bg-primary text-black">Free</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="services-single.html" class="dropdown-item text-titlecase fw-bold">Service-Single
-                                            <span class="badge bg-primary text-black">Free</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="project.html" class="dropdown-item text-titlecase fw-bold">Project
-                                            <span class="badge bg-primary text-black">Free</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="project-single.html" class="dropdown-item text-titlecase fw-bold">Project-Single
-                                            <span class="badge bg-primary text-black">Free</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="pricing.html" class="dropdown-item text-titlecase fw-bold">Pricing
-                                            <span class="badge bg-primary text-black">Free</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="contact.html" class="dropdown-item text-titlecase fw-bold">Contact
-                                            <span class="badge bg-primary text-black">Free</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="team.html" class="dropdown-item text-titlecase fw-bold">Our Team
-                                            <span class="badge bg-primary text-black">Free</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="review.html" class="dropdown-item text-titlecase fw-bold">Reviews
-                                            <span class="badge bg-primary text-black">Free</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="faq.html" class="dropdown-item text-titlecase fw-bold">FAQs
-                                            <span class="badge bg-primary text-black">Free</span></a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item me-5">
-                                <a class="nav-link text-titlecase fw-bold"
-                                    href="https://templatesjungle.gumroad.com/l/bamboo-construction-company-bootstrap-website-template"
-                                    target="_blank">Get Pro</a>
+                                    role="button" aria-expanded="false">Pages</a>
                             </li>
                         </ul>
                         <div class="social-links d-flex mt-5 mt-lg-0 align-items-center justify-content-end">
