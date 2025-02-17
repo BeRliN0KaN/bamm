@@ -21,7 +21,15 @@ include "includes/header.php";
         </a>
       </div>
       <div class="col-lg-6">
-        <img src="images/banner-img.png" alt="" class="img-fluid z-5">
+        <div class="hero-buttons">
+          <div class="video-container ">
+            <video autoplay muted loop playsinline class="shadow-lg img-fluid z-5 rounded-3">
+              <source src="video/AXW.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+        <!-- <img src="images/banner-img.png" alt="" class="img-fluid z-5"> -->
       </div>
     </div>
   </div>

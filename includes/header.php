@@ -116,7 +116,7 @@
         </symbol>
     </svg>
     <div id="bodywrap" class="overflow-hidden">
-        <nav id="header-nav" class="navbar navbar-expand-lg p-3 py-2 container-fluid border-bottom position-fixed ">
+        <nav id="header-nav" class="navbar navbar-expand-lg p-3 py-2 container-fluid border-bottom">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.php">
                     <img src="images/logo-文字版.png" class="logo" />
@@ -136,7 +136,7 @@
                         <ul id="navbar"
                             class="navbar-nav text-titlecase fw-bold justify-content-lg-center justify-content-md-end align-items-center text-center flex-grow-1 text-hover">
                             <li class="nav-item me-5">
-                                <a class="nav-link text-titlecase fw-bold active" href="index.php">Home</a>
+                                <a class="nav-link text-titlecase fw-bold " href="index.php">Home</a>
                             </li>
                             <li class="nav-item me-5">
                                 <a class="nav-link text-titlecase fw-bold" href="about.php">About</a>
