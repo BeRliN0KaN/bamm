@@ -57,12 +57,12 @@
                 <svg class="text-primary" width="25" height="20" aria-hidden="true">
                   <use xlink:href="#location"></use>
                 </svg>
-                163 Elm Drive, New York City
+                เลขที 109 / 39 หมู่บ้าน มายอิสระ - ราชพฤกษ์ หมู่ที 10 ตําบลบางกร่าง อําเภอเมืองนนทบุรี จังหวัด นนทบุรี
               </li>
               <li class="pb-2 fw-bold text-capitalize">
                 <svg class="text-primary" width="25" height="20" aria-hidden="true">
                   <use xlink:href="#call"></use>
-                </svg>(+089) 234-516-6123
+                </svg>095-795-6695
               </li>
               <li class="pb-2 fw-bold text-capitalize">
                 <svg class="text-primary" width="25" height="20" aria-hidden="true">
@@ -78,55 +78,15 @@
   </footer>
   <!-- footer end -->
 
-  <div class="footer-bottom d-flex flex-wrap justify-content-between border-top pt-5 pb-3">
+  <div class="footer-bottom d-flex flex-wrap justify-content-between border-top pt-3 pb-0">
     <div class="container">
       <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-12 text-center">
           <p>
-            ©2024 Bamboo | All Rights Reserved | Template by <strong>
-              <a href="https://templatesjungle.com/" target="_blank">TemplatesJungle</a>
-            </strong>
+            ©2024 A.X.W INTERNATIONAL CO.,LTD. | All Rights Reserved 
           </p>
         </div>
-        <div class="col-lg-6">
-          <ul class="social-links list-unstyled d-flex justify-content-lg-end">
-            <li class="pe-3">
-              <a href="#">
-                <svg class="facebook text-primary-500" width="15" height="15" aria-hidden="true">
-                  <use xlink:href="#facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="pe-3">
-              <a href="#">
-                <svg class="twitter text-primary-500" width="15" height="15" aria-hidden="true">
-                  <use xlink:href="#twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="pe-3">
-              <a href="#">
-                <svg class="instagram text-primary-500" width="15" height="15" aria-hidden="true">
-                  <use xlink:href="#instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="pe-3">
-              <a href="#">
-                <svg class="linkedin text-primary-500" width="15" height="15" aria-hidden="true">
-                  <use xlink:href="#linkedin"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <svg class="youtube text-primary-500" width="15" height="15" aria-hidden="true">
-                  <use xlink:href="#blogger"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+
       </div>
     </div>
   </div>
