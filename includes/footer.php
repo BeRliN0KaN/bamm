@@ -64,6 +64,45 @@
                   <use xlink:href="#call"></use>
                 </svg>095-795-6695
               </li>
+              <!-- <div class="social-links d-flex mt-5 mt-lg-0 align-items-center justify-content-end">
+                            <ul class="navbar-nav list-unstyled align-items-center justify-content-end">
+                                <li class="pe-4">
+                                    <a href="https://www.facebook.com/profile.php?id=61568368107367&sk=about" target="_blank">
+                                        <svg class="facebook" width="18" height="18">
+                                            <use xlink:href="#facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li> -->
+                                <!-- <li class="pe-4">
+                  <a href="#" class="light">
+                    <svg class="instagram" width="18" height="18">
+                      <use xlink:href="#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="pe-4">
+                  <a href="#" class="light">
+                    <svg class="linkedin" width="18" height="18">
+                      <use xlink:href="#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="pe-4">
+                  <a href="#" class="light">
+                    <svg class="twitter" width="18" height="18">
+                      <use xlink:href="#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="pe-4">
+                  <a href="#" class="light">
+                    <svg class="blogger" width="18" height="18">
+                      <use xlink:href="#blogger"></use>
+                    </svg>
+                  </a>
+                </li> -->
+                            <!-- </ul>
+                        </div> -->
               <!-- <li class="pb-2 fw-bold text-capitalize">
                 <svg class="text-primary" width="25" height="20" aria-hidden="true">
                   <use xlink:href="#mail"></use>
