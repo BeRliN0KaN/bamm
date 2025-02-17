@@ -48,8 +48,7 @@
               </div>
               <h4 class="fw-bold py-3 m-0">งานโครงสร้าง civil</h3>
                 <div class="card-text">
-                  <p class="blog-paragraph fs-5">Vehicula at eget a arcu neque, ultricies liquet tempus vel amet eget
-                    egestas arcu non.</p>
+                  <p class="blog-paragraph fs-5">ให้บริการออกแบบและก่อสร้างโครงสร้างที่มีมาตรฐานสูง มุ่งเน้นความปลอดภัยและความมั่นคง</p>
                 </div>
                 <!-- <a href="#" class="btn-normal my-2">
                   <span class="text-titlecase fw-bold fs-5">View Details
@@ -73,8 +72,7 @@
               </div>
               <h4 class="fw-bold py-3 m-0">งานสถาปัตย์ Architect</h3>
                 <div class="card-text">
-                  <p class="blog-paragraph fs-5">Vehicula at eget a arcu neque, ultricies liquet tempus vel amet eget
-                    egestas arcu non.</p>
+                  <p class="blog-paragraph fs-5">การออกแบบที่ตอบสนองทุกความต้องการ ทั้งในแง่ของความงาม ความสะดวกสบาย และประสิทธิภาพ</p>
                 </div>
                 <!-- <a href="#" class="btn-normal my-2">
                   <span class="text-titlecase fw-bold fs-5">View Details
@@ -98,8 +96,7 @@
               </div>
               <h4 class="fw-bold py-3 m-0">งานระบบไฟฟ้า ประปา</h3>
                 <div class="card-text">
-                  <p class="blog-paragraph fs-5">Vehicula at eget a arcu neque, ultricies liquet tempus vel amet eget
-                    egestas arcu non.</p>
+                  <p class="blog-paragraph fs-5">มุ่งมั่นในการออกแบบและติดตั้งระบบไฟฟ้าและประปาที่รองรับการใช้งานได้อย่างยาวนานและปลอดภัย</p>
                 </div>
                 <!-- <a href="#" class="btn-normal my-2">
                   <span class="text-titlecase fw-bold fs-5">View Details
@@ -121,10 +118,9 @@
                   <span class="circle-pattern position-absolute bottom-0 end-0"></span>
                 </div>
               </div>
-              <h4 class="fw-bold py-3 m-0">งานสถาปัตย์ Architect</h3>
+              <h4 class="fw-bold py-3 m-0">งานปรับภูมิทัศน์</h3>
                 <div class="card-text">
-                  <p class="blog-paragraph fs-5">Vehicula at eget a arcu neque, ultricies liquet tempus vel amet eget
-                    egestas arcu non.</p>
+                  <p class="blog-paragraph fs-5">มุ่งมั่นในการสร้างพื้นที่ภายนอกที่มีความสมดุลระหว่างธรรมชาติและการใช้งาน</p>
                 </div>
                 <!-- <a href="#" class="btn-normal my-2">
                   <span class="text-titlecase fw-bold fs-5">View Details
