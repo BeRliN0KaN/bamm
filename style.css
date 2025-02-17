@@ -599,7 +599,10 @@ h3 {
   background-color: #e9ecef;
 }
 
-
+.logo{
+  width: 170px;
+  height: 80px;
+}
 /* - Offcanvas
 ------------------------------------------------------------- */
 #header-nav .offcanvas.show {
