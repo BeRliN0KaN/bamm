@@ -115,7 +115,7 @@
   <div id="bodywrap" class="overflow-hidden">
     <nav id="header-nav" class="navbar navbar-expand-lg p-3 py-2 container-fluid border-bottom position-fixed ">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand" href="index.php">
           <img src="images/logo-文字版.png" class="logo" />
         </a>
         <button class="navbar-toggler d-flex d-lg-none order-3 p-2 shadow-none" type="button" data-bs-toggle="offcanvas"
@@ -133,13 +133,13 @@
             <ul id="navbar"
               class="navbar-nav text-titlecase fw-bold justify-content-lg-center justify-content-md-end align-items-center text-center flex-grow-1 text-hover">
               <li class="nav-item me-5">
-                <a class="nav-link text-titlecase fw-bold active" href="index.html">Home</a>
+                <a class="nav-link text-titlecase fw-bold active" href="index.php">Home</a>
               </li>
               <li class="nav-item me-5">
                 <a class="nav-link text-titlecase fw-bold" href="about.html">About</a>
               </li>
               <li class="nav-item me-5">
-                <a class="nav-link text-titlecase fw-bold" href="project.html">Projects</a>
+                <a class="nav-link text-titlecase fw-bold" href="project.php">Projects</a>
               </li>
               <li class="nav-item me-5">
                 <a class="nav-link text-titlecase fw-bold" href="services.html">Services</a>
