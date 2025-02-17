@@ -1,173 +1,173 @@
 <?php
-  include "includes/header.php";
+include "includes/header.php";
 ?>
-    <section id="main-banner " class="padding-large position-relative margin-large">
-      <div class="container" data-aos="fade-up">
-        <div class="row g-md-5 d-flex justify-content-center align-items-center timer">
-          <div class="col-lg-6">
-            <h1 class="display-2 text-titlecase fw-bold text-black">
-              Best construction company around the world.
-            </h1>
-            <p>
-              Vehicula at eget a arcu neque, ultricies. Aliquet tempus vel
-              amet eget egestas musus leo non.
-            </p>
-            <a href="#" class="btn-slide btn-medium btn-dark hover-slide-right my-5">
-              <span class="text-titlecase">View Our Projects
-                <svg class="btn-arrow text-white" width="18" height="18">
-                  <use xlink:href="#btn-arrow"></use>
-                </svg>
-              </span>
-            </a>
-          </div>
-          <div class="col-lg-6">
-            <img src="images/banner-img.png" alt="" class="img-fluid z-5">
-          </div>
-        </div>
+<section id="main-banner " class="padding-large position-relative margin-large">
+  <div class="container" data-aos="fade-up">
+    <div class="row g-md-5 d-flex justify-content-center align-items-center timer">
+      <div class="col-lg-6">
+        <h1 class="display-2 text-titlecase fw-bold text-black">
+          Best construction company around the world.
+        </h1>
+        <p>
+          Vehicula at eget a arcu neque, ultricies. Aliquet tempus vel
+          amet eget egestas musus leo non.
+        </p>
+        <a href="#" class="btn-slide btn-medium btn-dark hover-slide-right my-5">
+          <span class="text-titlecase">View Our Projects
+            <svg class="btn-arrow text-white" width="18" height="18">
+              <use xlink:href="#btn-arrow"></use>
+            </svg>
+          </span>
+        </a>
       </div>
-    </section>
-    <div class="bg-pattern position-absolute top-0 end-0">
-      <img src="images/bg-pattern1.png" alt="" class="img-fluid"
-        style="background-repeat: no-repeat; overflow: hidden;">
+      <div class="col-lg-6">
+        <img src="images/banner-img.png" alt="" class="img-fluid z-5">
+      </div>
     </div>
+  </div>
+</section>
+<div class="bg-pattern position-absolute top-0 end-0">
+  <img src="images/bg-pattern1.png" alt="" class="img-fluid"
+    style="background-repeat: no-repeat; overflow: hidden;">
+</div>
 
-    <section id="service" class="bg-light padding-medium">
-      <div class="container" data-aos="fade-up">
+<section id="service" class="bg-light padding-medium">
+  <div class="container" data-aos="fade-up">
 
-        <div class="row g-md-5 pt-4 timer" data-to="100" data-speed="1000">
-          <div class="col-md-3 my-3">
-            <div class="card text-center text-lg-start border-0">
-              <div class="service-svg text-center m-auto m-md-0 pb-5">
-                <div class="svg position-relative">
-                  <svg class="text-black" width="70" height="70">
-                    <use xlink:href="#home"></use>
-                  </svg>
-                  <span class="circle-pattern position-absolute top-0 start-0"></span>
-                  <span class="circle-pattern position-absolute bottom-0 end-0"></span>
-                </div>
-              </div>
-              <h4 class="fw-bold py-3 m-0">งานโครงสร้าง civil</h3>
-                <div class="card-text">
-                  <p class="blog-paragraph fs-5">ให้บริการออกแบบและก่อสร้างโครงสร้างที่มีมาตรฐานสูง มุ่งเน้นความปลอดภัยและความมั่นคง</p>
-                </div>
-                <!-- <a href="#" class="btn-normal my-2">
+    <div class="row g-md-5 pt-4 timer" data-to="100" data-speed="1000">
+      <div class="col-md-3 my-3">
+        <div class="card text-center text-lg-start border-0">
+          <div class="service-svg text-center m-auto m-md-0 pb-5">
+            <div class="svg position-relative">
+              <svg class="text-black" width="70" height="70">
+                <use xlink:href="#home"></use>
+              </svg>
+              <span class="circle-pattern position-absolute top-0 start-0"></span>
+              <span class="circle-pattern position-absolute bottom-0 end-0"></span>
+            </div>
+          </div>
+          <h4 class="fw-bold py-3 m-0">งานโครงสร้าง civil</h3>
+            <div class="card-text">
+              <p class="blog-paragraph fs-5">ให้บริการออกแบบและก่อสร้างโครงสร้างที่มีมาตรฐานสูง มุ่งเน้นความปลอดภัยและความมั่นคง</p>
+            </div>
+            <!-- <a href="#" class="btn-normal my-2">
                   <span class="text-titlecase fw-bold fs-5">View Details
                     <svg class="btn-arrow" width="18" height="18">
                       <use xlink:href="#btn-arrow"></use>
                     </svg>
                   </span>
                 </a> -->
-            </div>
-          </div>
-          <div class="col-md-3 my-3">
-            <div class="card text-center text-lg-start border-0">
-              <div class="service-svg text-center m-auto m-md-0 pb-5">
-                <div class="svg position-relative">
-                  <svg class="text-black" width="60" height="60">
-                    <use xlink:href="#design"></use>
-                  </svg>
-                  <span class="circle-pattern position-absolute top-0 start-0"></span>
-                  <span class="circle-pattern position-absolute bottom-0 end-0"></span>
-                </div>
-              </div>
-              <h4 class="fw-bold py-3 m-0">งานสถาปัตย์ Architect</h3>
-                <div class="card-text">
-                  <p class="blog-paragraph fs-5">การออกแบบที่ตอบสนองทุกความต้องการ ทั้งในแง่ของความงาม ความสะดวกสบาย และประสิทธิภาพ</p>
-                </div>
-                <!-- <a href="#" class="btn-normal my-2">
-                  <span class="text-titlecase fw-bold fs-5">View Details
-                    <svg class="btn-arrow" width="18" height="18">
-                      <use xlink:href="#btn-arrow"></use>
-                    </svg>
-                  </span>
-                </a> -->
-            </div>
-          </div>
-          <div class="col-md-3 my-3">
-            <div class="card text-center text-lg-start border-0">
-              <div class="service-svg text-center m-auto m-md-0 pb-5">
-                <div class="svg position-relative">
-                  <svg class="text-black" width="60" height="60">
-                    <use xlink:href="#tools"></use>
-                  </svg>
-                  <span class="circle-pattern position-absolute top-0 start-0"></span>
-                  <span class="circle-pattern position-absolute bottom-0 end-0"></span>
-                </div>
-              </div>
-              <h4 class="fw-bold py-3 m-0">งานระบบไฟฟ้า ประปา</h3>
-                <div class="card-text">
-                  <p class="blog-paragraph fs-5">มุ่งมั่นในการออกแบบและติดตั้งระบบไฟฟ้าและประปาที่รองรับการใช้งานได้อย่างยาวนานและปลอดภัย</p>
-                </div>
-                <!-- <a href="#" class="btn-normal my-2">
-                  <span class="text-titlecase fw-bold fs-5">View Details
-                    <svg class="btn-arrow" width="18" height="18">
-                      <use xlink:href="#btn-arrow"></use>
-                    </svg>
-                  </span>
-                </a> -->
-            </div>
-          </div>
-          <div class="col-md-3 my-3">
-            <div class="card text-center text-lg-start border-0">
-              <div class="service-svg text-center m-auto m-md-0 pb-5">
-                <div class="svg position-relative">
-                  <svg class="text-black" width="60" height="60">
-                    <use xlink:href="#design"></use>
-                  </svg>
-                  <span class="circle-pattern position-absolute top-0 start-0"></span>
-                  <span class="circle-pattern position-absolute bottom-0 end-0"></span>
-                </div>
-              </div>
-              <h4 class="fw-bold py-3 m-0">งานปรับภูมิทัศน์</h3>
-                <div class="card-text">
-                  <p class="blog-paragraph fs-5">มุ่งมั่นในการสร้างพื้นที่ภายนอกที่มีความสมดุลระหว่างธรรมชาติและการใช้งาน</p>
-                </div>
-                <!-- <a href="#" class="btn-normal my-2">
-                  <span class="text-titlecase fw-bold fs-5">View Details
-                    <svg class="btn-arrow" width="18" height="18">
-                      <use xlink:href="#btn-arrow"></use>
-                    </svg>
-                  </span>
-                </a> -->
-            </div>
-          </div>
-          
         </div>
       </div>
-    </section>
-
-
-    <section id="about-us" class=" padding-large position-relative ">
-      <div class="container" data-aos="fade-up">
-        <div class="section-header col-lg-4">
-          <h2 class="text-uppercase mb-3 left-pattern">About us</h2>
-          <h3 class="text-titlecase">Recognize more about our company</h3>
-        </div>
-        <div class="row g-md-5 flex-row-reverse d-flex justify-content-center align-items-top mt-5">
-          <div class="col-lg-6 mt-0 justify-content-top">
-            <img src="images/about2.jpg" alt="" class="img-fluid rounded-3">
-            <h5 class="mt-3">Enim leo leo non in viverra adipiscing nisi sed dictum nisi blandit.</h5>
-            <p class="fs-5 mt-2">
-              Gravida feugiat viverra porttitor semper in faucibus ut. Ipsum, vel aliquet purus urna placerat convallis
-              felis. Pretium curabitur fames est.
-            </p>
-            <a href="#" class="btn-slide btn-medium btn-dark hover-slide-right my-3">
-              <span class="text-titlecase">About Us
-                <svg class="btn-arrow text-white" width="18" height="18">
-                  <use xlink:href="#btn-arrow"></use>
-                </svg>
-              </span>
-            </a>
+      <div class="col-md-3 my-3">
+        <div class="card text-center text-lg-start border-0">
+          <div class="service-svg text-center m-auto m-md-0 pb-5">
+            <div class="svg position-relative">
+              <svg class="text-black" width="60" height="60">
+                <use xlink:href="#design"></use>
+              </svg>
+              <span class="circle-pattern position-absolute top-0 start-0"></span>
+              <span class="circle-pattern position-absolute bottom-0 end-0"></span>
+            </div>
           </div>
-          <div class="col-lg-6 mt-0">
-            <img src="images/about1.jpg" alt="" class="img-fluid rounded-3">
-          </div>
+          <h4 class="fw-bold py-3 m-0">งานสถาปัตย์ Architect</h3>
+            <div class="card-text">
+              <p class="blog-paragraph fs-5">การออกแบบที่ตอบสนองทุกความต้องการ ทั้งในแง่ของความงาม ความสะดวกสบาย และประสิทธิภาพ</p>
+            </div>
+            <!-- <a href="#" class="btn-normal my-2">
+                  <span class="text-titlecase fw-bold fs-5">View Details
+                    <svg class="btn-arrow" width="18" height="18">
+                      <use xlink:href="#btn-arrow"></use>
+                    </svg>
+                  </span>
+                </a> -->
         </div>
       </div>
-      <div class="bg-pattern position-absolute top-0 start-0">
-        <img src="images/bg-pattern2.png" alt="" class="img-fluid"
-          style="background-repeat: no-repeat; overflow: hidden;">
+      <div class="col-md-3 my-3">
+        <div class="card text-center text-lg-start border-0">
+          <div class="service-svg text-center m-auto m-md-0 pb-5">
+            <div class="svg position-relative">
+              <svg class="text-black" width="60" height="60">
+                <use xlink:href="#tools"></use>
+              </svg>
+              <span class="circle-pattern position-absolute top-0 start-0"></span>
+              <span class="circle-pattern position-absolute bottom-0 end-0"></span>
+            </div>
+          </div>
+          <h4 class="fw-bold py-3 m-0">งานระบบไฟฟ้า ประปา</h3>
+            <div class="card-text">
+              <p class="blog-paragraph fs-5">มุ่งมั่นในการออกแบบและติดตั้งระบบไฟฟ้าและประปาที่รองรับการใช้งานได้อย่างยาวนานและปลอดภัย</p>
+            </div>
+            <!-- <a href="#" class="btn-normal my-2">
+                  <span class="text-titlecase fw-bold fs-5">View Details
+                    <svg class="btn-arrow" width="18" height="18">
+                      <use xlink:href="#btn-arrow"></use>
+                    </svg>
+                  </span>
+                </a> -->
+        </div>
       </div>
+      <div class="col-md-3 my-3">
+        <div class="card text-center text-lg-start border-0">
+          <div class="service-svg text-center m-auto m-md-0 pb-5">
+            <div class="svg position-relative">
+              <svg class="text-black" width="60" height="60">
+                <use xlink:href="#landscape"></use>
+              </svg>
+              <span class="circle-pattern position-absolute top-0 start-0"></span>
+              <span class="circle-pattern position-absolute bottom-0 end-0"></span>
+            </div>
+          </div>
+          <h4 class="fw-bold py-3 m-0">งานปรับภูมิทัศน์</h3>
+            <div class="card-text">
+              <p class="blog-paragraph fs-5">มุ่งมั่นในการสร้างพื้นที่ภายนอกที่มีความสมดุลระหว่างธรรมชาติและการใช้งาน</p>
+            </div>
+            <!-- <a href="#" class="btn-normal my-2">
+                  <span class="text-titlecase fw-bold fs-5">View Details
+                    <svg class="btn-arrow" width="18" height="18">
+                      <use xlink:href="#btn-arrow"></use>
+                    </svg>
+                  </span>
+                </a> -->
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section id="about-us" class=" padding-large position-relative ">
+  <div class="container" data-aos="fade-up">
+    <div class="section-header col-lg-4">
+      <h2 class="text-uppercase mb-3 left-pattern">About us</h2>
+      <h3 class="text-titlecase">Recognize more about our company</h3>
+    </div>
+    <div class="row g-md-5 flex-row-reverse d-flex justify-content-center align-items-top mt-5">
+      <div class="col-lg-6 mt-0 justify-content-top">
+        <img src="images/about2.jpg" alt="" class="img-fluid rounded-3">
+        <h5 class="mt-3">Enim leo leo non in viverra adipiscing nisi sed dictum nisi blandit.</h5>
+        <p class="fs-5 mt-2">
+          Gravida feugiat viverra porttitor semper in faucibus ut. Ipsum, vel aliquet purus urna placerat convallis
+          felis. Pretium curabitur fames est.
+        </p>
+        <a href="#" class="btn-slide btn-medium btn-dark hover-slide-right my-3">
+          <span class="text-titlecase">About Us
+            <svg class="btn-arrow text-white" width="18" height="18">
+              <use xlink:href="#btn-arrow"></use>
+            </svg>
+          </span>
+        </a>
+      </div>
+      <div class="col-lg-6 mt-0">
+        <img src="images/about1.jpg" alt="" class="img-fluid rounded-3">
+      </div>
+    </div>
+  </div>
+  <div class="bg-pattern position-absolute top-0 start-0">
+    <img src="images/bg-pattern2.png" alt="" class="img-fluid"
+      style="background-repeat: no-repeat; overflow: hidden;">
+  </div>
   </div>
 
   <!-- start -->
@@ -488,4 +488,4 @@
   </section>
   <!--  end-->
 
- <?php include"includes/footer.php";?>
+  <?php include "includes/footer.php"; ?>
