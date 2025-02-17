@@ -216,13 +216,13 @@
             <div class="social-links d-flex mt-5 mt-lg-0 align-items-center justify-content-end">
               <ul class="navbar-nav list-unstyled align-items-center justify-content-end">
                 <li class="pe-4">
-                  <a href="#">
+                  <a href="https://www.facebook.com/profile.php?id=61568368107367&sk=about" target="_blank"> 
                     <svg class="facebook" width="18" height="18">
                       <use xlink:href="#facebook"></use>
                     </svg>
                   </a>
                 </li>
-                <li class="pe-4">
+                <!-- <li class="pe-4">
                   <a href="#" class="light">
                     <svg class="instagram" width="18" height="18">
                       <use xlink:href="#instagram"></use>
@@ -249,7 +249,7 @@
                       <use xlink:href="#blogger"></use>
                     </svg>
                   </a>
-                </li>
+                </li> -->
               </ul>
             </div>
           </div>
