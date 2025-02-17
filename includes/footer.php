@@ -57,7 +57,7 @@
                 <svg class="text-primary" width="25" height="20" aria-hidden="true">
                   <use xlink:href="#location"></use>
                 </svg>
-                เลขที 109 / 39 หมู่บ้าน มายอิสระ - ราชพฤกษ์ หมู่ที 10 ตําบลบางกร่าง อําเภอเมืองนนทบุรี จังหวัด นนทบุรี
+                เลขที 109 / 39 หมู่บ้าน มายอิสระ ราชพฤกษ์ หมู่ที 10 ตําบลบางกร่าง อําเภอเมืองนนทบุรี จังหวัด นนทบุรี 11140
               </li>
               <li class="pb-2 fw-bold text-capitalize">
                 <svg class="text-primary" width="25" height="20" aria-hidden="true">

@@ -33,8 +33,9 @@
 
     <section id="service" class="bg-light padding-medium">
       <div class="container" data-aos="fade-up">
+
         <div class="row g-md-5 pt-4 timer" data-to="100" data-speed="1000">
-          <div class="col-md-4 my-3">
+          <div class="col-md-3 my-3">
             <div class="card text-center text-lg-start border-0">
               <div class="service-svg text-center m-auto m-md-0 pb-5">
                 <div class="svg position-relative">
@@ -45,21 +46,21 @@
                   <span class="circle-pattern position-absolute bottom-0 end-0"></span>
                 </div>
               </div>
-              <h4 class="fw-bold py-3 m-0">Building new homes</h3>
+              <h4 class="fw-bold py-3 m-0">งานโครงสร้าง civil</h3>
                 <div class="card-text">
                   <p class="blog-paragraph fs-5">Vehicula at eget a arcu neque, ultricies liquet tempus vel amet eget
                     egestas arcu non.</p>
                 </div>
-                <a href="#" class="btn-normal my-2">
+                <!-- <a href="#" class="btn-normal my-2">
                   <span class="text-titlecase fw-bold fs-5">View Details
                     <svg class="btn-arrow" width="18" height="18">
                       <use xlink:href="#btn-arrow"></use>
                     </svg>
                   </span>
-                </a>
+                </a> -->
             </div>
           </div>
-          <div class="col-md-4 my-3">
+          <div class="col-md-3 my-3">
             <div class="card text-center text-lg-start border-0">
               <div class="service-svg text-center m-auto m-md-0 pb-5">
                 <div class="svg position-relative">
@@ -70,21 +71,21 @@
                   <span class="circle-pattern position-absolute bottom-0 end-0"></span>
                 </div>
               </div>
-              <h4 class="fw-bold py-3 m-0">Designing spaces</h3>
+              <h4 class="fw-bold py-3 m-0">งานสถาปัตย์ Architect</h3>
                 <div class="card-text">
                   <p class="blog-paragraph fs-5">Vehicula at eget a arcu neque, ultricies liquet tempus vel amet eget
                     egestas arcu non.</p>
                 </div>
-                <a href="#" class="btn-normal my-2">
+                <!-- <a href="#" class="btn-normal my-2">
                   <span class="text-titlecase fw-bold fs-5">View Details
                     <svg class="btn-arrow" width="18" height="18">
                       <use xlink:href="#btn-arrow"></use>
                     </svg>
                   </span>
-                </a>
+                </a> -->
             </div>
           </div>
-          <div class="col-md-4 my-3">
+          <div class="col-md-3 my-3">
             <div class="card text-center text-lg-start border-0">
               <div class="service-svg text-center m-auto m-md-0 pb-5">
                 <div class="svg position-relative">
@@ -95,20 +96,46 @@
                   <span class="circle-pattern position-absolute bottom-0 end-0"></span>
                 </div>
               </div>
-              <h4 class="fw-bold py-3 m-0">Road maintenance</h3>
+              <h4 class="fw-bold py-3 m-0">งานระบบไฟฟ้า ประปา</h3>
                 <div class="card-text">
                   <p class="blog-paragraph fs-5">Vehicula at eget a arcu neque, ultricies liquet tempus vel amet eget
                     egestas arcu non.</p>
                 </div>
-                <a href="#" class="btn-normal my-2">
+                <!-- <a href="#" class="btn-normal my-2">
                   <span class="text-titlecase fw-bold fs-5">View Details
                     <svg class="btn-arrow" width="18" height="18">
                       <use xlink:href="#btn-arrow"></use>
                     </svg>
                   </span>
-                </a>
+                </a> -->
             </div>
           </div>
+          <div class="col-md-3 my-3">
+            <div class="card text-center text-lg-start border-0">
+              <div class="service-svg text-center m-auto m-md-0 pb-5">
+                <div class="svg position-relative">
+                  <svg class="text-black" width="60" height="60">
+                    <use xlink:href="#design"></use>
+                  </svg>
+                  <span class="circle-pattern position-absolute top-0 start-0"></span>
+                  <span class="circle-pattern position-absolute bottom-0 end-0"></span>
+                </div>
+              </div>
+              <h4 class="fw-bold py-3 m-0">งานสถาปัตย์ Architect</h3>
+                <div class="card-text">
+                  <p class="blog-paragraph fs-5">Vehicula at eget a arcu neque, ultricies liquet tempus vel amet eget
+                    egestas arcu non.</p>
+                </div>
+                <!-- <a href="#" class="btn-normal my-2">
+                  <span class="text-titlecase fw-bold fs-5">View Details
+                    <svg class="btn-arrow" width="18" height="18">
+                      <use xlink:href="#btn-arrow"></use>
+                    </svg>
+                  </span>
+                </a> -->
+            </div>
+          </div>
+          
         </div>
       </div>
     </section>

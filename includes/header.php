@@ -137,10 +137,10 @@
                 <a class="nav-link text-titlecase fw-bold active" href="index.php">Home</a>
               </li>
               <li class="nav-item me-5">
-                <a class="nav-link text-titlecase fw-bold" href="about.html">About</a>
+                <a class="nav-link text-titlecase fw-bold" href="about.php">About</a>
               </li>
               <li class="nav-item me-5">
-                <a class="nav-link text-titlecase fw-bold" href="project.php">Projects</a>
+                <a class="nav-link text-titlecase fw-bold" href="projects.php">Projects</a>
               </li>
               <li class="nav-item me-5">
                 <a class="nav-link text-titlecase fw-bold" href="services.html">Services</a>
