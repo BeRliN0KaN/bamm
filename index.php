@@ -5,15 +5,14 @@ include "includes/header.php";
   <div class="container" data-aos="fade-up">
     <div class="row g-md-5 d-flex justify-content-center align-items-center timer">
       <div class="col-lg-6">
-        <h1 class="display-2 text-titlecase fw-bold text-black">
-          Best construction company around the world.
+        <h1 class="display-3 text-titlecase fw-bold text-black">
+        <?php echo constant('page_index_slide_1') ?>
         </h1>
-        <p>
-          Vehicula at eget a arcu neque, ultricies. Aliquet tempus vel
-          amet eget egestas musus leo non.
+        <p class="fs-5 mt-3">
+        <?php echo constant('page_index_slide_2') ?>
         </p>
-        <a href="#" class="btn-slide btn-medium btn-dark hover-slide-right my-5">
-          <span class="text-titlecase">View Our Projects
+        <a href="projects.php" class="btn-slide btn-medium btn-dark hover-slide-right my-5">
+          <span class="text-titlecase"><?php echo constant('page_index_button_3') ?>
             <svg class="btn-arrow text-white" width="18" height="18">
               <use xlink:href="#btn-arrow"></use>
             </svg>
@@ -54,9 +53,9 @@ include "includes/header.php";
               <span class="circle-pattern position-absolute bottom-0 end-0"></span>
             </div>
           </div>
-          <h4 class="fw-bold py-3 m-0">งานโครงสร้าง civil</h3>
+          <h4 class="fw-bold py-3 m-0"><?php echo constant('page_index_card_1') ?></h3>
             <div class="card-text">
-              <p class="blog-paragraph fs-5">ให้บริการออกแบบและก่อสร้างโครงสร้างที่มีมาตรฐานสูง มุ่งเน้นความปลอดภัยและความมั่นคง</p>
+              <p class="blog-paragraph fs-5"><?php echo constant('page_index_card_content_1') ?></p>
             </div>
             <!-- <a href="#" class="btn-normal my-2">
                   <span class="text-titlecase fw-bold fs-5">View Details
@@ -78,9 +77,9 @@ include "includes/header.php";
               <span class="circle-pattern position-absolute bottom-0 end-0"></span>
             </div>
           </div>
-          <h4 class="fw-bold py-3 m-0">งานสถาปัตย์ Architect</h3>
+          <h4 class="fw-bold py-3 m-0"><?php echo constant('page_index_card_2') ?></h3>
             <div class="card-text">
-              <p class="blog-paragraph fs-5">การออกแบบที่ตอบสนองทุกความต้องการ ทั้งในแง่ของความงาม ความสะดวกสบาย และประสิทธิภาพ</p>
+              <p class="blog-paragraph fs-5"><?php echo constant('page_index_card_content_2') ?></p>
             </div>
             <!-- <a href="#" class="btn-normal my-2">
                   <span class="text-titlecase fw-bold fs-5">View Details
@@ -102,9 +101,9 @@ include "includes/header.php";
               <span class="circle-pattern position-absolute bottom-0 end-0"></span>
             </div>
           </div>
-          <h4 class="fw-bold py-3 m-0">งานระบบไฟฟ้า ประปา</h3>
+          <h4 class="fw-bold py-3 m-0"><?php echo constant('page_index_card_3') ?></h3>
             <div class="card-text">
-              <p class="blog-paragraph fs-5">มุ่งมั่นในการออกแบบและติดตั้งระบบไฟฟ้าและประปาที่รองรับการใช้งานได้อย่างยาวนานและปลอดภัย</p>
+              <p class="blog-paragraph fs-5"><?php echo constant('page_index_card_content_3') ?></p>
             </div>
             <!-- <a href="#" class="btn-normal my-2">
                   <span class="text-titlecase fw-bold fs-5">View Details
@@ -126,9 +125,9 @@ include "includes/header.php";
               <span class="circle-pattern position-absolute bottom-0 end-0"></span>
             </div>
           </div>
-          <h4 class="fw-bold py-3 m-0">งานปรับภูมิทัศน์</h3>
+          <h4 class="fw-bold py-3 m-0"><?php echo constant('page_index_card_4') ?></h3>
             <div class="card-text">
-              <p class="blog-paragraph fs-5">มุ่งมั่นในการสร้างพื้นที่ภายนอกที่มีความสมดุลระหว่างธรรมชาติและการใช้งาน</p>
+              <p class="blog-paragraph fs-5"><?php echo constant('page_index_card_content_4') ?></p>
             </div>
             <!-- <a href="#" class="btn-normal my-2">
                   <span class="text-titlecase fw-bold fs-5">View Details
@@ -148,19 +147,18 @@ include "includes/header.php";
 <section id="about-us" class=" padding-large position-relative ">
   <div class="container" data-aos="fade-up">
     <div class="section-header col-lg-4">
-      <h2 class="text-uppercase mb-3 left-pattern">About us</h2>
-      <h3 class="text-titlecase">Recognize more about our company</h3>
+      <h2 class="text-uppercase mb-3 left-pattern"><?php echo constant('page_index_about_1') ?></h2>
+      <h3 class="text-titlecase"><?php echo constant('page_index_about_2') ?></h3>
     </div>
     <div class="row g-md-5 flex-row-reverse d-flex justify-content-center align-items-top mt-5">
       <div class="col-lg-6 mt-0 justify-content-top">
         <img src="images/about2.jpg" alt="" class="img-fluid rounded-3">
-        <h5 class="mt-3">Enim leo leo non in viverra adipiscing nisi sed dictum nisi blandit.</h5>
+        <h5 class="mt-3"><?php echo constant('page_index_about_3') ?></h5>
         <p class="fs-5 mt-2">
-          Gravida feugiat viverra porttitor semper in faucibus ut. Ipsum, vel aliquet purus urna placerat convallis
-          felis. Pretium curabitur fames est.
+        <?php echo constant('page_index_about_4') ?>
         </p>
-        <a href="#" class="btn-slide btn-medium btn-dark hover-slide-right my-3">
-          <span class="text-titlecase">About Us
+        <a href="about.php" class="btn-slide btn-medium btn-dark hover-slide-right my-3">
+          <span class="text-titlecase"><?php echo constant('page_index_button_2') ?>
             <svg class="btn-arrow text-white" width="18" height="18">
               <use xlink:href="#btn-arrow"></use>
             </svg>
@@ -177,114 +175,7 @@ include "includes/header.php";
       style="background-repeat: no-repeat; overflow: hidden;">
   </div>
   </div>
-
-  <!-- start -->
-  <section id="projects" class="padding-large">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="text-uppercase mb-3 left-pattern">Latest Projects</h2>
-        <h3 class="text-titlecase">Explore our works</h3>
-      </div>
-      <div class="projects-isotope my-5">
-        <div class="d-flex flex-wrap justify-content-between">
-          <div class="projects-flters d-flex flex-wrap">
-            <button class="filter-button active border-0 bg-transparent me-5 mb-3 fs-5" data-filter="*">
-              All
-            </button>
-            <button class="filter-button border-0 bg-transparent me-5 mb-3 fs-5" data-filter=".building">
-              Buildings
-            </button>
-            <button class="filter-button border-0 bg-transparent me-5 mb-3 fs-5" data-filter=".interior">
-              Interior & Exterior
-            </button>
-            <button class="filter-button border-0 bg-transparent me-5 mb-3 fs-5" data-filter=".renovate">
-              Renovate
-            </button>
-            <button class="filter-button border-0 bg-transparent me-5 mb-3 fs-5" data-filter=".industry">
-              Industry
-            </button>
-            <button class="filter-button border-0 bg-transparent me-5 mb-3 fs-5" data-filter=".road">
-              Road
-            </button>
-          </div>
-          <div class="text-start text-lg-end">
-            <a href="#" class="btn-normal">
-              <span class="text-titlecase fw-bold fs-5">View All Projects
-                <svg class="btn-arrow" width="18" height="18">
-                  <use xlink:href="#btn-arrow"></use>
-                </svg>
-              </span>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="row isotope-container">
-        <div class="col-lg-4 col-md-6 item building">
-          <div class="projects-content mx-auto">
-            <a href="project-single.html">
-              <img src="images/projects-item1.jpg" class="rounded-3 " alt="building" />
-            </a>
-          </div>
-          <h3 class="fs-3 text-center mt-3 mb-5">
-            <a href="project-single.html">Outbox creatives building</a>
-          </h3>
-        </div>
-        <div class="col-lg-4 col-md-6 item renovate">
-          <div class="projects-content mx-auto">
-            <a href="project-single.html">
-              <img src="images/projects-item2.jpg" class="rounded-3 img-fluid" alt="building" />
-            </a>
-          </div>
-          <h3 class="fs-3 text-center mt-3 mb-5">
-            <a href="project-single.html">Slova private residence</a>
-          </h3>
-        </div>
-        <div class="col-lg-4 col-md-6 item industry">
-          <div class="projects-content mx-auto">
-            <a href="project-single.html">
-              <img src="images/projects-item3.jpg" class="rounded-3 img-fluid" alt="building" />
-            </a>
-          </div>
-          <h3 class="fs-3 text-center mt-3 mb-5">
-            <a href="project-single.html">Jaguare garment industry</a>
-          </h3>
-        </div>
-        <div class="col-lg-4 col-md-6 item industry">
-          <div class="projects-content">
-            <a href="project-single.html">
-              <img src="images/projects-item4.jpg" class="rounded-3 img-fluid" alt="building" />
-            </a>
-          </div>
-          <h3 class="fs-3 text-center mt-3 mb-5">
-            <a href="project-single.html">Jaguare garment industry</a>
-          </h3>
-        </div>
-        <div class="col-lg-4 col-md-6 item road">
-          <div class="projects-content">
-            <a href="project-single.html">
-              <img src="images/projects-item5.jpg" class="rounded-3 img-fluid" alt="building" />
-            </a>
-          </div>
-          <h3 class="fs-3 text-center mt-3 mb-5">
-            <a href="project-single.html">Jaguare garment industry</a>
-          </h3>
-        </div>
-        <div class="col-lg-4 col-md-6 item building">
-          <div class="projects-content">
-            <a href="project-single.html">
-              <img src="images/projects-item6.jpg" class="rounded-3 img-fluid" alt="building" />
-            </a>
-          </div>
-          <h3 class="fs-3 text-center mt-3 mb-5">
-            <a href="project-single.html">Jaguare garment industry</a>
-          </h3>
-        </div>
-
-      </div>
-    </div>
-    </div>
-  </section>
-  <!-- end -->
+</section>
 
   <!-- start -->
   <section id="testimonial" class="jarallax d-flex align-items-center padding-large"

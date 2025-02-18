@@ -4,13 +4,11 @@ define('work_time','周一至周五：早上8:30 - 下午5:00');
 define('address', 'SSP Tower 2, 19层, Na Ranong Road, Klongtoey Bangkok, 泰国 10110');
 
 //footer
-define('page_footer_1', '联系我们');
-define('page_footer_1.1', '您的可信赖技术合作伙伴');
-define('page_footer_2', '116/69 SSP Tower 2, 19层, Na Ranong Road, Klongtoey, Klongtoey Bangkok, 泰国 10110');
-define('page_footer_3', '02-119-5300');
-define('page_footer_3.1', '021195310');
-define('page_footer_4', 'hello@wisepaq.com');
-define('page_footer_4.1', '@wisepaq');
+define('page_footer_1','联系方式');
+define('page_footer_2','泰国春苑路109 / 39号，10村，曼谷加朗，曼谷府，11140');
+define('page_footer_3','095-795-6695');
+define('page_footer_4','@email.com');
+
 define('page_footer_5', '地址');
 define('page_footer_6', '快速链接');
 define('page_footer_7', '业务');
@@ -24,7 +22,7 @@ define('page_footer_0', '&copy;' . date("Y") . 'Wisepaq, 版权所有。');
 define('welcome', '欢迎来到 ');
 define('page_index_button_1', '首页');
 define('page_index_button_2', '关于我们');
-define('page_index_button_3', '愿景与使命');
+define('page_index_button_3', '查看我们的项目');
 define('page_index_button_4', '服务');
 define('page_index_button_5', '页面');
 define('page_index_button_51', '定价计划');
@@ -40,23 +38,24 @@ define('page_index_top_2', '货物追踪');
 define('page_index_top_3', '追踪');
 define('page_index_top_4', '追踪号码');
 
-define('page_index_slide_1', '全球第三方物流领导者');
-define('page_index_slide_2', '为您的物流需求提供定制化的交钥匙解决方案');
+define('page_index_slide_1', 'A.X.W. International');
+define('page_index_slide_2', '它是建筑行业的领先公司之一，在各种类型的建筑工作方面拥有丰富的经验和专业知识。该公司以提供高质量和现代服务而闻名，包括高效执行复杂和具有挑战性的项目。');
 define('page_index_slide_3', '专注于设计定制化的交钥匙解决方案');
 
-define('page_index_virtualiz_1', 'Sangfor开发的超融合基础架构（HCI）解决方案是一种通过单一控制台易于使用的软件定义数据中心解决方案。它将计算、存储、网络和安全功能集成到一个软件套件中，为各种规模的组织提供数据中心服务，从小型企业到大型企业。');
-define('page_index_virtualiz_2', 'Nutanix是一家专注于存储管理和网络管理的公司，提供包括超融合基础架构（HCI）在内的完整解决方案。Nutanix还提供HCI服务器机架和多种工具，帮助用户轻松高效地管理和控制系统。');
-define('page_index_virtualiz_3', '微软系统是微软开发的一套产品和服务，包括Windows操作系统、Microsoft Office软件、Azure云平台及其他帮助数据管理、协作和技术应用的工具。');
-define('page_index_virtualiz_4', 'VMware是一款虚拟化软件，可以在单个硬件上创建和管理多个虚拟机，帮助用户创建和管理虚拟系统，提高资源效率，降低成本，增加IT系统管理的灵活性。');
+define('page_index_card_1','土木结构工程');
+define('page_index_card_2','建筑工作');
+define('page_index_card_3','电气和管道系统');
+define('page_index_card_4','景观设计');
 
-define('page_index_solution_1', '我们提供工程解决方案，帮助组织改善基础设施并提高工作效率，实现可扩展性和增加生产力。');
-define('page_index_solution_2', '我们提供量身定制的端到端网络解决方案，确保无缝连接且不干扰运营。');
-define('page_index_solution_3', '将您的业务提升到更高的现代化和效率！随时随地访问数据和应用程序，按需扩展业务，减少成本，提高绩效，推动您的业务走向成功。');
-define('page_index_solution_4', '我们为您的团队提供先进的技术保护，确保在安全的环境中无缝协作。');
+define('page_index_card_content_1','提供高标准结构的设计和施工，注重安全性和稳定性。');
+define('page_index_card_content_2','设计满足美学、舒适和效率方面的所有需求。');
+define('page_index_card_content_3','致力于设计和安装电气和管道系统，以确保长期功能和安全性。');
+define('page_index_card_content_4','致力于创造平衡自然与功能的户外空间。');
 
-define('page_index_activity_1', '我们在Wisepaq专注于提供优质服务并为客户提供最佳解决方案。');
-define('page_index_activity_2', '在Wisepaq，我们致力于提供最高质量的服务，充分满足客户需求。我们不仅专注于提供最好的产品和解决方案，还优先通过高效支持和细致关怀，为客户创造积极的体验。');
-define('page_index_activity_3', '查看活动');
+define('page_index_about_1','服务业');
+define('page_index_about_2','施工承包');
+define('page_index_about_3','A.X.W. International Co., Ltd.');
+define('page_index_about_4','我们在国内外的高层建筑、商业建筑、工业工厂和公共基础设施项目等各个领域提供服务。我们专注于使用现代技术和建筑材料来确保每个项目的耐用性和安全性。');
 
 define('page_index_contact_1', '让我们共同建设未来。');
 define('page_index_contact_2', '让我们携手合作，创造新的机会，引领您的业务走向可持续成功，携手与我们一起成长。我们拥有帮助您突破界限的工具和解决方案。');

@@ -1,8 +1,8 @@
 <?php include "includes/header.php"; ?>
 
 <!-- Page Header Start -->
-<section id="intro" class="jarallax" style="background: none;" data-jarallax-original-styles="background: url(images/call-to-action.jpg);" >
-  <div class="container-sm pt-5 aos-init aos-animate" >
+<section id="intro" class="jarallax" style="background: none;" data-jarallax-original-styles="background: url(images/call-to-action.jpg);">
+  <div class="container-sm pt-5 aos-init aos-animate">
     <div class="row py-5 " data-aos="fade-up">
       <div class=" banner-content my-5 py-5 ">
         <h1 class="banner-title light text-titlecase fw-bold">About us</h1>
@@ -14,62 +14,81 @@
     </div>
   </div>
   <div id="jarallax-container-0" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; z-index: -100; clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0px 100%);">
-    <div style="background-position: 50% 50%; background-size: cover; background-repeat: no-repeat; background-image: url(&quot;https://demo.templatesjungle.com/bamboo/images/call-to-action.jpg&quot;); position: fixed; top: 0px; left: 0px; width: 1455px; height: 549.797px; overflow: hidden; pointer-events: none; transform-style: preserve-3d; backface-visibility: hidden; will-change: transform, opacity; margin-top: 14.1016px; transform: translate3d(0px, -36.1016px, 0px);"></div>
+    <div style="background-position: 50% 50%; background-size: cover; background-repeat: no-repeat; background-image: url(&quot;https://demo.templatesjungle.com/bamboo/images/call-to-action.jpg&quot;); position: fixed; top: 0px; left: 0px; width: 100%; height: 549.797px; overflow: hidden; pointer-events: none; transform-style: preserve-3d; backface-visibility: hidden; will-change: transform, opacity; margin-top: 14.1016px; transform: translate3d(0px, -36.1016px, 0px);"></div>
   </div>
 </section>
 <!-- Page Header End -->
 
 
+<!-- Solution content Start -->
+<div class="container">
+  <?php
+  $query = "SELECT * FROM tbl_posts inner join tbl_categories on tbl_categories.cat_id = tbl_posts.post_category_id where tbl_categories.cat_page=2 AND tbl_categories.cat_id=2 AND tbl_posts.post_status='Published'";
+  $fetch_posts_data = mysqli_query($connection, $query);
+  $counter = 1; // ตัวแปรสำหรับนับลูป
+  while ($Row = mysqli_fetch_assoc($fetch_posts_data)) {
+    $the_post_id = $Row['post_id'];
+    $the_post_image = $Row['post_image'];
+    $lang = $_SESSION['lang'];
+    switch ($lang) {
+      case 'en':
+        $the_post_title = base64_decode($Row['post_title']);
+        $the_post_subtitle = base64_decode($Row['post_subtitle']);
+        $the_post_content = base64_decode($Row['post_content']);
+        break;
+      case 'cn':
+        $the_post_title = base64_decode($Row['post_title_china']);
+        $the_post_subtitle = base64_decode($Row['post_subtitle_china']);
+        $the_post_content = base64_decode($Row['post_content_china']);
+        break;
+      default:
+        $the_post_title = base64_decode($Row['post_title_thai']);
+        $the_post_subtitle = base64_decode($Row['post_subtitle_thai']);
+        $the_post_content = base64_decode($Row['post_content_thai']);
+        break;
+    }
 
-<!-- about -->
-<section id="about-us" class="mt-5 pt-5">
-  <div class="vertical-element aos-init aos-animate" >
-    <div class="container" data-aos="fade-up">
-      <div class="row d-flex align-items-center">
-        <div class="col-md-5">
-          <div class="image-holder">
-            <img src="images/projects-item1.jpg" alt="" class="img-fluid">
-          </div>
+    // ตรวจสอบว่าตัวนับคือเลขคี่หรือคู่
+    if ($counter % 2 != 0) {
+  ?>
+      <div class="row g-5 py-5 align-items-center">
+        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+          <img class="img-fluid rounded" src="<?php echo "admin//images/" . $the_post_image; ?>">
         </div>
-        <div class="col-md-7">
-          <div class="section-element ps-0 p-5">
-            <div class="section-header mb-4">
-              <h2 class="left-pattern text-uppercase">About us</h2>
-              <h3 class="text-titlecase">Who are we?</h3>
+        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+          <div class="d-flex align-items-center mb-4">
+          <div class="section-header mb-4">
+            <h2 class="left-pattern text-uppercase"><?php echo $the_post_subtitle ?></h2>
+            <h3 class="mb-0"><?php echo $the_post_title ?></h5>
             </div>
-            <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              ทุนจดทะเบียน 100,000,000.00 ( หนึ่งร้อยล้านบาทถ้วน ) ก่อตั้งเดือน สิงหาคม ปี 2556
-              ด้วยประสบการณ์ ในธุรกิจก่อสร้างกว่า 20 ปี ดูแลโครงการก่อสร้างหลายรูปแบบ
-              ด้วยประสบการณ์ที่เข้าใจในการก่อสร้างอย่างแท้จริง</p>
           </div>
+          <p class="mb-4"><?php echo $the_post_content ?></p>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="vertical-element mt-md-5 py-md-5 aos-init aos-animate" >
-    <div class="container" data-aos="fade-up">
-      <div class="row d-flex align-items-center">
-        <div class="col-md-7">
-          <div class="section-element ps-0 p-5">
-            <div class="section-header mb-4">
-              <h2 class="left-pattern text-uppercase">Our Services</h2>
-              <h3 class="text-titlecase">Choose us for best services</h3>
+    <?php
+    } else {
+    ?>
+      <div class="row g-5 py-5 align-items-center flex-column-reverse flex-lg-row">
+        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+          <div class="d-flex align-items-center mb-4">
+          <div class="section-header mb-4">
+            <h2 class="left-pattern text-uppercase"><?php echo $the_post_subtitle ?></h2>
+            <h3 class="text-titlecase"><?php echo $the_post_title ?></h3>
             </div>
-            <p>We are nunc, lorem sit lorem urna, pretium aliquam ut. In vel, quis donec dolor idin.Pulvinar commodo mollis diam sed facilisis at magna imperdiet cursus ac faucibus sitlibero. Dignissim lacus, turpis ut suspendisse vel tellus. Turpis purus, gravida
-              orci,fringilla a. Ac sed eu fringilla odio mi. Consequat pharetra at magna imperdietcursusac faucibus sit libero.</p>
           </div>
+          <p class="mb-4"><?php echo $the_post_content ?></p>
         </div>
-        <div class="col-md-5">
-          <div class="image-holder text-right">
-            <img src="images/projects-item2.jpg" alt="" class="img-fluid">
-          </div>
+        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+          <img class="img-fluid rounded" src="<?php echo "admin//images/" . $the_post_image; ?>">
         </div>
       </div>
-    </div>
-  </div>
-
-</section>
-
+  <?php
+    }
+    $counter++; // เพิ่มตัวนับ
+  }
+  ?>
+</div>
+<!-- Solution content End -->
 
 <!-- start -->
 <section id="blog" class="padding-large position-relative">

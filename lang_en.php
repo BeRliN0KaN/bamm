@@ -4,13 +4,11 @@ define('work_time','Mon - Fri : 08.30 AM - 05.00 PM');
 define('address', 'SSP Tower 2, 19th Floor, Na Ranong Road, Klongtoey Bangkok, Thailand 10110');
 
 //footer
-define('page_footer_1', 'Get In Touch');
-define('page_footer_1.1', 'Your Trusted Technology Partner');
-define('page_footer_2', '116/69 SSP Tower 2, 19th Floor, Na Ranong Road, Klongtoey, Klongtoey Bangkok, Thailand 10110');
-define('page_footer_3', '02-119-5300');
-define('page_footer_3.1', '021195310');
-define('page_footer_4', 'hello@wisepaq.com');
-define('page_footer_4.1', '@wisepaq');
+define('page_footer_1','Contact');
+define('page_footer_2','109 / 39 My Isara Village, Ratchaphruek Road, Moo 10, Bang Krang Subdistrict, Mueang Nonthaburi District, Nonthaburi Province, 11140');
+define('page_footer_3','095-795-6695');
+define('page_footer_4','@email.com');
+
 
 define('page_footer_5', 'Address');
 define('page_footer_6', 'Quick Link');
@@ -27,8 +25,8 @@ define('page_footer_0', '&copy;' . date("Y") . 'Wisepaq, All Right Reserved.');
 
 define('welcome', 'WELCOME TO ');
 define('page_index_button_1', 'Home');
-define('page_index_button_2', 'About');
-define('page_index_button_3', 'Vision Mission');
+define('page_index_button_2', 'About Us');
+define('page_index_button_3', 'View Our Projects');
 define('page_index_button_4', 'Services');
 define('page_index_button_5', 'Pages');
 define('page_index_button_51', 'Pricing Plan');
@@ -44,23 +42,24 @@ define('page_index_top_2', 'Cargo Tracking');
 define('page_index_top_3', 'Track');
 define('page_index_top_4', 'Tracking number');
 
-define('page_index_slide_1', 'Global leader in third-party logistics');
-define('page_index_slide_2', 'Offering customized, turnkey solutions for your logistics needs.');
+define('page_index_slide_1', 'A.X.W. International');
+define('page_index_slide_2', 'It is one of the leading companies in the construction industry, with extensive experience and expertise in various types of construction work. The company has built a reputation for providing high-quality and modern services, including efficiently executing complex and challenging projects.');
 define('page_index_slide_3', 'Focus on designing customized, turnkey solutions.');
 
-define('page_index_virtualiz_1', 'The Hyper-Converged Infrastructure (HCI) solution developed by Sangfor is a Software-defined Data Center solution that is easy to use through a single console. It integrates the capabilities of Compute, Storage, Networking, and Security into a single software suite, providing Data Center services for all levels of organizations, from small businesses to large enterprises.');
-define('page_index_virtualiz_2', 'Nutanix is a software and cloud-related hardware company that specializes in storage management and network management, as well as designing complete solutions. The company’s main product is Hyper-Converged Infrastructure (HCI). In addition, Nutanix offers HCI for server racks and various tools that help users manage and control systems easily and efficiently.');
-define('page_index_virtualiz_3', 'Microsoft systems are a set of products and services developed by Microsoft, including the Windows operating system, Microsoft Office software, the Azure cloud platform, and other tools that help with data management, collaboration, and the use of technology in organizations and daily life.');
-define('page_index_virtualiz_4', 'VMware is a virtualization software that allows you to create and manage multiple virtual machines on a single piece of hardware. It helps users create and manage virtual systems on a single server, maximizing resource efficiency, reducing costs, and increasing flexibility in IT system management.');
+define('page_index_card_1','Civil Structural Work');
+define('page_index_card_2','Architectural Work');
+define('page_index_card_3','Electrical and Plumbing Systems');
+define('page_index_card_4','Landscape Design');
 
-define('page_index_solution_1', 'We offer engineering solutions that help organizations improve their infrastructure and enhance workflow efficiency, enabling scalability and increased productivity.');
-define('page_index_solution_2', 'We provide end-to-end network solutions tailored to the specific needs of your organization, ensuring seamless connectivity without disrupting operations.');
-define('page_index_solution_3', 'Take your business to the next level of modernity and efficiency! Access data and applications anytime, anywhere. Scale your operations as needed, reduce costs, enhance performance, and drive your business towards unlimited success');
-define('page_index_solution_4', 'We provide protection for your team with advanced technologies that enable seamless collaboration in a secure environment.');
+define('page_index_card_content_1','Providing design and construction of high-standard structures, focusing on safety and stability.');
+define('page_index_card_content_2','Design that meets all needs in terms of aesthetics, comfort, and efficiency.');
+define('page_index_card_content_3','Committed to designing and installing electrical and plumbing systems that ensure long-term functionality and safety.');
+define('page_index_card_content_4','Dedicated to creating outdoor spaces that balance nature with functionality.');
 
-define('page_index_activity_1', 'We at Wisepaq focus on providing excellent service and offering the best solutions for our customers.');
-define('page_index_activity_2', "At Wisepaq, we are committed to providing the highest quality service and fully meeting our customers' needs. We don’t just focus on offering the best products and solutions, but also prioritize creating a positive experience for our customers through efficient support and attentive care at every step of their journey with us.");
-define('page_index_activity_3', 'View Activity');
+define('page_index_about_1','Services');
+define('page_index_about_2','Construction Contracting');
+define('page_index_about_3','A.X.W. International Co., Ltd.');
+define('page_index_about_4','We provide services in various areas such as high-rise building construction, commercial buildings, industrial factories, and public infrastructure projects, both domestically and internationally. Our focus is on using modern technology and construction materials to ensure durability and safety in every project.');
 
 define('page_index_contact_1', "Let's build the future together.");
 define('page_index_contact_2', "Let's collaborate to create new opportunities that will lead your business to sustainable success, growing with us every step of the way. We have the tools and solutions that will help you break through boundaries.");

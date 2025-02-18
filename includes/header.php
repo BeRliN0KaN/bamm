@@ -56,29 +56,7 @@ include "includes/db.php";
                             data-bs-target="#bdNavbar"></button>
                     </div>
                     <div class="offcanvas-body">
-<<<<<<< HEAD
-                        <ul id="navbar"
-                            class="navbar-nav text-titlecase fw-bold justify-content-lg-center justify-content-md-end align-items-center text-center flex-grow-1 text-hover">
-                            <li class="nav-item me-5">
-                                <a class="nav-link text-titlecase fw-bold " href="index.php">Home</a>
-                            </li>
-                            <li class="nav-item me-5">
-                                <a class="nav-link text-titlecase fw-bold" href="about.php">About</a>
-                            </li>
-                            <li class="nav-item me-5">
-                                <a class="nav-link text-titlecase fw-bold" href="projects.php">Projects</a>
-                            </li>
-                            <li class="nav-item me-5">
-                                <a class="nav-link text-titlecase fw-bold" href="services.html">Services</a>
-                            </li>
-                            <li class="nav-item me-5">
-                                <a class="nav-link text-titlecase fw-bold" href="blog.html">News</a>
-                            </li>
-                            <li class="nav-item dropdown me-5">
-                                <a class="nav-link text-titlecase fw-bold dropdown-toggle pe-0" data-bs-toggle="dropdown" href="#"
-                                    role="button" aria-expanded="false">Pages</a>
-                            </li>
-=======
+
                         <ul id="navbar" class="navbar-nav text-titlecase fw-bold justify-content-lg-center justify-content-md-end align-items-center text-center flex-grow-1 text-hover">
                             <?php
                             $sql = "SELECT * FROM tbl_menu";
@@ -140,7 +118,7 @@ include "includes/db.php";
                             <?php }
                                 }
                             } ?>
->>>>>>> e83ef6b311020a711e327dbd36e0b3d1eb9a93e2
+
                         </ul>
                     </div>
                 </div>
