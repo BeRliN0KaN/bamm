@@ -90,6 +90,51 @@
 </div>
 <!-- Solution content End -->
 
+
+<section id="blog" class="padding-large position-relative">
+  <div class="container">
+    <div class="section-header col-lg-4">
+      <h2 class="text-uppercase mb-3 left-pattern">News articles</h2>
+      <h3 class="text-titlecase">Read some latest news articles</h3>
+    </div>
+    <div class="row mt-5 mt-lg-0">
+      <?php
+            $query = "SELECT * FROM tbl_posts inner join tbl_categories on tbl_categories.cat_id = tbl_posts.post_category_id   where tbl_categories.cat_page=2 and tbl_categories.cat_id=19 AND tbl_posts.post_status='Published'";
+            $fetch_posts_data = mysqli_query($connection, $query);
+            while ($Row = mysqli_fetch_assoc($fetch_posts_data)) {
+                $the_post_id = $Row['post_id'];
+                $the_post_image = $Row['post_image'];
+                $lang = $_SESSION['lang'];
+                switch ($lang) {
+                    case 'en':
+                        $the_post_title = base64_decode($Row['post_title']);
+                        $the_post_subtitle = base64_decode($Row['post_subtitle']);
+                        $the_post_content = base64_decode($Row['post_content']);
+                        break;
+                    case 'cn':
+                        $the_post_title = base64_decode($Row['post_title_china']);
+                        $the_post_subtitle = base64_decode($Row['post_subtitle_china']);
+                        $the_post_content = base64_decode($Row['post_content_china']);
+                        break;
+                    default:
+                        $the_post_title = base64_decode($Row['post_title_thai']);
+                        $the_post_subtitle = base64_decode($Row['post_subtitle_thai']);
+                        $the_post_content = base64_decode($Row['post_content_thai']);
+                        break;
+                }
+            ?>
+      <div class="col-md-4 mb-4 mt-4">
+        <a href="blog-single.html"><img src="<?php echo "admin//images/" . $the_post_image; ?>" alt="image" class="img-fluid rounded-3 h-100"></a>
+        <p class="blog text-capitalize mt-3 fw-semibold"><?php echo $the_post_subtitle ?></p>
+        <h4 class="blog-heading fw-semibold"><a href="blog-single.html"><?php echo $the_post_title ?></a></h4>
+      </div>
+    <?php } ?>
+    </div>
+  </div>
+</section>
+
+
+
 <!-- start -->
 <section id="blog" class="padding-large position-relative">
   <div class="container">
