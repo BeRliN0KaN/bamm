@@ -136,7 +136,7 @@ include "includes/db.php";
                                         default:
                                             $menu_titile = $row['menuTH'];
                                     }
-                                    $sql_sub = "SELECT *FROM tbl_menu_dd WHERE id_menu = '$id_menu'";
+                                    $sql_sub = "SELECT * FROM tbl_menu_dd WHERE id_menu = '$id_menu'";
                                     $fetch_sub = $connection->query($sql_sub);
                                     if ($fetch_sub->num_rows == 0) {
                                         // ไม่มีเมนูย่อย
@@ -156,6 +156,7 @@ include "includes/db.php";
                                                 while ($row_sub = $fetch_sub->fetch_assoc()) {
                                                     $id_menu = $row_sub['id_menu'];
                                                     $link_sub = $row_sub['link_dd'];
+                                                    $change_name = $row_sub['change_name'];
                                                     $lang = $_SESSION['lang'];
                                                     switch ($lang) {
                                                         case 'en':
@@ -169,7 +170,7 @@ include "includes/db.php";
                                                     }
                                                 ?>
                                                     <li class="text-decoration-none">
-                                                        <a href="#" onclick="change_lang('<?php echo $link_sub; ?>')" class="dropdown-item text-uppercase fw-bold <?php echo $current_page == basename($link)?'active':''; ?>"><?php echo $menu_subtitile; ?></a></a>
+                                                        <a href="<?php echo $link_sub; ?>" onclick="change_lang('<?php echo $chang_name; ?>')" class="dropdown-item text-uppercase fw-bold <?php echo $current_page == basename($link)?'active':''; ?>"><?php echo $menu_subtitile; ?></a></a>
                                                     </li>
                                                 <?php } ?>
                                             </ul>
