@@ -5,7 +5,7 @@ include "includes/header.php";
   <div class="container" data-aos="fade-up">
     <div class="row g-md-5 d-flex justify-content-center align-items-center timer">
       <div class="col-lg-6">
-        <h1 class="display-3 text-titlecase fw-bold text-black">
+        <h1 class="display-4 text-titlecase fw-bold text-black">
         <?php echo constant('page_index_slide_1') ?>
         </h1>
         <p class="fs-5 mt-3">
@@ -309,7 +309,7 @@ include "includes/header.php";
           <div class="counter-info text-center align-items-end">
             <div class="counter-number align-items-center">
               <h4 class="timer fw-bold m-0" data-to="100" data-speed="1000">
-                780
+                100+
               </h4>
             </div>
             <h2 class="counter-description text-uppercase ps-2 fw-semibold">

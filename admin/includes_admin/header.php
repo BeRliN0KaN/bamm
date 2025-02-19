@@ -19,10 +19,10 @@ if (isMobile()) {
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>WISEPAQ | วางระบบ network | Thailand</title>
+    <title>LOGIN ADMIN | A.X.W</title>
 
     <!-- Favicon -->
-    <link href="../img/wisepaq.jpg" rel="icon">
+    <link href="../images/logo-文字版.png" rel="icon">
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">

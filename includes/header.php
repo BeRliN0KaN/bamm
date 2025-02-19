@@ -1,10 +1,10 @@
 <?php
 session_start();
 if (isset($_GET['lang'])) {
-    $_SESSION['lang'] = $_GET['lang'];
-  } elseif (!isset($_SESSION['lang'])) {
-    $_SESSION['lang'] = 'th';
-  }
+  $_SESSION['lang'] = $_GET['lang'];
+} elseif (!isset($_SESSION['lang'])) {
+  $_SESSION['lang'] = 'th';
+}
 include "lang_" . $_SESSION['lang'] . ".php";
 include "includes/db.php";
 ?>
@@ -12,7 +12,65 @@ include "includes/db.php";
 <html>
 
 <head>
-    <title>A.X.W INTERNATIONAL CO.,LTD.</title>
+    <?php 
+    $current_page = basename($_SERVER['PHP_SELF']);
+    $sql_title = "SELECT * FROM tbl_menu";
+    $fetch_data = $connection->query($sql_title);
+    while ($row_title = $fetch_data->fetch_assoc()) {
+
+    $page_default = "A.X.W INTERNATIONAL CO.,LTD.";
+    if($fetch_data->num_rows>0){
+        while($row_title = $fetch_data->fetch_assoc()){
+        $menu_id = $row_title['id_menu'];
+        $link = basename($row_title['link']);
+        $title_lang = $_SESSION['lang'];
+        switch($title_lang){
+            case 'en':
+                $title_name = strtoupper($row_title['name'] ." | A.X.W INTERNATIONAL CO.,LTD.");
+                break;
+            case 'cn':
+                $title_name = strtoupper($row_title['menuCN'] ." | A.X.W INTERNATIONAL CO.,LTD.");
+                break;
+            default:
+                $title_name = strtoupper($row_title['menuTH'] ." | A.X.W INTERNATIONAL CO.,LTD.");
+                break;
+        }
+
+        if($current_page == 'index.php'){
+            $page_title = $page_default;
+        } elseif ($current_page == $link){
+            $page_title = $title_name;
+        }
+
+        $sql_sub = "SELECT * FROM tbl_menu_dd WHERE id_menu = '$menu_id'";
+        $fetch_sub = $connection->query($sql_sub);
+
+        if($fetch_sub->num_rows >0){
+            while ($row_sub = $fetch_sub->fetch_assoc()) {
+                $sub_link = basename($row_sub['link_dd']);
+                $sub_title_lang = $_SESSION['lang'];
+                switch($sub_title_lang){
+                    case 'en':
+                        $sub_title_name = strtoupper( $row_sub['name_dd'] ." | A.X.W INTERNATIONAL CO.,LTD.");
+                        break;
+                    case 'cn':
+                        $sub_title_name = strtoupper($row_sub['menuCN_dd'] ." | A.X.W INTERNATIONAL CO.,LTD.");
+                        break;
+                    default:
+                        $sub_title_name = strtoupper($row_sub['menuTH_dd'] ." | A.X.W INTERNATIONAL CO.,LTD.");
+                        break;
+                }
+                
+                if($current_page == $sub_link){
+                    $page_title = $sub_title_name;
+            }
+        }
+     }
+    }
+}
+    }
+    echo "<title>".$page_title."</title>";
+    ?>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -59,6 +117,7 @@ include "includes/db.php";
 
                         <ul id="navbar" class="navbar-nav text-titlecase fw-bold justify-content-lg-center justify-content-md-end align-items-center text-center flex-grow-1 text-hover">
                             <?php
+                            $current_page = basename($_SERVER['PHP_SELF']);
                             $sql = "SELECT * FROM tbl_menu";
                             $fetch_data = $connection->query($sql);
                             if ($fetch_data->num_rows == 0) {
@@ -83,7 +142,7 @@ include "includes/db.php";
                                         // ไม่มีเมนูย่อย
                             ?>
                                         <li class="nav-item me-5">
-                                            <a class="nav-link text-titlecase fw-bold " href="<?php echo $link; ?>"><?php echo $menu_titile; ?></a>
+                                            <a class="nav-link text-titlecase fw-bold <?php echo $current_page == basename($link)?'active':''; ?>" href="<?php echo $link; ?>"><?php echo $menu_titile; ?></a>
                                         </li>
                                     <?php } else {
                                         // มีเมนูย่อย
@@ -110,7 +169,7 @@ include "includes/db.php";
                                                     }
                                                 ?>
                                                     <li class="text-decoration-none">
-                                                        <a href="#" onclick="change_lang('<?php echo $link_sub; ?>')" class="dropdown-item text-titlecase fw-bold"><?php echo $menu_subtitile; ?></a></a>
+                                                        <a href="#" onclick="change_lang('<?php echo $link_sub; ?>')" class="dropdown-item text-titlecase fw-bold <?php echo $current_page == basename($link)?'active':''; ?>"><?php echo $menu_subtitile; ?></a></a>
                                                     </li>
                                                 <?php } ?>
                                             </ul>
