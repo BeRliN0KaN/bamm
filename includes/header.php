@@ -1,9 +1,9 @@
 <?php
 session_start();
 if (isset($_GET['lang'])) {
-  $_SESSION['lang'] = $_GET['lang'];
+    $_SESSION['lang'] = $_GET['lang'];
 } elseif (!isset($_SESSION['lang'])) {
-  $_SESSION['lang'] = 'th';
+    $_SESSION['lang'] = 'th';
 }
 include "lang_" . $_SESSION['lang'] . ".php";
 include "includes/db.php";
@@ -12,64 +12,64 @@ include "includes/db.php";
 <html>
 
 <head>
-    <?php 
+    <?php
     $current_page = basename($_SERVER['PHP_SELF']);
     $sql_title = "SELECT * FROM tbl_menu";
     $fetch_data = $connection->query($sql_title);
     while ($row_title = $fetch_data->fetch_assoc()) {
 
-    $page_default = "A.X.W INTERNATIONAL CO.,LTD.";
-    if($fetch_data->num_rows>0){
-        while($row_title = $fetch_data->fetch_assoc()){
-        $menu_id = $row_title['id_menu'];
-        $link = basename($row_title['link']);
-        $title_lang = $_SESSION['lang'];
-        switch($title_lang){
-            case 'en':
-                $title_name = strtoupper($row_title['name'] ." | A.X.W INTERNATIONAL CO.,LTD.");
-                break;
-            case 'cn':
-                $title_name = strtoupper($row_title['menuCN'] ." | A.X.W INTERNATIONAL CO.,LTD.");
-                break;
-            default:
-                $title_name = strtoupper($row_title['menuTH'] ." | A.X.W INTERNATIONAL CO.,LTD.");
-                break;
-        }
-
-        if($current_page == 'index.php'){
-            $page_title = $page_default;
-        } elseif ($current_page == $link){
-            $page_title = $title_name;
-        }
-
-        $sql_sub = "SELECT * FROM tbl_menu_dd WHERE id_menu = '$menu_id'";
-        $fetch_sub = $connection->query($sql_sub);
-
-        if($fetch_sub->num_rows >0){
-            while ($row_sub = $fetch_sub->fetch_assoc()) {
-                $sub_link = basename($row_sub['link_dd']);
-                $sub_title_lang = $_SESSION['lang'];
-                switch($sub_title_lang){
+        $page_default = "A.X.W INTERNATIONAL CO.,LTD.";
+        if ($fetch_data->num_rows > 0) {
+            while ($row_title = $fetch_data->fetch_assoc()) {
+                $menu_id = $row_title['id_menu'];
+                $link = basename($row_title['link']);
+                $title_lang = $_SESSION['lang'];
+                switch ($title_lang) {
                     case 'en':
-                        $sub_title_name = strtoupper( $row_sub['name_dd'] ." | A.X.W INTERNATIONAL CO.,LTD.");
+                        $title_name = strtoupper($row_title['name'] . " | A.X.W INTERNATIONAL CO.,LTD.");
                         break;
                     case 'cn':
-                        $sub_title_name = strtoupper($row_sub['menuCN_dd'] ." | A.X.W INTERNATIONAL CO.,LTD.");
+                        $title_name = strtoupper($row_title['menuCN'] . " | A.X.W INTERNATIONAL CO.,LTD.");
                         break;
                     default:
-                        $sub_title_name = strtoupper($row_sub['menuTH_dd'] ." | A.X.W INTERNATIONAL CO.,LTD.");
+                        $title_name = strtoupper($row_title['menuTH'] . " | A.X.W INTERNATIONAL CO.,LTD.");
                         break;
                 }
-                
-                if($current_page == $sub_link){
-                    $page_title = $sub_title_name;
+
+                if ($current_page == 'index.php') {
+                    $page_title = $page_default;
+                } elseif ($current_page == $link) {
+                    $page_title = $title_name;
+                }
+
+                $sql_sub = "SELECT * FROM tbl_menu_dd WHERE id_menu = '$menu_id'";
+                $fetch_sub = $connection->query($sql_sub);
+
+                if ($fetch_sub->num_rows > 0) {
+                    while ($row_sub = $fetch_sub->fetch_assoc()) {
+                        $sub_link = basename($row_sub['link_dd']);
+                        $sub_title_lang = $_SESSION['lang'];
+                        switch ($sub_title_lang) {
+                            case 'en':
+                                $sub_title_name = strtoupper($row_sub['name_dd'] . " | A.X.W INTERNATIONAL CO.,LTD.");
+                                break;
+                            case 'cn':
+                                $sub_title_name = strtoupper($row_sub['menuCN_dd'] . " | A.X.W INTERNATIONAL CO.,LTD.");
+                                break;
+                            default:
+                                $sub_title_name = strtoupper($row_sub['menuTH_dd'] . " | A.X.W INTERNATIONAL CO.,LTD.");
+                                break;
+                        }
+
+                        if ($current_page == $sub_link) {
+                            $page_title = $sub_title_name;
+                        }
+                    }
+                }
             }
         }
-     }
     }
-}
-    }
-    echo "<title>".$page_title."</title>";
+    echo "<title>" . $page_title . "</title>";
     ?>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -142,7 +142,7 @@ include "includes/db.php";
                                         // ไม่มีเมนูย่อย
                             ?>
                                         <li class="nav-item me-5">
-                                            <a class="nav-link text-uppercase fw-bold <?php echo $current_page == basename($link)?'active':''; ?>" href="<?php echo $link; ?>"><?php echo $menu_titile; ?></a>
+                                            <a class="nav-link text-uppercase fw-bold <?php echo $current_page == basename($link) ? 'active' : ''; ?>" href="<?php echo $link; ?>"><?php echo $menu_titile; ?></a>
                                         </li>
                                     <?php } else {
                                         // มีเมนูย่อย
@@ -156,7 +156,6 @@ include "includes/db.php";
                                                 while ($row_sub = $fetch_sub->fetch_assoc()) {
                                                     $id_menu = $row_sub['id_menu'];
                                                     $link_sub = $row_sub['link_dd'];
-                                                    $change_name = $row_sub['change_name'];
                                                     $lang = $_SESSION['lang'];
                                                     switch ($lang) {
                                                         case 'en':
@@ -170,7 +169,7 @@ include "includes/db.php";
                                                     }
                                                 ?>
                                                     <li class="text-decoration-none">
-                                                        <a href="<?php echo $link_sub; ?>" onclick="change_lang('<?php echo $chang_name; ?>')" class="dropdown-item text-uppercase fw-bold <?php echo $current_page == basename($link)?'active':''; ?>"><?php echo $menu_subtitile; ?></a></a>
+                                                        <a href="<?php echo $link_sub; ?>" class="dropdown-item text-uppercase fw-bold <?php echo $current_page == basename($link) ? 'active' : ''; ?>"><?php echo $menu_subtitile; ?></a>
                                                     </li>
                                                 <?php } ?>
                                             </ul>
@@ -178,18 +177,52 @@ include "includes/db.php";
                             <?php }
                                 }
                             } ?>
-
+                            <li class="nav-item dropdown me-5">
+                                <?php
+                                $lang = $_SESSION['lang'];
+                                switch ($lang) {
+                                    case 'en':
+                                        $menu_titile = 'Language';
+                                        break;
+                                    case 'cn':
+                                        $menu_titile = '語言';
+                                        break;
+                                    default:
+                                        $menu_titile = 'ภาษา';
+                                }
+                                ?>
+                                <a class="nav-link text-uppercase fw-bold dropdown-toggle pe-0" data-bs-toggle="dropdown" href="#"
+                                    role="button" aria-expanded="false"><?php echo $menu_titile ?><iconify-icon
+                                        icon="material-symbols:arrow-drop-down"></iconify-icon></a>
+                                <ul class="dropdown-menu">
+                                    <li class="text-decoration-none">
+                                        <a href="#" onclick="change_lang('th')" class="dropdown-item text-uppercase fw-bold <?php echo $current_page == basename($link) ? 'active' : ''; ?>">
+                                            Thailand
+                                        </a>
+                                    </li>
+                                    <li class="text-decoration-none">
+                                        <a href="#" onclick="change_lang('en')" class="dropdown-item text-uppercase fw-bold <?php echo $current_page == basename($link) ? 'active' : ''; ?>">
+                                            English
+                                        </a>
+                                    </li>
+                                    <li class="text-decoration-none">
+                                        <a href="#" onclick="change_lang('cn')" class="dropdown-item text-uppercase fw-bold <?php echo $current_page == basename($link) ? 'active' : ''; ?>">
+                                            China
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </nav>
     </div>
-        </header>
+    </header>
 
-        <script>
-            function change_lang(value) {
-                localStorage.setItem("lang", value);
-                window.location.replace("?lang=" + value);
-            }
-        </script>
+    <script>
+        function change_lang(value) {
+            localStorage.setItem("lang", value);
+            window.location.replace("?lang=" + value);
+        }
+    </script>
