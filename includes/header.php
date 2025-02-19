@@ -115,7 +115,7 @@ include "includes/db.php";
                     </div>
                     <div class="offcanvas-body">
 
-                        <ul id="navbar" class="navbar-nav text-titlecase fw-bold justify-content-lg-center justify-content-md-end align-items-center text-center flex-grow-1 text-hover">
+                        <ul id="navbar" class="navbar-nav text-uppercase fw-bold justify-content-lg-center justify-content-md-end align-items-center text-center flex-grow-1 text-hover">
                             <?php
                             $current_page = basename($_SERVER['PHP_SELF']);
                             $sql = "SELECT * FROM tbl_menu";
@@ -142,13 +142,13 @@ include "includes/db.php";
                                         // ไม่มีเมนูย่อย
                             ?>
                                         <li class="nav-item me-5">
-                                            <a class="nav-link text-titlecase fw-bold <?php echo $current_page == basename($link)?'active':''; ?>" href="<?php echo $link; ?>"><?php echo $menu_titile; ?></a>
+                                            <a class="nav-link text-uppercase fw-bold <?php echo $current_page == basename($link)?'active':''; ?>" href="<?php echo $link; ?>"><?php echo $menu_titile; ?></a>
                                         </li>
                                     <?php } else {
                                         // มีเมนูย่อย
                                     ?>
                                         <li class="nav-item dropdown me-5">
-                                            <a class="nav-link text-titlecase fw-bold dropdown-toggle pe-0" data-bs-toggle="dropdown" href="<?php echo $link ?>"
+                                            <a class="nav-link text-uppercase fw-bold dropdown-toggle pe-0" data-bs-toggle="dropdown" href="<?php echo $link ?>"
                                                 role="button" aria-expanded="false"><?php echo $menu_titile ?><iconify-icon
                                                     icon="material-symbols:arrow-drop-down"></iconify-icon></a>
                                             <ul class="dropdown-menu">

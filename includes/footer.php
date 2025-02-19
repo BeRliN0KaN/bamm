@@ -122,7 +122,7 @@
       <div class="row">
         <div class="col-lg-12 text-center">
           <p>
-            ©2024 A.X.W INTERNATIONAL CO.,LTD. | All Rights Reserved 
+            <?php echo constant('page_footer_0'); ?>
           </p>
         </div>
 

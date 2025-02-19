@@ -5,10 +5,10 @@
   <div class="container-sm pt-5 aos-init aos-animate" >
     <div class="row py-5 " data-aos="fade-up">
       <div class=" banner-content my-5 py-5 ">
-        <h1 class="banner-title light text-titlecase fw-bold">Services</h1>
+        <h1 class="banner-title light text-titlecase fw-bold">Services </h1>
         <nav class="breadcrumb mt-3 ">
-          <a href="index.php" class="breadcrumb-item text-white">Home</a>
-          <span class="breadcrumb-item active text-white" aria-current="page"> / Services</span>
+          <a href="index.php" class="breadcrumb-item text-white">Home /</a>
+          <span class="breadcrumb-item active text-warning" aria-current="page">Services</span>
         </nav>
       </div>
     </div>

@@ -16,7 +16,7 @@ define('page_footer_7', 'Business');
 define('page_footer_8', 'Terms & Condition');
 define('page_footer_9', 'Support');
 define('page_footer_10', 'Contact Us');
-define('page_footer_0', '&copy;' . date("Y") . 'Wisepaq, All Right Reserved.');
+define('page_footer_0', '&copy;' . date("Y") . ' A.X.W INTERNATIONAL CO.,LTD. , All Right Reserved.');
 //define('page_footer_8','Vision Mission');
 //define('page_footer_9','Our Services');
 //define('page_footer_10','Contact Us');
