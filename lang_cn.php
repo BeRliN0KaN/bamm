@@ -5,7 +5,7 @@ define('address', 'SSP Tower 2, 19层, Na Ranong Road, Klongtoey Bangkok, 泰国
 
 //footer
 define('page_footer_1','联系方式');
-define('page_footer_2','泰国春苑路109 / 39号，10村，曼谷加朗，曼谷府，11140');
+define('page_footer_2','泰国春苑路109 / 39号, 10村，曼谷加朗，曼谷府，11140');
 define('page_footer_3','095-795-6695');
 define('page_footer_4','@email.com');
 
@@ -15,7 +15,7 @@ define('page_footer_7', '业务');
 define('page_footer_8', '条款与条件');
 define('page_footer_9', '支持');
 define('page_footer_10', '联系我们');
-define('page_footer_0', '&copy;' . date("Y") . 'Wisepaq, 版权所有。');
+define('page_footer_0', '&copy;' . date("Y") . ' A.X.W INTERNATIONAL CO.,LTD. , 版权所有。');
 
 //index.php
 

@@ -15,7 +15,7 @@ define('page_footer_7','ธุระกิจ');
 define('page_footer_8','ข้อกำหนดและเงื่อนไข');
 define('page_footer_9','ช่วยเหลือ');
 define('page_footer_10','ติดต่อ');
-define('page_footer_0','สงวนลิขสิทธิ์  &copy; '.date("Y").' Wisepaq');
+define('page_footer_0','สงวนลิขสิทธิ์  &copy; '.date("Y").' A.X.W INTERNATIONAL CO.,LTD. ');
 //define('page_footer_11','วิสัยทัศน์ และพันธกิจ');
 //define('page_footer_10','ลิงค์ด่วน');
 //define('page_footer_10','หน้าหลัก');

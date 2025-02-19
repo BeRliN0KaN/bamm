@@ -321,11 +321,11 @@ include "includes/header.php";
           <div class="counter-info text-center align-items-end">
             <div class="counter-number align-items-center">
               <h4 class="timer fw-bold m-0" data-to="100" data-speed="1000">
-                127
+                20+
               </h4>
             </div>
             <h2 class="counter-description text-uppercase ps-2 fw-semibold">
-              Awards
+            Years Experience
             </h2>
           </div>
         </div>
@@ -345,7 +345,7 @@ include "includes/header.php";
           <div class="counter-info text-center align-items-end">
             <div class="counter-number align-items-center">
               <h4 class="timer fw-bold m-0" data-to="10" data-speed="1000">
-                28
+                -100
               </h4>
             </div>
             <h2 class="counter-description text-uppercase ps-2 fw-semibold">
