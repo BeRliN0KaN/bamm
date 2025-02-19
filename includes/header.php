@@ -97,7 +97,7 @@ include "includes/db.php";
 <body data-bs-spy="scroll" data-bs-target="#header-nav" tabindex="0">
     <?php include "svg.php"; ?>
     <div id="bodywrap" class="overflow-hidden">
-        <nav id="header-nav" class="navbar navbar-expand-lg p-3 py-2 container-fluid border-bottom">
+        <nav id="header-nav" class="navbar navbar-expand-lg p-3 py-2 container-fluid border-bottom position-fixed">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.php">
                     <img src="images/logo-文字版.png" class="logo" />
@@ -169,7 +169,7 @@ include "includes/db.php";
                                                     }
                                                 ?>
                                                     <li class="text-decoration-none">
-                                                        <a href="#" onclick="change_lang('<?php echo $link_sub; ?>')" class="dropdown-item text-titlecase fw-bold <?php echo $current_page == basename($link)?'active':''; ?>"><?php echo $menu_subtitile; ?></a></a>
+                                                        <a href="#" onclick="change_lang('<?php echo $link_sub; ?>')" class="dropdown-item text-uppercase fw-bold <?php echo $current_page == basename($link)?'active':''; ?>"><?php echo $menu_subtitile; ?></a></a>
                                                     </li>
                                                 <?php } ?>
                                             </ul>
@@ -183,6 +183,7 @@ include "includes/db.php";
                 </div>
             </div>
         </nav>
+    </div>
         </header>
 
         <script>

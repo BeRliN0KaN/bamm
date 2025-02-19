@@ -585,6 +585,10 @@ h3 {
   background-color: transparent;
   border: 0;
 }
+.dropdown-item:hover {
+  color: var(--primary-color);
+  background-color: white;
+}
 
 .dropdown-toggle::after {
   border-top: 0em solid;
@@ -637,6 +641,8 @@ h3 {
     width: 90px;
     object-fit: cover;
   }
+
+  
 }
 
 @media (min-width: 1399px) {
@@ -654,6 +660,8 @@ h3 {
   #header .navbar-expand-lg .navbar-toggler {
     display: none;
   }
+
+  
 }
 
 /* 4.2 Intro
