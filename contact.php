@@ -33,7 +33,7 @@
                         <p class="mb-2">
                             <span class="text-primary me-2">#</span><?php echo constant('page_contact_3') ?>
                         </p>
-                        <h5 class="mb-0"><?php echo constant('address') ?></h5>
+                        <h5 class="mb-0"><?php echo constant('page_footer_2') ?></h5>
                     </div>
                 </div>
             </div>
