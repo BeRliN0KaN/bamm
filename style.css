@@ -568,7 +568,7 @@ h3 {
 
 /* dropdown style  */
 .dropdown-menu {
-  border-radius: 0rem;
+  border-radius: 0.25rem;
 }
 
 .dropdown-item {
@@ -584,6 +584,7 @@ h3 {
   white-space: nowrap;
   background-color: transparent;
   border: 0;
+
 }
 .dropdown-item:hover {
   color: var(--primary-color);
