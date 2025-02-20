@@ -196,17 +196,17 @@ include "includes/db.php";
                                         icon="material-symbols:arrow-drop-down"></iconify-icon></a>
                                 <ul class="dropdown-menu">
                                     <li class="text-decoration-none">
-                                        <a href="#" onclick="change_lang('th')" class="dropdown-item text-uppercase fw-bold <?php echo $current_page == basename($link) ? 'active' : ''; ?>">
+                                        <a href="#" onclick="change_lang('th')" class="dropdown-item text-uppercase fw-bold bg-white <?php echo $current_page == basename($link) ? 'active' : ''; ?>">
                                             Thailand
                                         </a>
                                     </li>
                                     <li class="text-decoration-none">
-                                        <a href="#" onclick="change_lang('en')" class="dropdown-item text-uppercase fw-bold <?php echo $current_page == basename($link) ? 'active' : ''; ?>">
+                                        <a href="#" onclick="change_lang('en')" class="dropdown-item text-uppercase fw-bold bg-white  <?php echo $current_page == basename($link) ? 'active' : ''; ?>">
                                             English
                                         </a>
                                     </li>
                                     <li class="text-decoration-none">
-                                        <a href="#" onclick="change_lang('cn')" class="dropdown-item text-uppercase fw-bold <?php echo $current_page == basename($link) ? 'active' : ''; ?>">
+                                        <a href="#" onclick="change_lang('cn')" class="dropdown-item text-uppercase fw-bold bg-white  <?php echo $current_page == basename($link) ? 'active' : ''; ?>">
                                             China
                                         </a>
                                     </li>
