@@ -55,11 +55,23 @@
               $fetch_data = $connection->query($sql);
               if($fetch_data->num_rows>0){
                 while($row_project = $fetch_data->fetch_assoc()){
-                  $title_name = $row_project['title_name'];
-                  $title_name_sec = $row_project['title_name_sec'];
                   $filter_name = $row_project['filter_name'];
                   $filter_name_sec = $row_project['filter_name_sec'];
-                  
+                  $lang = $_SESSION['lang'];
+                  switch ($lang) {
+                    case 'en':
+                      $title_name = $row_project['title_name'];
+                      $title_name_sec = $row_project['title_name_sec'];
+                      break;
+                    case 'cn':
+                      $title_name = $row_project['title_name_cn'];
+                      $title_name_sec = $row_project['title_name_sec_cn'];
+                      break;
+                    default:
+                      $title_name = $row_project['title_name_th'];
+                      $title_name_sec = $row_project['title_name_sec_th'];
+                      break;
+                  }
                 if($filter_name == "*"){
                   echo "<button class='filter-button border-0 bg-transparent me-5 mb-3 fs-5' data-filter='{$filter_name}'>
                           {$title_name} 

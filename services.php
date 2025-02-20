@@ -31,21 +31,39 @@
       <div class="projects-flters d-flex flex-wrap justify-content-center my-5">
         <div class="d-flex flex-wrap justify-content-between">
           <div class="projects-flters d-flex flex-wrap">
-            <button class="filter-button active border-0 bg-transparent me-5 mb-3 fs-5" data-filter="*">
-              All
-            </button>
-            <button class="filter-button border-0 bg-transparent me-5 mb-3 fs-5" data-filter=".civil">
-            <?php echo constant('page_index_card_1') ?>
-            </button>
-            <button class="filter-button border-0 bg-transparent me-5 mb-3 fs-5" data-filter=".architect">
-            <?php echo constant('page_index_card_2') ?>
-            </button>
-            <button class="filter-button border-0 bg-transparent me-5 mb-3 fs-5" data-filter=".plumping, .electric">
-            <?php echo constant('page_index_card_3') ?>
-            </button>
-            <button class="filter-button border-0 bg-transparent me-5 mb-3 fs-5" data-filter=".landscape">
-            <?php echo constant('page_index_card_4') ?>
-            </button>
+            <?php 
+              $sql = "SELECT * FROM tbl_service_cat ";
+              $fetch_data = $connection->query($sql);
+              if($fetch_data->num_rows>0){
+                while($row_service = $fetch_data->fetch_assoc()){
+                  $filter_name = $row_service['filter_name'];
+                  $filter_name_sec = $row_service['filter_name_sec'];
+                  $lang = $_SESSION['lang'];
+                  switch ($lang) {
+                    case 'en':
+                      $title_name = $row_service['title_name'];
+                      $title_name_sec = $row_service['title_name_sec'];
+                      break;
+                    case 'cn':
+                      $title_name = $row_service['title_name_cn'];
+                      $title_name_sec = $row_service['title_name_sec_cn'];
+                      break;
+                    default:
+                      $title_name = $row_service['title_name_th'];
+                      $title_name_sec = $row_service['title_name_sec_th'];
+                      break;
+                  }
+                if($filter_name == "*"){
+                  echo "<button class='filter-button border-0 bg-transparent me-5 mb-3 fs-5' data-filter='{$filter_name}'>
+                          {$title_name} 
+                       </button>" ;
+                 } else{
+                        echo "<button class='filter-button border-0 bg-transparent me-5 mb-3 fs-5' data-filter='.{$filter_name}'>
+                                  {$title_name}
+                              </button>" ;
+                }
+              }}
+            ?>
           </div>
         </div>
       </div>
