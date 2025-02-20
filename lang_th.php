@@ -84,7 +84,7 @@ define('page_solution_5','บริการโซลูชันที่เร
 define('page_solution_6','บริการโซลูชันที่เรามี');
 
 //service.php
-define('page_service_1', 'สิ่งที่เรามอบให้');
+define('page_service_1', 'บริการที่เรามอบให้');
 
 //cloudComput.php
 define('page_cloudComput_1','CLOUD COMPUTING');
