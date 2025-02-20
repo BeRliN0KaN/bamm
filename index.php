@@ -1,7 +1,7 @@
 <?php
 include "includes/header.php";
 ?>
-<section id="main-banner " class="padding-large position-relative margin-large">
+<section id="main-banner " class="padding-medium position-relative margin-medium">
   <div class="container" data-aos="fade-up">
     <div class="row g-md-5 d-flex justify-content-center align-items-center timer">
       <div class="col-lg-6">
@@ -38,9 +38,8 @@ include "includes/header.php";
     style="background-repeat: no-repeat; overflow: hidden;">
 </div>
 
-<section id="service" class="bg-light padding-medium">
+<section id="service" class="bg-light">
   <div class="container" data-aos="fade-up">
-
     <div class="row g-md-5 pt-4 timer" data-to="100" data-speed="1000">
       <div class="col-md-3 my-3">
         <div class="card text-center text-lg-start border-0">
@@ -138,7 +137,6 @@ include "includes/header.php";
                 </a> -->
         </div>
       </div>
-
     </div>
   </div>
 </section>
@@ -177,84 +175,7 @@ include "includes/header.php";
   </div>
 </section>
 
-  <!-- start -->
-  <section id="testimonial" class="jarallax d-flex align-items-center padding-large"
-    style="background-image: url(images/testimonial-bg.jpg); background-size: cover; background-repeat: no-repeat; height: 90vh; background-position: center;">
-    <div class="container" data-aos="fade-up">
-      <div class="row">
-        <div class="col-md-1 offset-md-1 ">
-          <div class="me-3">
-            <svg class="text-primary me-1" width="80" height="80">
-              <use xlink:href="#quote"></use>
-            </svg>
-          </div>
-        </div>
-        <div class="col-md-9">
-          <div class="swiper testimonial-swiper mt-3">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="review">
-                  <div class="review-content">
-                    <h3 class="fw-normal testimonial-text text-white">At the core of our practice is the idea that
-                      cities are
-                      the incubators of our greatest achievements, and the best hope for a sustainable future. </h3>
-                    <h6 class="fw-bold text-white py-5">John Geoffrey <span class="fw-normal">| Hexagon Builders inc.,
-                        USA</span></h6>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="review">
-                  <div class="review-content">
-                    <h3 class="fw-normal testimonial-text text-white">At the core of our practice is the idea that
-                      cities are
-                      the incubators of our greatest achievements, and the best hope for a sustainable future. </h3>
-                    <h6 class="fw-bold text-white py-5">John Geoffrey <span class="fw-normal">| Hexagon Builders inc.,
-                        USA</span></h6>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="review">
-                  <div class="review-content">
-                    <h3 class="fw-normal testimonial-text text-white">At the core of our practice is the idea that
-                      cities are
-                      the incubators of our greatest achievements, and the best hope for a sustainable future. </h3>
-                    <h6 class="fw-bold text-white py-5">John Geoffrey <span class="fw-normal">| Hexagon Builders inc.,
-                        USA</span></h6>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="review">
-                  <div class="review-content">
-                    <h3 class="fw-normal testimonial-text text-white">At the core of our practice is the idea that
-                      cities are
-                      the incubators of our greatest achievements, and the best hope for a sustainable future. </h3>
-                    <h6 class="fw-bold text-white py-5">John Geoffrey <span class="fw-normal">| Hexagon Builders inc.,
-                        USA</span></h6>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="review">
-                  <div class="review-content">
-                    <h3 class="fw-normal testimonial-text text-white">At the core of our practice is the idea that
-                      cities are
-                      the incubators of our greatest achievements, and the best hope for a sustainable future. </h3>
-                    <h6 class="fw-bold text-white py-5">John Geoffrey <span class="fw-normal">| Hexagon Builders inc.,
-                        USA</span></h6>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-pagination testimonial-pagination text-start position-relative mt-4"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- end -->
+ 
 
   <!-- start -->
   <section id="our-achievement" class="padding-large">

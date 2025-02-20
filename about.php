@@ -77,7 +77,7 @@
       <div class="vertical-element mt-md-5 py-md-5 aos-init aos-animate">
         <div class="container" data-aos="fade-up">
           <div class="row d-flex align-items-center">
-            <div class="col-md-7 ">
+            <div class="col-md-6 ">
               <div class="section-element ps-0 p-5">
                 <div class="section-header mb-4">
                   <h2 class="left-pattern text-uppercase"><?php echo $the_post_subtitle ?></h2>
@@ -104,9 +104,9 @@
 
 <section id="blog" class="padding-large position-relative">
   <div class="container">
-    <div class="section-header col-lg-4">
-      <h2 class="text-uppercase mb-3 left-pattern">News articles</h2>
-      <h3 class="text-titlecase">Read some latest news articles</h3>
+    <div class="section-header col-lg-6">
+      <h2 class="text-uppercase mb-3 left-pattern">Our Services</h2>
+      <h3 class="text-titlecase"><?php echo constant('page_about_3') ?></h3>
     </div>
     <div class="row mt-5 mt-lg-0">
       <?php

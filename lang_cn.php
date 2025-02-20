@@ -65,18 +65,12 @@ define('page_index_contact_3', '联系我们');
 define('page_about_title_sm', '了解我们');
 define('page_about_years', '年');
 define('page_about_title', '业务服务经验');
-define('page_about_1', '关于我们');
-define('page_about_2', '我们能为您做什么！');
-define('page_about_3', '我们是Wisepaq，致力于创新和提高服务标准，以增强企业并全面满足客户的多样化需求。拥有超过 ' . ((date("Y") + 543) - 2552) . ' 年的经验和一支专业团队，我们随时为您提供各方面的优质服务。我们相信，我们可以成为您值得信赖的合作伙伴，共同实现增长与成功。');
-define('page_about_4', '您可以从我们这里期待什么');
-define('page_about_5', '提供一站式解决方案，专注于设计无缝定制的交钥匙解决方案，以满足客户需求，覆盖各个行业。我们在国内已为不低于500家机构和医疗设施提供服务。');
-define('page_about_6', '');
-define('page_about_7', '有助于减少负担或提高工作效率的服务，特别是在需要专业或资源的领域。');
-define('page_about_8', '帮助保护系统、数据和资产免受未经授权访问、攻击或损坏的服务。');
-define('page_about_9', '确保软件高效和安全运行的开发、安装、定制或维护相关服务。');
-define('page_about_10', '确保硬件设备高效运行的安装、维修、维护和定制相关服务。');
-define('page_about_11', '提供云存储空间的服务，用户可以通过互联网随时上传、下载和存储数据。');
-define('page_about_12', '提供信息技术支持服务，包括软件、硬件、网络系统的使用及故障排除。');
+define('page_about_1','');
+define('page_about_2','');
+define('page_about_3','我们在建筑领域提供各种服务。'); 
+define('page_about_4',''); 
+define('page_about_5',''); 
+define('page_about_6','');
 
 //solution.php
 define('page_solution_1', '我们的解决方案');

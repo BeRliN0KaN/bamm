@@ -69,18 +69,14 @@ define('page_index_contact_3', 'Contact Us');
 define('page_about_title_sm', 'LEARN ABOUT US');
 define('page_about_years', 'Years');
 define('page_about_title', 'Of experience in business service');
-define('page_about_1', 'ABOUT US');
-define('page_about_2', 'What We Can Do for You!');
-define('page_about_3', 'We are Wisepaq, dedicated to innovation and elevating service standards to enhance businesses and fully meet the diverse needs of our clients. With over ' . ((date("Y") + 543) - 2552) . ' years of experience and a team of professionals, we are ready to offer the best services in every aspect. We are confident that we can be the trusted partner you rely on for growth and success together.');
-define('page_about_4', 'What You Can Expect from Us');
-define('page_about_5', 'Offering a one-stop solution Focus on designing a seamless customizable, turnkey solution to meet the needs of customers, regardless of business sector. Operating services in both industrial and industrial chains. academy There have been no less than 500 establishments and medical facilities in the country.');
-define('page_about_6', '');
-define('page_about_7', 'Services that help reduce burdens or increase work efficiency, especially in areas that require expertise or resources.');
-define('page_about_8', 'Services that help protect systems, data, and assets from unauthorized access, attacks, or damage. Security services come in various types.');
-define('page_about_9', 'Services related to the development, installation, customization, or maintenance of software to ensure it operates efficiently and securely.');
-define('page_about_10', 'Services related to the installation, repair, maintenance, and customization of hardware devices to ensure they operate efficiently.');
-define('page_about_11', 'Service that provides cloud storage space where users can upload, download, and store data from anywhere with an internet connection.');
-define('page_about_12', 'Service that provides assistance with the use of information technology, including software, hardware, network systems, and troubleshooting various issues.');
+define('page_about_1', ' ');
+define('page_about_2', ' ');
+define('page_about_3', 'We provide various services in the field of construction.');
+define('page_about_4', ' ');
+define('page_about_5', ' ');
+define('page_about_6', ' ');
+
+
 
 //solution.php
 define('page_solution_1', 'Our Solutions');
