@@ -36,21 +36,20 @@
               $fetch_data = $connection->query($sql);
               if($fetch_data->num_rows>0){
                 while($row_service = $fetch_data->fetch_assoc()){
-                  $filter_name = $row_service['filter_name'];
-                  $filter_name_sec = $row_service['filter_name_sec'];
+                  $filter_name = $row_service['filter_ser'];
                   $lang = $_SESSION['lang'];
                   switch ($lang) {
                     case 'en':
-                      $title_name = $row_service['title_name'];
-                      $title_name_sec = $row_service['title_name_sec'];
+                      $title_name = $row_service['name_serEN'];
+        
                       break;
                     case 'cn':
-                      $title_name = $row_service['title_name_cn'];
-                      $title_name_sec = $row_service['title_name_sec_cn'];
+                      $title_name = $row_service['name_serCN'];
+              
                       break;
                     default:
-                      $title_name = $row_service['title_name_th'];
-                      $title_name_sec = $row_service['title_name_sec_th'];
+                      $title_name = $row_service['name_serTH'];
+          
                       break;
                   }
                 if($filter_name == "*"){
