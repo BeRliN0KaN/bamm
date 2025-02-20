@@ -8,7 +8,7 @@
         <h1 class="banner-title light text-titlecase fw-bold">About us</h1>
         <nav class="breadcrumb mt-3 ">
           <a href="index.php" class="breadcrumb-item text-white">Home /</a>
-          <span class="breadcrumb-item active text-warning" aria-current="page">About Us</span>
+          <span class=" active text-warning" aria-current="page">About Us</span>
         </nav>
       </div>
     </div>
@@ -123,48 +123,16 @@
                         break;
                 }
             ?>
-      <div class="col-md-4 mb-4 mt-4">
-        <a href="blog-single.html"><img src="<?php echo "admin//images/" . $the_post_image; ?>" alt="image" class="img-fluid rounded-3 h-100"></a>
+      <div class="col-md-3 mb-4 mt-4">
+        <a href="blog-single.html"><img src="<?php echo "admin//images/" . $the_post_image; ?>" alt="image" class="img-fluid rounded-3 h-100 w-"></a>
         <p class="blog text-capitalize mt-3 fw-semibold"><?php echo $the_post_subtitle ?></p>
         <h4 class="blog-heading fw-semibold"><a href="blog-single.html"><?php echo $the_post_title ?></a></h4>
       </div>
     <?php } ?>
     </div>
-  </div>
-</section>
-
-
-
-<!-- start -->
-<section id="blog" class="padding-large position-relative">
-  <div class="container">
-    <div class="section-header col-lg-4">
-      <h2 class="text-uppercase mb-3 left-pattern">News articles</h2>
-      <h3 class="text-titlecase">Read some latest news articles</h3>
-    </div>
-    <div class="row mt-5 mt-lg-0">
-      <div class="col-md-4 mb-4 mt-4">
-        <a href="blog-single.html"><img src="images/blog1.jpg" alt="image" class="img-fluid rounded-3"></a>
-        <p class="blog text-capitalize mt-3 fw-semibold">feb 1, 2022 / buildings</p>
-        <h4 class="blog-heading fw-semibold"><a href="blog-single.html">Top 10 mindblowing architecture buildings in
-            the world</a></h4>
-      </div>
-      <div class="col-md-4 mb-4 mt-4">
-        <a href="blog-single.html"><img src="images/blog2.jpg" alt="image" class="img-fluid rounded-3"></a>
-        <p class="blog text-capitalize mt-3 fw-semibold">feb 1, 2022 / buildings</p>
-        <h4 class="blog-heading fw-semibold"><a href="blog-single.html">Amazing technologies that helped to create
-            creatives works</a></h4>
-      </div>
-      <div class="col-md-4 mb-4 mt-4">
-        <a href="blog-single.html"><img src="images/blog3.jpg" alt="image" class="img-fluid rounded-3"></a>
-        <p class="blog text-capitalize mt-3 fw-semibold">feb 1, 2022 / buildings</p>
-        <h4 class="blog-heading fw-semibold"><a href="blog-single.html">Top 100 best construction company around the
-            world</a></h4>
-      </div>
-    </div>
     <div class="btn d-flex justify-content-center">
-      <a href="#" class="btn-slide btn-medium btn-dark hover-slide-right mt-5">
-        <span class="text-titlecase">All Articles
+      <a href="services.php" class="btn-slide btn-medium btn-dark hover-slide-right mt-5">
+        <span class="text-titlecase">All Services
           <svg class="btn-arrow text-white" width="18" height="18">
             <use xlink:href="#btn-arrow"></use>
           </svg>
@@ -172,14 +140,7 @@
       </a>
     </div>
   </div>
-
-  <div class="bg-pattern position-absolute top-0 end-0">
-    <img src="images/bg-pattern3.png" alt="" class="img-fluid"
-      style="background-repeat: no-repeat; overflow: hidden;">
-  </div>
 </section>
-<!-- end -->
-
 
 
 <!-- start -->

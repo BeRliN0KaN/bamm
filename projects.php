@@ -8,7 +8,7 @@
         <h1 class="banner-title light text-titlecase fw-bold">Projects</h1>
         <nav class="breadcrumb mt-3 ">
           <a href="index.php" class="breadcrumb-item text-white">Home /</a>
-          <span class="breadcrumb-item active text-warning" aria-current="page">Projects</span>
+          <span class=" active text-warning" aria-current="page">Projects</span>
         </nav>
       </div>
     </div>

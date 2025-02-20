@@ -90,16 +90,18 @@ define('page_solution_5','บริการโซลูชันที่เร
 define('page_solution_6','บริการโซลูชันที่เรามี');
 
 //service.php
-define('page_service_1','บริการของเรา');
-define('page_service_2','บริการลอจิสติกส์ที่ดีที่สุด');
-define('page_service_3','การขนส่งทางอากาศ');
-define('page_service_4','บริการนำเข้าและส่งออกสินค้าในประเทศและต่างประเทศ บริการทั้งเที่ยวบินตรง เที่ยวบินต่อ สู่ปลายทางทั่วโลก');
-define('page_service_5','การขนส่งทางทะเล');
-define('page_service_6','ให้บริการขนส่งสินค้าทั้งแบบเต็มตู้คอนเทนเนอร์ (FCL) และแบบไม่เต็มตู้คอนเทนเนอร์ (LCL) ครอบคลุมท่าเรือทั่วทุกทวีป');
-define('page_service_7','การขนส่งทางบก');
-define('page_service_8','บริการขนส่งสินค้าทางรถบรรทุกข้ามแดน (Cross Border Service) ไปยังประเทศในแถบอินโดจีน ได้แก่ พม่า ลาว');
-define('page_service_9','ห้องเก็บสินค้า');
-define('page_service_10','บริการบริหารคลังสินค้าครบวงจรด้วยระบบ WMS การควบคุมการหยิบจ่ายสินค้ารวมถึงการกระจายสินค้า');
+define('page_service_1','');
+define('page_service_2','');
+define('page_service_3','');
+define('page_service_4','');
+define('page_service_5','');
+define('page_service_6','');
+define('page_service_7','');
+define('page_service_8','');
+define('page_service_9','');
+define('page_service_10','');
+define('page_service_11','');
+define('page_service_12','');
 
 //cloudComput.php
 define('page_cloudComput_1','CLOUD COMPUTING');
