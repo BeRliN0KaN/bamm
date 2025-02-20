@@ -31,7 +31,7 @@
       <div class="projects-flters d-flex flex-wrap justify-content-center my-5">
         <div class="d-flex flex-wrap justify-content-between">
           <div class="projects-flters d-flex flex-wrap">
-            <button class="filter-button active border-0 bg-transparent me-5 mb-3 fs-5" data-filter="*">
+            <!-- <button class="filter-button active border-0 bg-transparent me-5 mb-3 fs-5" data-filter="*">
               All
             </button>
             <button class="filter-button border-0 bg-transparent me-5 mb-3 fs-5" data-filter=".building">
@@ -48,7 +48,33 @@
             </button>
             <button class="filter-button border-0 bg-transparent me-5 mb-3 fs-5" data-filter=".road, .parking">
               Road&Parking
-            </button>
+            </button> -->
+
+            <?php 
+              $sql = "SELECT * FROM tbl_project_cat ";
+              $fetch_data = $connection->query($sql);
+              if($fetch_data->num_rows>0){
+                while($row_project = $fetch_data->fetch_assoc()){
+                  $title_name = $row_project['title_name'];
+                  $title_name_sec = $row_project['title_name_sec'];
+                  $filter_name = $row_project['filter_name'];
+                  $filter_name_sec = $row_project['filter_name_sec'];
+                  
+                if($filter_name == "*"){
+                  echo "<button class='filter-button border-0 bg-transparent me-5 mb-3 fs-5' data-filter='{$filter_name}'>
+                          {$title_name} 
+                       </button>" ;
+                }elseif(isset($filter_name_sec)){
+                   echo "<button class='filter-button border-0 bg-transparent me-5 mb-3 fs-5' data-filter='.{$filter_name},.{$filter_name_sec}'>
+                          {$title_name} & {$title_name_sec}
+                        </button>" ;
+                 } else{
+                        echo "<button class='filter-button border-0 bg-transparent me-5 mb-3 fs-5' data-filter='.{$filter_name}'>
+                                  {$title_name}
+                              </button>" ;
+                }
+              }}
+            ?>
           </div>
         </div>
       </div>
