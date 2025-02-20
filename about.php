@@ -19,9 +19,9 @@
 </section>
 <!-- Page Header End -->
 
+<section id="about-us" class="container mt-5 pt-5">
+  <!-- Solution content Start -->
 
-<!-- Solution content Start -->
-<div class="container">
   <?php
   $query = "SELECT * FROM tbl_posts inner join tbl_categories on tbl_categories.cat_id = tbl_posts.post_category_id where tbl_categories.cat_page=2 AND tbl_categories.cat_id=2 AND tbl_posts.post_status='Published'";
   $fetch_posts_data = mysqli_query($connection, $query);
@@ -51,35 +51,45 @@
     // ตรวจสอบว่าตัวนับคือเลขคี่หรือคู่
     if ($counter % 2 != 0) {
   ?>
-      <div class="row g-5 py-5 align-items-center">
-        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-          <img class="img-fluid rounded" src="<?php echo "admin//images/" . $the_post_image; ?>">
-        </div>
-        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-          <div class="d-flex align-items-center mb-4">
-          <div class="section-header mb-4">
-            <h2 class="left-pattern text-uppercase"><?php echo $the_post_subtitle ?></h2>
-            <h3 class="mb-0"><?php echo $the_post_title ?></h5>
+      <div class="vertical-element aos-init aos-animate">
+        <div class="container" data-aos="fade-up">
+          <div class="row d-flex align-items-center">
+            <div class="col-md-5 ">
+              <div class="image-holder">
+                <img class="img-fluid rounded" src="<?php echo "admin//images/" . $the_post_image; ?>">
+              </div>
+            </div>
+            <div class="col-md-7 ">
+              <div class="section-element ps-0 p-5">
+                <div class="section-header mb-4">
+                  <h2 class="left-pattern text-uppercase"><?php echo $the_post_subtitle ?></h2>
+                  <h3 class="text-titlecase"><?php echo $the_post_title ?></h5>
+                </div>
+                <p class="mb-4"><?php echo $the_post_content ?></p>
+              </div>
             </div>
           </div>
-          <p class="mb-4"><?php echo $the_post_content ?></p>
         </div>
       </div>
     <?php
     } else {
     ?>
-      <div class="row g-5 py-5 align-items-center flex-column-reverse flex-lg-row">
-        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-          <div class="d-flex align-items-center mb-4">
-          <div class="section-header mb-4">
-            <h2 class="left-pattern text-uppercase"><?php echo $the_post_subtitle ?></h2>
-            <h3 class="text-titlecase"><?php echo $the_post_title ?></h3>
+      <div class="vertical-element mt-md-5 py-md-5 aos-init aos-animate">
+        <div class="container" data-aos="fade-up">
+          <div class="row d-flex align-items-center">
+            <div class="col-md-7 ">
+              <div class="section-element ps-0 p-5">
+                <div class="section-header mb-4">
+                  <h2 class="left-pattern text-uppercase"><?php echo $the_post_subtitle ?></h2>
+                  <h3 class="text-titlecase"><?php echo $the_post_title ?></h3>
+                </div>
+                <p class="mb-4"><?php echo $the_post_content ?></p>
+              </div>
+            </div>
+            <div class="col-md-5 wow fadeInUp" data-wow-delay="0.1s">
+              <img class="img-fluid rounded" src="<?php echo "admin//images/" . $the_post_image; ?>">
             </div>
           </div>
-          <p class="mb-4"><?php echo $the_post_content ?></p>
-        </div>
-        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-          <img class="img-fluid rounded" src="<?php echo "admin//images/" . $the_post_image; ?>">
         </div>
       </div>
   <?php
@@ -87,7 +97,8 @@
     $counter++; // เพิ่มตัวนับ
   }
   ?>
-</div>
+
+</section>
 <!-- Solution content End -->
 
 
@@ -99,6 +110,7 @@
     </div>
     <div class="row mt-5 mt-lg-0">
       <?php
+<<<<<<< HEAD
             $query = "SELECT * FROM tbl_posts inner join tbl_categories on tbl_categories.cat_id = tbl_posts.post_category_id   where tbl_categories.cat_page=2 and tbl_categories.cat_id=19 AND tbl_posts.post_status='Published'";
             $fetch_posts_data = mysqli_query($connection, $query);
             while ($Row = mysqli_fetch_assoc($fetch_posts_data)) {
@@ -130,6 +142,71 @@
       </div>
     <?php } ?>
     </div>
+=======
+      $query = "SELECT * FROM tbl_posts inner join tbl_categories on tbl_categories.cat_id = tbl_posts.post_category_id   where tbl_categories.cat_page=2 and tbl_categories.cat_id=19 AND tbl_posts.post_status='Published'";
+      $fetch_posts_data = mysqli_query($connection, $query);
+      while ($Row = mysqli_fetch_assoc($fetch_posts_data)) {
+        $the_post_id = $Row['post_id'];
+        $the_post_image = $Row['post_image'];
+        $lang = $_SESSION['lang'];
+        switch ($lang) {
+          case 'en':
+            $the_post_title = base64_decode($Row['post_title']);
+            $the_post_subtitle = base64_decode($Row['post_subtitle']);
+            $the_post_content = base64_decode($Row['post_content']);
+            break;
+          case 'cn':
+            $the_post_title = base64_decode($Row['post_title_china']);
+            $the_post_subtitle = base64_decode($Row['post_subtitle_china']);
+            $the_post_content = base64_decode($Row['post_content_china']);
+            break;
+          default:
+            $the_post_title = base64_decode($Row['post_title_thai']);
+            $the_post_subtitle = base64_decode($Row['post_subtitle_thai']);
+            $the_post_content = base64_decode($Row['post_content_thai']);
+            break;
+        }
+      ?>
+        <div class="col-md-4 mb-4 mt-4">
+          <a href="blog-single.html"><img src="<?php echo "admin//images/" . $the_post_image; ?>" alt="image" class="img-fluid rounded-3 h-100"></a>
+          <p class="blog text-capitalize mt-3 fw-semibold"><?php echo $the_post_subtitle ?></p>
+          <h4 class="blog-heading fw-semibold"><a href="blog-single.html"><?php echo $the_post_title ?></a></h4>
+        </div>
+      <?php } ?>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- start -->
+<!-- <section id="blog" class="padding-large position-relative">
+  <div class="container">
+    <div class="section-header col-lg-4">
+      <h2 class="text-uppercase mb-3 left-pattern">News articles</h2>
+      <h3 class="text-titlecase">Read some latest news articles</h3>
+    </div>
+    <div class="row mt-5 mt-lg-0">
+      <div class="col-md-4 mb-4 mt-4">
+        <a href="blog-single.html"><img src="images/blog1.jpg" alt="image" class="img-fluid rounded-3"></a>
+        <p class="blog text-capitalize mt-3 fw-semibold">feb 1, 2022 / buildings</p>
+        <h4 class="blog-heading fw-semibold"><a href="blog-single.html">Top 10 mindblowing architecture buildings in
+            the world</a></h4>
+      </div>
+      <div class="col-md-4 mb-4 mt-4">
+        <a href="blog-single.html"><img src="images/blog2.jpg" alt="image" class="img-fluid rounded-3"></a>
+        <p class="blog text-capitalize mt-3 fw-semibold">feb 1, 2022 / buildings</p>
+        <h4 class="blog-heading fw-semibold"><a href="blog-single.html">Amazing technologies that helped to create
+            creatives works</a></h4>
+      </div>
+      <div class="col-md-4 mb-4 mt-4">
+        <a href="blog-single.html"><img src="images/blog3.jpg" alt="image" class="img-fluid rounded-3"></a>
+        <p class="blog text-capitalize mt-3 fw-semibold">feb 1, 2022 / buildings</p>
+        <h4 class="blog-heading fw-semibold"><a href="blog-single.html">Top 100 best construction company around the
+            world</a></h4>
+      </div>
+    </div>
+>>>>>>> 0330892d38924e7f5d318d80ca1f1379f9b51452
     <div class="btn d-flex justify-content-center">
       <a href="services.php" class="btn-slide btn-medium btn-dark hover-slide-right mt-5">
         <span class="text-titlecase">All Services
@@ -140,11 +217,22 @@
       </a>
     </div>
   </div>
+<<<<<<< HEAD
 </section>
+=======
+
+  <div class="bg-pattern position-absolute top-0 end-0">
+    <img src="images/bg-pattern3.png" alt="" class="img-fluid"
+      style="background-repeat: no-repeat; overflow: hidden;">
+  </div>
+</section> -->
+<!-- end -->
+
+>>>>>>> 0330892d38924e7f5d318d80ca1f1379f9b51452
 
 
 <!-- start -->
-<section id="contact" class="jarallax d-flex align-items-center padding-large" style="
+<!-- <section id="contact" class="jarallax d-flex align-items-center padding-large" style="
           background-image: url(images/call-to-action.jpg);
           width: 100%;
           height: 567px;
@@ -169,7 +257,7 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!--  end-->
 
 <?php include "includes/footer.php"; ?>
