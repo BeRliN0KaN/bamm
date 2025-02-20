@@ -27,7 +27,7 @@ define('welcome', 'WELCOME TO ');
 define('page_index_button_1', 'Home');
 define('page_index_button_2', 'About Us');
 define('page_index_button_3', 'View Our Projects');
-define('page_index_button_4', 'Services');
+define('page_index_button_4', 'All Services');
 define('page_index_button_5', 'Pages');
 define('page_index_button_51', 'Pricing Plan');
 define('page_index_button_52', 'Features');

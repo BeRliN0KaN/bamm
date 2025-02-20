@@ -25,7 +25,7 @@ define('page_footer_0','สงวนลิขสิทธิ์  &copy; '.date("
 define('page_index_button_1','หน้าหลัก');
 define('page_index_button_2','เกี่ยวกับเรา');
 define('page_index_button_3','ดูโครงการของเรา');
-define('page_index_button_4','บริการ');
+define('page_index_button_4','บริการทั้งหมด');
 define('page_index_button_5','หน้า');
 define('page_index_button_51','กำหนดราคา');
 define('page_index_button_52','คุณสมบัติ');

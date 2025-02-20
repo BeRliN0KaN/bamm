@@ -141,6 +141,15 @@
         </div>
       <?php } ?>
     </div>
+    <div class="btn d-flex justify-content-center">
+      <a href="#" class="btn-slide btn-medium btn-dark hover-slide-right mt-5">
+        <span class="text-titlecase"><?php echo constant('page_index_button_4') ?>
+          <svg class="btn-arrow text-white" width="18" height="18">
+            <use xlink:href="#btn-arrow"></use>
+          </svg>
+        </span>
+      </a>
+    </div>
   </div>
 </section>
 

@@ -113,7 +113,7 @@
 </section>
 <!-- end -->
 
-
+<!-- 
 <div class="container mt-5 pt-5 aos-init aos-animate" data-aos-duration="2000">
   <div class="section-header my-5" data-aos="fade-up">
     <h2 class="text-uppercase mb-3 left-pattern">
@@ -239,5 +239,6 @@
       </div>
     </div>
   </div>
+</div> -->
 
   <?php include "includes/footer.php"; ?>

@@ -23,7 +23,7 @@ define('welcome', '欢迎来到 ');
 define('page_index_button_1', '首页');
 define('page_index_button_2', '关于我们');
 define('page_index_button_3', '查看我们的项目');
-define('page_index_button_4', '服务');
+define('page_index_button_4', '所有服务');
 define('page_index_button_5', '页面');
 define('page_index_button_51', '定价计划');
 define('page_index_button_52', '功能');

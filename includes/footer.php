@@ -11,42 +11,64 @@
       <div class="col-lg-2 col-md-6 col-sm-6 pb-3">
         <div class="footer-menu">
           <ul class="menu-list list-unstyled">
-            <li class="pb-2 fw-bold text-capitalize">
-              <a href="#about">Home</a>
-            </li>
-            <li class="pb-2 fw-bold text-capitalize">
-              <a href="#">Services</a>
-            </li>
-            <li class="pb-2 fw-bold text-capitalize">
-              <a href="#">News</a>
-            </li>
-            <li class="pb-2 fw-bold text-capitalize">
-              <a href="#">Terms of use</a>
-            </li>
-            <li class="pb-2 fw-bold text-capitalize">
-              <a href="#">Privacy Policy</a>
-            </li>
+            <?php
+            $query = "SELECT * FROM quick_link";
+            $fetch_data = mysqli_query($connection, $query);
+
+            if (mysqli_num_rows($fetch_data) == 0) {
+              //echo "<h1 class='text-center'>No content Found</h1>";
+            } else {
+              while ($Row = mysqli_fetch_assoc($fetch_data)) {
+
+                $menu_id = $Row['idFQ'];
+                //                        $menu_title = $Row['name'];
+                if ($_SESSION['lang'] == 'en') {
+                  $menu_title = $Row['nameFQ'];
+                } elseif ($_SESSION['lang'] == 'th') {
+                  $menu_title = $Row['menuTH'];
+                } else {
+                  $menu_title = $Row['menuCN'];
+                }
+                $link = $Row['linkFQ'];
+            ?>
+                <li class="pb-2 fw-bold text-capitalize">
+                  <a href="<?php echo $link; ?>" ><?php echo $menu_title; ?></a>
+                </li>
+            <?php }
+            }
+            ?>
           </ul>
         </div>
       </div>
       <div class="col-lg-2 col-md-6 col-sm-6 pb-3">
         <div class="footer-menu">
           <ul class="menu-list list-unstyled">
-            <li class="pb-2 fw-bold text-capitalize">
-              <a href="#about">Our location</a>
-            </li>
-            <li class="pb-2 fw-bold text-capitalize">
-              <a href="#">About </a>
-            </li>
-            <li class="pb-2 fw-bold text-capitalize">
-              <a href="#">Contact </a>
-            </li>
-            <li class="pb-2 fw-bold text-capitalize">
-              <a href="#">Help Center</a>
-            </li>
-            <li class="pb-2 fw-bold text-capitalize">
-              <a href="#">FAQs</a>
-            </li>
+            <?php
+            $query = "SELECT * FROM popular_link";
+            $fetch_data = mysqli_query($connection, $query);
+
+            if (mysqli_num_rows($fetch_data) == 0) {
+              //echo "<h1 class='text-center'>No content Found</h1>";
+            } else {
+              while ($Row = mysqli_fetch_assoc($fetch_data)) {
+
+                $menu_id = $Row['idFP'];
+                //                        $menu_title = $Row['name'];
+                if ($_SESSION['lang'] == 'en') {
+                  $menu_title = $Row['nameFP'];
+                } elseif ($_SESSION['lang'] == 'th') {
+                  $menu_title = $Row['menuTH'];
+                } else {
+                  $menu_title = $Row['menuCN'];
+                }
+                $link = $Row['linkFP'];
+            ?>
+                <li class="pb-2 fw-bold text-capitalize">
+                  <a href="<?php echo $link; ?>"><?php echo $menu_title; ?></a>
+                </li>
+            <?php }
+            }
+            ?>
           </ul>
         </div>
       </div>
@@ -64,7 +86,7 @@
                 <use xlink:href="#call"></use>
               </svg>095-795-6695
             </li>
-           
+
 
             <li class="pb-2 fw-bold text-capitalize">
               <svg class="text-primary" width="25" height="20" aria-hidden="true">
