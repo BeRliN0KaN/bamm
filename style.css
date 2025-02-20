@@ -1175,3 +1175,16 @@ iconify-icon.services-icon {
 .breadcrumb-item + .breadcrumb-item::before {
   color: var(--light);
 }
+
+.social-linkss ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+.social-linkss li {
+  list-style: none;
+}
+

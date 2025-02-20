@@ -175,7 +175,88 @@ include "includes/header.php";
   </div>
 </section>
 
+<<<<<<< HEAD
  
+=======
+  <!-- start -->
+  <!-- <section id="testimonial" class="jarallax d-flex align-items-center padding-large"
+    style="background-image: url(images/testimonial-bg.jpg); background-size: cover; background-repeat: no-repeat; height: 90vh; background-position: center;">
+    <div class="container" data-aos="fade-up">
+      <div class="row">
+        <div class="col-md-1 offset-md-1 ">
+          <div class="me-3">
+            <svg class="text-primary me-1" width="80" height="80">
+              <use xlink:href="#quote"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="swiper testimonial-swiper mt-3">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="review">
+                  <div class="review-content">
+                    <h3 class="fw-normal testimonial-text text-white">At the core of our practice is the idea that
+                      cities are
+                      the incubators of our greatest achievements, and the best hope for a sustainable future. </h3>
+                    <h6 class="fw-bold text-white py-5">John Geoffrey <span class="fw-normal">| Hexagon Builders inc.,
+                        USA</span></h6>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="review">
+                  <div class="review-content">
+                    <h3 class="fw-normal testimonial-text text-white">At the core of our practice is the idea that
+                      cities are
+                      the incubators of our greatest achievements, and the best hope for a sustainable future. </h3>
+                    <h6 class="fw-bold text-white py-5">John Geoffrey <span class="fw-normal">| Hexagon Builders inc.,
+                        USA</span></h6>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="review">
+                  <div class="review-content">
+                    <h3 class="fw-normal testimonial-text text-white">At the core of our practice is the idea that
+                      cities are
+                      the incubators of our greatest achievements, and the best hope for a sustainable future. </h3>
+                    <h6 class="fw-bold text-white py-5">John Geoffrey <span class="fw-normal">| Hexagon Builders inc.,
+                        USA</span></h6>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="review">
+                  <div class="review-content">
+                    <h3 class="fw-normal testimonial-text text-white">At the core of our practice is the idea that
+                      cities are
+                      the incubators of our greatest achievements, and the best hope for a sustainable future. </h3>
+                    <h6 class="fw-bold text-white py-5">John Geoffrey <span class="fw-normal">| Hexagon Builders inc.,
+                        USA</span></h6>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="review">
+                  <div class="review-content">
+                    <h3 class="fw-normal testimonial-text text-white">At the core of our practice is the idea that
+                      cities are
+                      the incubators of our greatest achievements, and the best hope for a sustainable future. </h3>
+                    <h6 class="fw-bold text-white py-5">John Geoffrey <span class="fw-normal">| Hexagon Builders inc.,
+                        USA</span></h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination testimonial-pagination text-start position-relative mt-4"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <!-- end -->
+>>>>>>> b79c9d5 (1)
 
   <!-- start -->
   <section id="our-achievement" class="padding-large">
@@ -221,7 +302,7 @@ include "includes/header.php";
           <div class="counter-info text-center align-items-end">
             <div class="counter-number align-items-center">
               <h4 class="timer fw-bold m-0" data-to="10" data-speed="1000">
-                -100
+                100+
               </h4>
             </div>
             <h2 class="counter-description text-uppercase ps-2 fw-semibold">
@@ -235,7 +316,7 @@ include "includes/header.php";
   <!-- end -->
 
   <!-- start -->
-  <section id="contact" class="jarallax d-flex align-items-center padding-large" style="
+  <!-- <section id="contact" class="jarallax d-flex align-items-center padding-large" style="
           background-image: url(images/call-to-action.jpg);
           width: 100%;
           height: 567px;
@@ -260,7 +341,7 @@ include "includes/header.php";
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
   <!--  end-->
 
   <?php include "includes/footer.php"; ?>
