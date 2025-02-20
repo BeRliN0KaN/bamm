@@ -90,24 +90,16 @@ define('page_solution_5','บริการโซลูชันที่เร
 define('page_solution_6','บริการโซลูชันที่เรามี');
 
 //service.php
-define('page_service_1','');
-define('page_service_2','');
-define('page_service_3','');
-define('page_service_4','');
-define('page_service_5','');
-define('page_service_6','');
-define('page_service_7','');
-define('page_service_8','');
-define('page_service_9','');
-define('page_service_10','');
-define('page_service_11','');
-define('page_service_12','');
+define('page_service_1', 'สิ่งที่เรามอบให้');
 
 //cloudComput.php
 define('page_cloudComput_1','CLOUD COMPUTING');
 define('page_cloudComput_2','บริการคลาวด์คอมพิวติ้ง');
 define('page_cloudComput_3','ทรัพยากรคอมพิวเตอร์ผ่านอินเทอร์เน็ต เซิร์ฟเวอร์และซอฟต์แวร์ โดยไม่ต้องลงทุนในอุปกรณ์เอง ช่วยให้เข้าถึงข้อมูลจากทุกที่และประหยัดต้นทุน');
 define('page_cloudComput_4','บริการคลาวด์คอมพิวติ้ง คือ การให้บริการเช่าพื้นที่เก็บข้อมูลบนคลาวด์ ที่สามารถเข้าถึงได้ผ่านอินเทอร์เน็ต โดยที่ไม่จำเป็นต้องมีเซิร์ฟเวอร์ในองค์กร');
+
+// project.php
+define('page_project_1','สำรวจผลงานของเรา');
 
 
 //software.php

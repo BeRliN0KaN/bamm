@@ -108,16 +108,8 @@ define('page_mission_5', 'And can provide advice on transportation services and 
 
 
 //service.php
-define('page_service_1', 'Our Services');
-define('page_service_2', 'Best Logistic Services');
-define('page_service_3', 'Air Freight');
-define('page_service_4', 'Services for importing and exporting products domestically and abroad. Services include direct flights and connecting flights to destinations around the world.');
-define('page_service_5', 'Ocean Freight');
-define('page_service_6', 'Providing transportation services for both Full Container Load (FCL) and Less than Container Load (LCL), covering ports on all continents.');
-define('page_service_7', 'Land Transport');
-define('page_service_8', 'Cross-border trucking service (Cross Border Service) to countries in Indochina, including Burma and Laos.');
-define('page_service_9', 'Cargo Storage');
-define('page_service_10', 'Complete warehouse management service with WMS system, controlling product picking and distribution.');
+define('page_service_1', 'What we provide');
+
 
 //cloudComput.php
 define('page_cloudComput_1', 'CLOUD COMPUTING');
@@ -126,6 +118,8 @@ define('page_cloudComput_3', 'Computer resources through the internet, such as s
 define('page_cloudComput_4', 'A service that provides cloud storage space where users can upload, download, and store data from anywhere with an internet connection.');
 
 
+// project.php
+define('page_project_1','Explore our works');
 
 
 //software.php

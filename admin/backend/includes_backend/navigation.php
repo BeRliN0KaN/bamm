@@ -9,7 +9,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.php"><b>WISEPAQ</b><span style="font-size: 18px;">admin</span></a>
+        <a class="navbar-brand" href="index.php"><b>A.X.W </b><span style="font-size: 18px;">admin</span></a>
         <!-- <a class="navbar-brand" href="index.php">WISEPAQ  <small><?php echo $_SESSION['username'] ?></small></a> -->
     </div>
     <!-- Top Menu Items -->

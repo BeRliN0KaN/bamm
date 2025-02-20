@@ -24,10 +24,10 @@
 <section id="projects" class="padding-large">
   <div class="container">
     <div class="container">
-      <div class="section-header offset-lg-4">
-        <h2 class="text-uppercase mb-3 left-pattern">OUR PROJECTS</h2>
-        <h3 class="text-titlecase">Explore our works</h3>
+      <div class="section-header d-flex  justify-content-center">
+        <h2 class="text-uppercase mb-3  left-pattern  "><span class=""></span> OUR PROJECTS</h2>
       </div>
+      <h3 class="text-titlecase  d-flex  justify-content-center"><?php echo constant('page_project_1') ?></h3>
       <div class="projects-flters d-flex flex-wrap justify-content-center my-5">
         <div class="d-flex flex-wrap justify-content-between">
           <div class="projects-flters d-flex flex-wrap">
@@ -73,15 +73,15 @@
                     break;
                 }
                 if ($filter_name == "*") {
-                  echo "<button class='filter-button border-0 bg-transparent me-5 mb-3 fs-5' data-filter='{$filter_name}'>
+                  echo "<button class='filter-button border-0 bg-transparent me-3 mb-3 fs-5' data-filter='{$filter_name}'>
                           {$title_name} 
                        </button>";
                 } elseif (isset($filter_name_sec)) {
-                  echo "<button class='filter-button border-0 bg-transparent me-5 mb-3 fs-5' data-filter='.{$filter_name},.{$filter_name_sec}'>
+                  echo "<button class='filter-button border-0 bg-transparent me-3 mb-3 fs-5' data-filter='.{$filter_name},.{$filter_name_sec}'>
                           {$title_name} & {$title_name_sec}
                         </button>";
                 } else {
-                  echo "<button class='filter-button border-0 bg-transparent me-5 mb-3 fs-5' data-filter='.{$filter_name}'>
+                  echo "<button class='filter-button border-0 bg-transparent me-3 mb-3 fs-5' data-filter='.{$filter_name}'>
                                   {$title_name}
                               </button>";
                 }

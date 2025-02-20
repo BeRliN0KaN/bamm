@@ -24,90 +24,91 @@
 <section id="projects" class="padding-large">
   <div class="container">
     <div class="container">
-      <div class="section-header offset-lg-4">
-        <h2 class="text-uppercase mb-3 left-pattern">OUR PROJECTS</h2>
-        <h3 class="text-titlecase">Explore our works</h3>
+      <div class="section-header d-flex  justify-content-center">
+        <h2 class="text-uppercase mb-3  left-pattern  "><span class=""></span> OUR SERVICE</h2>
       </div>
-      <div class="projects-flters d-flex flex-wrap justify-content-center my-5">
-        <div class="d-flex flex-wrap justify-content-between">
-          <div class="projects-flters d-flex flex-wrap">
-            <?php
-            $sql = "SELECT * FROM tbl_service_cat ";
-            $fetch_data = $connection->query($sql);
-            if ($fetch_data->num_rows > 0) {
-              while ($row_service = $fetch_data->fetch_assoc()) {
-                $filter_name = $row_service['filter_ser'];
-                $lang = $_SESSION['lang'];
-                switch ($lang) {
-                  case 'en':
-                    $title_name = $row_service['name_serEN'];
+      <h3 class="text-titlecase  d-flex  justify-content-center"><?php echo constant('page_service_1') ?></h3>
+    </div>
+    <div class="projects-flters d-flex flex-wrap justify-content-center my-5">
+      <div class="d-flex flex-wrap justify-content-between">
+        <div class="projects-flters d-flex flex-wrap">
+          <?php
+          $sql = "SELECT * FROM tbl_service_cat ";
+          $fetch_data = $connection->query($sql);
+          if ($fetch_data->num_rows > 0) {
+            while ($row_service = $fetch_data->fetch_assoc()) {
+              $filter_name = $row_service['filter_ser'];
+              $lang = $_SESSION['lang'];
+              switch ($lang) {
+                case 'en':
+                  $title_name = $row_service['name_serEN'];
 
-                    break;
-                  case 'cn':
-                    $title_name = $row_service['name_serCN'];
+                  break;
+                case 'cn':
+                  $title_name = $row_service['name_serCN'];
 
-                    break;
-                  default:
-                    $title_name = $row_service['name_serTH'];
+                  break;
+                default:
+                  $title_name = $row_service['name_serTH'];
 
-                    break;
-                }
-                if ($filter_name == "*") {
-                  echo "<button class='filter-button border-0 bg-transparent me-5 mb-3 fs-5' data-filter='{$filter_name}'>
+                  break;
+              }
+              if ($filter_name == "*") {
+                echo "<button class='filter-button border-0 bg-transparent me-3 mb-3 fs-5' data-filter='{$filter_name}'>
                           {$title_name} 
                        </button>";
-                } else {
-                  echo "<button class='filter-button border-0 bg-transparent me-5 mb-3 fs-5' data-filter='.{$filter_name}'>
+              } else {
+                echo "<button class='filter-button border-0 bg-transparent me-3 mb-3 fs-5' data-filter='.{$filter_name}'>
                                   {$title_name}
                               </button>";
-                }
               }
             }
-            ?>
-          </div>
+          }
+          ?>
         </div>
       </div>
-      <div class="row isotope-container">
-        <?php
-        $query = "SELECT * FROM tbl_posts inner join tbl_categories on tbl_categories.cat_id = tbl_posts.post_category_id where tbl_categories.cat_page=4 AND tbl_categories.cat_id=4 AND tbl_posts.post_status='Published'";
-        $fetch_posts_data = mysqli_query($connection, $query);
-        $counter = 1; // ตัวแปรสำหรับนับลูป
-        while ($Row = mysqli_fetch_assoc($fetch_posts_data)) {
-          $the_post_id = $Row['post_id'];
-          $the_post_image = $Row['post_image'];
-          $lang = $_SESSION['lang'];
-          switch ($lang) {
-            case 'en':
-              $the_post_title = base64_decode($Row['post_title']);
-              $the_post_subtitle = base64_decode($Row['post_subtitle']);
-              $the_post_content = base64_decode($Row['post_content']);
-              break;
-            case 'cn':
-              $the_post_title = base64_decode($Row['post_title_china']);
-              $the_post_subtitle = base64_decode($Row['post_subtitle_china']);
-              $the_post_content = base64_decode($Row['post_content_china']);
-              break;
-            default:
-              $the_post_title = base64_decode($Row['post_title_thai']);
-              $the_post_subtitle = base64_decode($Row['post_subtitle_thai']);
-              $the_post_content = base64_decode($Row['post_content_thai']);
-              break;
-          }
-        ?>
-
-          <div class="col-lg-4 col-md-6 item <?php echo $the_post_subtitle ?>">
-            <div class="projects-content mx-auto">
-              <a href="project-single.html">
-                <img src="<?php echo "admin//images/" . $the_post_image; ?>" class="rounded-3 " alt="building" />
-              </a>
-            </div>
-            <h3 class="fs-3 text-center mt-3 mb-5">
-              <a href="project-single.html"><?php echo $the_post_title ?></a>
-            </h3>
-          </div>
-        <?php } ?>
-      </div>
     </div>
+    <div class="row isotope-container">
+      <?php
+      $query = "SELECT * FROM tbl_posts inner join tbl_categories on tbl_categories.cat_id = tbl_posts.post_category_id where tbl_categories.cat_page=4 AND tbl_categories.cat_id=4 AND tbl_posts.post_status='Published'";
+      $fetch_posts_data = mysqli_query($connection, $query);
+      $counter = 1; // ตัวแปรสำหรับนับลูป
+      while ($Row = mysqli_fetch_assoc($fetch_posts_data)) {
+        $the_post_id = $Row['post_id'];
+        $the_post_image = $Row['post_image'];
+        $lang = $_SESSION['lang'];
+        switch ($lang) {
+          case 'en':
+            $the_post_title = base64_decode($Row['post_title']);
+            $the_post_subtitle = base64_decode($Row['post_subtitle']);
+            $the_post_content = base64_decode($Row['post_content']);
+            break;
+          case 'cn':
+            $the_post_title = base64_decode($Row['post_title_china']);
+            $the_post_subtitle = base64_decode($Row['post_subtitle_china']);
+            $the_post_content = base64_decode($Row['post_content_china']);
+            break;
+          default:
+            $the_post_title = base64_decode($Row['post_title_thai']);
+            $the_post_subtitle = base64_decode($Row['post_subtitle_thai']);
+            $the_post_content = base64_decode($Row['post_content_thai']);
+            break;
+        }
+      ?>
+
+        <div class="col-lg-4 col-md-6 item <?php echo $the_post_subtitle ?>">
+          <div class="projects-content mx-auto">
+            <a href="project-single.html">
+              <img src="<?php echo "admin//images/" . $the_post_image; ?>" class="rounded-3 " alt="building" />
+            </a>
+          </div>
+          <h3 class="fs-3 text-center mt-3 mb-5">
+            <a href="project-single.html"><?php echo $the_post_title ?></a>
+          </h3>
+        </div>
+      <?php } ?>
+    </div>
+  </div>
   </div>
 </section>
 <!-- end -->

@@ -101,22 +101,18 @@ define('page_mission_4', '帮助客户以合理的价格、快速、安全地通
 define('page_mission_5', '并可以为客户提供有关运输服务和海关程序的建议，我们的团队拥有超过30年的专业知识和经验。');
 
 //service.php
-define('page_service_1', '我们的服务');
-define('page_service_2', '最佳物流服务');
-define('page_service_3', '空运');
-define('page_service_4', '提供国内外产品的进出口服务，包括直飞航班和连接航班，通达全球目的地。');
-define('page_service_5', '海运');
-define('page_service_6', '提供全箱货物（FCL）和拼箱货物（LCL）的运输服务，覆盖全球所有港口。');
-define('page_service_7', '陆运');
-define('page_service_8', '提供跨境卡车运输服务（跨境服务），包括前往缅甸、老挝等印度支那国家。');
-define('page_service_9', '货物存储');
-define('page_service_10', '提供完整的仓库管理服务，使用WMS系统控制产品拣选和分发。');
+define('page_service_1', '我们提供什么');
 
 //cloudComput.php
 define('page_cloudComput_1', '云计算');
 define('page_cloudComput_2', '我们提供云计算服务，帮助企业更高效、安全地存储、管理和处理数据。');
 define('page_cloudComput_3', '通过互联网提供计算资源，如服务器和软件，无需投资硬件。它允许随时随地访问数据，并帮助节省成本。');
 define('page_cloudComput_4', '提供云存储空间，用户可以随时上传、下载和存储数据，且不受地理位置限制。');
+
+
+// project.php
+define('page_project_1','探索我们的作品');
+
 
 //software.php
 define('page_software_1', '我们有一支团队，可以根据需求开发各种格式的网站和程序。');
