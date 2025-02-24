@@ -10,7 +10,7 @@
       </div>
       <div class="col-lg-2 col-md-6 col-sm-6 pb-3">
         <div class="footer-menu">
-          <ul class="menu-list list-unstyled">
+        <!--  <ul class="menu-list list-unstyled">
             <?php
             $query = "SELECT * FROM quick_link";
             $fetch_data = mysqli_query($connection, $query);
@@ -37,10 +37,10 @@
             <?php }
             }
             ?>
-          </ul>
+          </ul>-->
         </div>
       </div>
-      <div class="col-lg-2 col-md-6 col-sm-6 pb-3">
+     <div class="col-lg-2 col-md-6 col-sm-6 pb-3">
         <div class="footer-menu">
           <ul class="menu-list list-unstyled">
             <?php
@@ -50,9 +50,9 @@
             if (mysqli_num_rows($fetch_data) == 0) {
               //echo "<h1 class='text-center'>No content Found</h1>";
             } else {
-              while ($Row = mysqli_fetch_assoc($fetch_data)) {
+                 while ($Row = mysqli_fetch_assoc($fetch_data)) {
 
-                $menu_id = $Row['idFP'];
+                 $menu_id = $Row['idFP'];
                 //                        $menu_title = $Row['name'];
                 if ($_SESSION['lang'] == 'en') {
                   $menu_title = $Row['nameFP'];
@@ -63,11 +63,11 @@
                 }
                 $link = $Row['linkFP'];
             ?>
-                <li class="pb-2 fw-bold text-capitalize">
+              <li class="pb-2 fw-bold text-capitalize">
                   <a href="<?php echo $link; ?>"><?php echo $menu_title; ?></a>
                 </li>
             <?php }
-            }
+           }
             ?>
           </ul>
         </div>
@@ -88,11 +88,11 @@
             </li>
 
 
-            <li class="pb-2 fw-bold text-capitalize">
+            <li class="">
               <svg class="text-primary" width="25" height="20" aria-hidden="true">
                 <use xlink:href="#mail"></use>
               </svg>
-              <a href="mailto:">info@yourinfo.com</a>
+              <a href="mailto:">axw.international@gmail.com</a>
             </li>
           </ul>
         </div>

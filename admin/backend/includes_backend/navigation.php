@@ -9,7 +9,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.php"><b>A.X.W </b><span style="font-size: 18px;">admin</span></a>
+        <a class="navbar-brand" href="index.php"><b>WISEPAQ</b><span style="font-size: 18px;">admin</span></a>
         <!-- <a class="navbar-brand" href="index.php">WISEPAQ  <small><?php echo $_SESSION['username'] ?></small></a> -->
     </div>
     <!-- Top Menu Items -->
@@ -34,6 +34,19 @@
             <li class="active">
                 <a style="padding-left: 22px;" href="index.php"><i class="fa fa-dashboard"></i> Dashboard</a>
             </li>
+            <li>
+                <a style="padding-left: 21px;" href="javascript:;" data-toggle="collapse" data-target="#projects-dropdown">
+                    <i class="fa fa-table"></i> Projects <i class="fa fa-fw fa-caret-down"></i>
+                </a>
+                <ul id="projects-dropdown" class="collapse">
+                    <li>
+                        <a href="projects.php?source=add_project">Add Project</a>
+                    </li>
+                    <li>
+                        <a href="projects.php">View Projects</a>
+                    </li>
+                </ul>
+            </li>         
             <li>
                 <a style="padding-left: 21px;" href="javascript:;" data-toggle="collapse" data-target="#posts-dropdown">
                     <i class="fa fa-table"></i> Posts <i class="fa fa-fw fa-caret-down"></i>

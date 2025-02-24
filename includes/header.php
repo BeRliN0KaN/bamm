@@ -69,7 +69,13 @@ include "includes/db.php";
             }
         }
     }
+    
+   if (isset($page_title)) { 
     echo "<title>" . $page_title . "</title>";
+   }else{
+      echo "<title>" . "" . "</title>";  
+   }
+    
     ?>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -119,7 +125,7 @@ include "includes/db.php";
                         <ul id="navbar" class="navbar-nav text-uppercase fw-bold justify-content-lg-center justify-content-md-end align-items-center text-center flex-grow-1 text-hover">
                             <?php
                             $current_page = basename($_SERVER['PHP_SELF']);
-                            $sql = "SELECT * FROM tbl_menu";
+                            $sql = "SELECT * FROM tbl_menu where active=1";
                             $fetch_data = $connection->query($sql);
                             if ($fetch_data->num_rows == 0) {
                             } else {

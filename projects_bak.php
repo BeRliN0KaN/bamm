@@ -1,15 +1,4 @@
-<?php include "includes/header.php"; 
-    include('project_page.php');?>
-<?php         $lang = $_SESSION['lang'];  ?>
-
-   <script type="text/javascript">
-    //JK Popup Window Script (version 3.0)- By JavaScript Kit (http://www.javascriptkit.com)
-    //Visit JavaScriptKit.com for free JavaScripts
-    //This notice must stay intact for legal use
-    function openpopup(popurl){
-    var winpops=window.open(popurl,"","width=auto,height=auto,status,scrollbars,resizable,modal")
-    }
-    </script>   
+<?php include "includes/header.php"; ?>
 
 <!-- Page Header Start -->
 <section id="intro" class="jarallax" style="background: none;" data-jarallax-original-styles="background: url(images/call-to-action.jpg);">
@@ -39,8 +28,6 @@
         <h2 class="text-uppercase mb-3  left-pattern  "><span class=""></span> OUR PROJECTS</h2>
       </div>
       <h3 class="text-titlecase  d-flex  justify-content-center"><?php echo constant('page_project_1') ?></h3>
-      
-      
       <div class="projects-flters d-flex flex-wrap justify-content-center my-5">
         <div class="d-flex flex-wrap justify-content-between">
           <div class="projects-flters d-flex flex-wrap">
@@ -68,7 +55,6 @@
             $fetch_data = $connection->query($sql);
             if ($fetch_data->num_rows > 0) {
               while ($row_project = $fetch_data->fetch_assoc()) {
-                $id_project= $row_project['id_project'];
                 $filter_name = $row_project['filter_name'];
                 $filter_name_sec = $row_project['filter_name_sec'];
                 $lang = $_SESSION['lang'];
@@ -86,31 +72,19 @@
                     $title_name_sec = $row_project['title_name_sec_th'];
                     break;
                 }
-                ?>
-
-               <?php
                 if ($filter_name == "*") {
-                //  echo "<button class='filter-button border-0 bg-transparent me-3 mb-3 fs-5' data-filter='{$filter_name}'>
-                //          {$title_name} 
-                   //    </button>";
-                     echo"<a href='projects_one.php?page=$id_project'  class='filter-button border-0 bg-transparent me-3 mb-3 fs-5' >$title_name  </a>";
-
+                  echo "<button class='filter-button border-0 bg-transparent me-3 mb-3 fs-5' data-filter='{$filter_name}'>
+                          {$title_name} 
+                       </button>";
                 } elseif (isset($filter_name_sec)) {
-                 // echo "<button class='filter-button border-0 bg-transparent me-3 mb-3 fs-5' data-filter='.{$filter_name},.{$filter_name_sec}'>
-                  //        {$title_name} & {$title_name_sec}
-                   //     </button>";
-                     echo "<a href='projects_one.php?page=$id_project'  class='filter-button border-0 bg-transparent me-3 mb-3 fs-5' >$title_name&$title_name_sec</a>";  
-
+                  echo "<button class='filter-button border-0 bg-transparent me-3 mb-3 fs-5' data-filter='.{$filter_name},.{$filter_name_sec}'>
+                          {$title_name} & {$title_name_sec}
+                        </button>";
                 } else {
-                    
-                //  echo "<button class='filter-button border-0 bg-transparent me-3 mb-3 fs-5' data-filter='.{$filter_name}'>
-              //                    {$title_name}
-                    //          </button>";
-                    
-                         echo"<a href='projects_one.php?page=$id_project'  class='filter-button border-0 bg-transparent me-3 mb-3 fs-5' >$title_name  </a>";
-      
+                  echo "<button class='filter-button border-0 bg-transparent me-3 mb-3 fs-5' data-filter='.{$filter_name}'>
+                                  {$title_name}
+                              </button>";
                 }
- 
               }
             }
             ?>
@@ -119,45 +93,45 @@
       </div>
       <div class="row isotope-container">
         <?php
-        $query = "SELECT * FROM tbl_projects";
+        $query = "SELECT * FROM tbl_posts inner join tbl_categories on tbl_categories.cat_id = tbl_posts.post_category_id where tbl_categories.cat_page=3 AND tbl_categories.cat_id=3 AND tbl_posts.post_status='Published'";
         $fetch_posts_data = mysqli_query($connection, $query);
         $counter = 1; // ตัวแปรสำหรับนับลูป
-          while($Row = mysqli_fetch_array($nquery)){
-          $the_post_id = $Row['project_id'];
-          $the_post_image = $Row['project_image'];
-          $the_post_content = base64_decode($Row['project_content']);
+        while ($Row = mysqli_fetch_assoc($fetch_posts_data)) {
+          $the_post_id = $Row['post_id'];
+          $the_post_image = $Row['post_image'];
           $lang = $_SESSION['lang'];
           switch ($lang) {
             case 'en':
-              $the_post_title = base64_decode($Row['project_title']);
-              $the_post_subtitle = base64_decode($Row['project_subtitle']);
+              $the_post_title = base64_decode($Row['post_title']);
+              $the_post_subtitle = base64_decode($Row['post_subtitle']);
+              $the_post_content = base64_decode($Row['post_content']);
               break;
             case 'cn':
-              $the_post_title = base64_decode($Row['project_title_china']);
-              $the_post_subtitle = base64_decode($Row['project_subtitle_china']);
+              $the_post_title = base64_decode($Row['post_title_china']);
+              $the_post_subtitle = base64_decode($Row['post_subtitle_china']);
+              $the_post_content = base64_decode($Row['post_content_china']);
               break;
             default:
-              $the_post_title = base64_decode($Row['project_title_thai']);
-              $the_post_subtitle = base64_decode($Row['project_subtitle_thai']);
+              $the_post_title = base64_decode($Row['post_title_thai']);
+              $the_post_subtitle = base64_decode($Row['post_subtitle_thai']);
+              $the_post_content = base64_decode($Row['post_content_thai']);
               break;
           }
         ?>
 
-        <div class="col-lg-4 col-md-6 item <?php echo $the_post_subtitle ?>">
+          <div class="col-lg-4 col-md-6 item <?php echo $the_post_subtitle ?>">
             <div class="projects-content mx-auto">
-           <a  href="javascript:openpopup('service-project.php?lan=<?php echo   $_SESSION['lang']  ?>&id=<?php echo $the_post_id?>')">
-                <img src="<?php echo "admin//projects/" . $the_post_image; ?>" class="rounded-3 " alt="building" />
+              <a href="project-single.html">
+                <img src="<?php echo "admin//images/" . $the_post_image; ?>" class="rounded-3 " alt="building" />
               </a>
             </div>
             <h3 class="fs-3 text-center mt-3 mb-5">
-              <a  href="javascript:openpopup('service-project.php?lan=<?php echo   $_SESSION['lang']  ?>&id=<?php echo $the_post_id?>')"><?php echo $the_post_title ?></a>
+              <a href="project-single.html"><?php echo $the_post_title ?></a>
             </h3>
           </div>
         <?php } ?>
       </div>
-           <div id="pagination_controls"><?php echo $paginationCtrls; ?></div>
     </div>
-      
   </div>
 </section>
 <!-- end -->

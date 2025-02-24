@@ -1,5 +1,5 @@
 <?php include "includes/header.php"; 
-    include('project_page.php');?>
+    include('project_one_page.php');?>
 <?php         $lang = $_SESSION['lang'];  ?>
 
    <script type="text/javascript">
@@ -10,7 +10,6 @@
     var winpops=window.open(popurl,"","width=auto,height=auto,status,scrollbars,resizable,modal")
     }
     </script>   
-
 <!-- Page Header Start -->
 <section id="intro" class="jarallax" style="background: none;" data-jarallax-original-styles="background: url(images/call-to-action.jpg);">
   <div class="container-sm pt-5 aos-init aos-animate">
@@ -39,29 +38,9 @@
         <h2 class="text-uppercase mb-3  left-pattern  "><span class=""></span> OUR PROJECTS</h2>
       </div>
       <h3 class="text-titlecase  d-flex  justify-content-center"><?php echo constant('page_project_1') ?></h3>
-      
-      
-      <div class="projects-flters d-flex flex-wrap justify-content-center my-5">
+   <div class="projects-flters d-flex flex-wrap justify-content-center my-5">
         <div class="d-flex flex-wrap justify-content-between">
           <div class="projects-flters d-flex flex-wrap">
-            <!-- <button class="filter-button active border-0 bg-transparent me-5 mb-3 fs-5" data-filter="*">
-              All
-            </button>
-            <button class="filter-button border-0 bg-transparent me-5 mb-3 fs-5" data-filter=".building">
-              Buildings
-            </button>
-            <button class="filter-button border-0 bg-transparent me-5 mb-3 fs-5" data-filter=".hotel">
-              Hotel
-            </button>
-            <button class="filter-button border-0 bg-transparent me-5 mb-3 fs-5" data-filter=".mall, .restaurant">
-              Mall&Restaurant
-            </button>
-            <button class="filter-button border-0 bg-transparent me-5 mb-3 fs-5" data-filter=".industry">
-              Industry
-            </button>
-            <button class="filter-button border-0 bg-transparent me-5 mb-3 fs-5" data-filter=".road, .parking">
-              Road&Parking
-            </button> -->
 
             <?php
             $sql = "SELECT * FROM tbl_project_cat ";
@@ -90,27 +69,13 @@
 
                <?php
                 if ($filter_name == "*") {
-                //  echo "<button class='filter-button border-0 bg-transparent me-3 mb-3 fs-5' data-filter='{$filter_name}'>
-                //          {$title_name} 
-                   //    </button>";
                      echo"<a href='projects_one.php?page=$id_project'  class='filter-button border-0 bg-transparent me-3 mb-3 fs-5' >$title_name  </a>";
-
                 } elseif (isset($filter_name_sec)) {
-                 // echo "<button class='filter-button border-0 bg-transparent me-3 mb-3 fs-5' data-filter='.{$filter_name},.{$filter_name_sec}'>
-                  //        {$title_name} & {$title_name_sec}
-                   //     </button>";
                      echo "<a href='projects_one.php?page=$id_project'  class='filter-button border-0 bg-transparent me-3 mb-3 fs-5' >$title_name&$title_name_sec</a>";  
-
                 } else {
-                    
-                //  echo "<button class='filter-button border-0 bg-transparent me-3 mb-3 fs-5' data-filter='.{$filter_name}'>
-              //                    {$title_name}
-                    //          </button>";
-                    
                          echo"<a href='projects_one.php?page=$id_project'  class='filter-button border-0 bg-transparent me-3 mb-3 fs-5' >$title_name  </a>";
-      
                 }
- 
+             
               }
             }
             ?>
@@ -118,47 +83,60 @@
         </div>
       </div>
       <div class="row isotope-container">
+          
+          
+          
+          
         <?php
-        $query = "SELECT * FROM tbl_projects";
-        $fetch_posts_data = mysqli_query($connection, $query);
-        $counter = 1; // ตัวแปรสำหรับนับลูป
+        
+           if (isset($_GET["page"])) {
+                  $page = $_GET['page'];
+           }else{
+     //             $page = 1;            
+           }
+
+  
           while($Row = mysqli_fetch_array($nquery)){
-          $the_post_id = $Row['project_id'];
-          $the_post_image = $Row['project_image'];
-          $the_post_content = base64_decode($Row['project_content']);
-          $lang = $_SESSION['lang'];
+       
+      //  $counter = 1; // ตัวแปรสำหรับนับลูป
+    //    while ($Row = mysqli_fetch_assoc($fetch_data)) {  
+    
+          $the_project_id = $Row['project_id'];
+          $the_project_image = $Row['project_image'];
+   
           switch ($lang) {
             case 'en':
-              $the_post_title = base64_decode($Row['project_title']);
-              $the_post_subtitle = base64_decode($Row['project_subtitle']);
+              $the_project_title = base64_decode($Row['project_title']);
               break;
             case 'cn':
-              $the_post_title = base64_decode($Row['project_title_china']);
-              $the_post_subtitle = base64_decode($Row['project_subtitle_china']);
+              $the_project_title = base64_decode($Row['project_title_china']);
               break;
             default:
-              $the_post_title = base64_decode($Row['project_title_thai']);
-              $the_post_subtitle = base64_decode($Row['project_subtitle_thai']);
+              $the_project_title = base64_decode($Row['project_title_thai']);
               break;
           }
+
         ?>
 
-        <div class="col-lg-4 col-md-6 item <?php echo $the_post_subtitle ?>">
+           <div class="col-lg-4 col-md-6 item <?php echo $the_project_subtitle ?>">
             <div class="projects-content mx-auto">
-           <a  href="javascript:openpopup('service-project.php?lan=<?php echo   $_SESSION['lang']  ?>&id=<?php echo $the_post_id?>')">
-                <img src="<?php echo "admin//projects/" . $the_post_image; ?>" class="rounded-3 " alt="building" />
+           <a  href="javascript:openpopup('service-project.php?lan=<?php echo   $_SESSION['lang']  ?>&id=<?php echo $the_project_id?>')">
+                <img src="<?php echo "admin//projects/" . $the_project_image; ?>" class="rounded-3 " alt="building" />
               </a>
             </div>
             <h3 class="fs-3 text-center mt-3 mb-5">
-              <a  href="javascript:openpopup('service-project.php?lan=<?php echo   $_SESSION['lang']  ?>&id=<?php echo $the_post_id?>')"><?php echo $the_post_title ?></a>
+              <a  href="javascript:openpopup('service-project.php?lan=<?php echo   $_SESSION['lang']  ?>&id=<?php echo $the_project_id?>')"><?php echo $the_project_title ?></a>
             </h3>
           </div>
+         
         <?php } ?>
+          
       </div>
-           <div id="pagination_controls"><?php echo $paginationCtrls; ?></div>
+            <div id="pagination_controls"><?php echo $paginationCtrls; ?></div>
     </div>
-      
+        
   </div>
+
 </section>
 <!-- end -->
 
