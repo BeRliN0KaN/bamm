@@ -220,48 +220,48 @@ include "includes/db.php";
                                 </ul>
                             </li>
                         </ul>
-                    </div>
-                </div>
-            </div>
-            <ul class="navbar-nav list-unstyled d-flex align-items-center justify-content-start">
-                <li class="pe-4">
-                  <a href="https://www.facebook.com/profile.php?id=61568368107367&sk=about" target="_blank">
-                    <svg class="facebook" width="18" height="18">
-                      <use xlink:href="#facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="pe-4">
-                  <a href="https://ckbox.cloud/382e77cfc832c66adcfc/assets/3GNIHhFW2BLM/file?download=true" class="light">
-                    <svg class="instagram" width="18" height="18">
-                      <use xlink:href="#pdf"></use>
-                    </svg>
-                  </a>
-                </li>
-                <!-- <li class="pe-4">
+                        <ul class="navbar-nav list-unstyled d-lg-flex align-items-center justify-content-start d-none ">
+                            <li class="pe-4">
+                                <a href="https://www.facebook.com/profile.php?id=61568368107367&sk=about" target="_blank">
+                                    <svg class="facebook" width="18" height="18">
+                                        <use xlink:href="#facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="pe-4">
+                                <a href="https://ckbox.cloud/382e77cfc832c66adcfc/assets/3GNIHhFW2BLM/file?download=true" class="light">
+                                    <svg class="instagram" width="18" height="18">
+                                        <use xlink:href="#pdf"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <!-- <li class="pe-4">
                   <a href="#" class="light">
                     <svg class="linkedin" width="18" height="18">
                       <use xlink:href="#linkedin"></use>
                     </svg>
                   </a>
                 </li> -->
-                <!-- <li class="pe-4">
+                            <!-- <li class="pe-4">
                   <a href="#" class="light">
                     <svg class="twitter" width="18" height="18">
                       <use xlink:href="#twitter"></use>
                     </svg>
                   </a>
                 </li> -->
-                <!-- <li class="pe-4">
+                            <!-- <li class="pe-4">
                   <a href="#" class="light">
                     <svg class="blogger" width="18" height="18">
                       <use xlink:href="#blogger"></use>
                     </svg>
                   </a>
                 </li> -->
-              </ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </nav>
-        
+
     </div>
     </header>
 
