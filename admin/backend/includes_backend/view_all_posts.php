@@ -89,34 +89,7 @@ if (isset($_POST["apply"])) {
         </div>
         <thead>
             <tr>
-                <!-- <th class="text-center">
-                    <section>
-                        <option value="" disabled selected>Check All</option>
-
-                        </option>
-                    </section>
-                </th> -->
-                <th colspan="9" style="text-align:end;">
-                    <div style="display: flex; justify-content: flex-end; align-items: center;">
-                        <!-- <span>Filter:</span> -->
-                        <!-- <select class="form-control" style="height:30px; width:25%; margin-left:10px;padding:4px 15px;" name="" id="">
-                            <option value="all">Select Category</option>
-                            <option value="service">Service</option>
-                            <option value="our-service">Our Service</option>
-                            <option value="about-us">About Us</option>
-                        </select> -->
-                        <!-- <form action="" method="post">
-                            <select class="form-control text-center" style="height:30px; width:6%; margin:0px 10px ;padding:4px 2px; " name="page_rows" onchange="this.form.submit()" id="">
-                                <option value="10">10</option>
-                                <option value="20">20</option>
-                                <option value="50">50</option>
-                                <select>
-                        </form> -->
-                    </div>
-                </th>
-            </tr>
-            <tr>
-                <!-- <th><input type='checkbox' id='selectAllBoxes' onclick="selectAll(this)"></th> -->
+                <th><input type='checkbox' id='selectAllBoxes' onclick="selectAll(this)"></th>
                 <th style="width:40px;padding-right:0;"><a href="#" id="sort-asc-id">ID <i class="fa fa-sort-asc " aria-hidden="true"></i></a><a href="#" id="sort-desc-id" style="display: none;">ID <i class="fa fa-sort-desc " aria-hidden="true"></i></a></th>
                 <th style="width: 300px;">Title[EN] / Title[TH]</th>
                 <!-- <th style="width: 150px;">[ภาษาไทย] Title</th> -->
@@ -127,7 +100,6 @@ if (isset($_POST["apply"])) {
                 <th style="width:100px">Image</th>
                 <th>Date</th>
                 <th>Action</th>
-                <th><input type='checkbox' id='selectAllBoxes' onclick="selectAll(this)"></th>
             </tr>
             <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
             <script>
@@ -217,7 +189,8 @@ if (isset($_POST["apply"])) {
 
                 echo "<tr>"; ?>
             <?php
-                echo "<td>{$count}</td>
+                echo " <td><input type='checkbox' name='checkBoxArray[]' value='{$the_post_id}'></td>
+                    <td>{$count}</td>
                     <td><a href='../post.php?lang=en&p_id=$the_post_id'>{$the_post_title}</a>
                      / <a href='../post.php?lang=th&p_id=$the_post_id'>{$the_post_title_thai}</a>
                     / <a href='../post.php?lang=cn&p_id=$the_post_id'>{$the_post_title_china}</a></td>";
@@ -247,7 +220,6 @@ if (isset($_POST["apply"])) {
                         <a href='posts.php?source=edit_post&p_id=$the_post_id'><i class='fa fa-pencil-square-o fa-lg' aria-hidden='true'></i></a> | 
                         <a onClick=\"javascript: return confirm('Are you sure you want to delete'); \" href='posts.php?deletePost=$the_post_id&image=$the_post_image'><i class='fa fa-trash-o fa-lg' aria-hidden='true'></i></a> 
                     </td>
-                    <td><input type='checkbox' name='checkBoxArray[]' value='{$the_post_id}'></td>
                 </tr>";
                 $count++;
             }
