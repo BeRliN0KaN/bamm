@@ -89,25 +89,36 @@ if (isset($_POST["apply"])) {
         </div>
         <thead>
             <tr>
-                <th class="text-center">
-                    <a href="#"><i class="fa fa-reply" aria-hidden="true"></i></a>
-                </th>
-                <th colspan="8" style="text-align:end;">
+                <!-- <th class="text-center">
+                    <section>
+                        <option value="" disabled selected>Check All</option>
+
+                        </option>
+                    </section>
+                </th> -->
+                <th colspan="9" style="text-align:end;">
                     <div style="display: flex; justify-content: flex-end; align-items: center;">
-                        <span>Filter:</span>
-                        <select class="form-control" style="height:30px; width:25%; margin-left:10px;padding:4px 15px;" name="" id="">
+                        <!-- <span>Filter:</span> -->
+                        <!-- <select class="form-control" style="height:30px; width:25%; margin-left:10px;padding:4px 15px;" name="" id="">
                             <option value="all">Select Category</option>
                             <option value="service">Service</option>
                             <option value="our-service">Our Service</option>
                             <option value="about-us">About Us</option>
-                        </select>
+                        </select> -->
+                        <!-- <form action="" method="post">
+                            <select class="form-control text-center" style="height:30px; width:6%; margin:0px 10px ;padding:4px 2px; " name="page_rows" onchange="this.form.submit()" id="">
+                                <option value="10">10</option>
+                                <option value="20">20</option>
+                                <option value="50">50</option>
+                                <select>
+                        </form> -->
                     </div>
                 </th>
             </tr>
             <tr>
-                <th><input type='checkbox' id='selectAllBoxes' onclick="selectAll(this)"></th>
+                <!-- <th><input type='checkbox' id='selectAllBoxes' onclick="selectAll(this)"></th> -->
                 <th style="width:40px;padding-right:0;"><a href="#" id="sort-asc-id">ID <i class="fa fa-sort-asc " aria-hidden="true"></i></a><a href="#" id="sort-desc-id" style="display: none;">ID <i class="fa fa-sort-desc " aria-hidden="true"></i></a></th>
-                <th style="width: 300px;">Title[EN] / Title[TH] / Title[CH]</th>
+                <th style="width: 300px;">Title[EN] / Title[TH]</th>
                 <!-- <th style="width: 150px;">[ภาษาไทย] Title</th> -->
                 <th style="width: 300px;">Category[EN] / Category[TH]</th>
                 <!-- <th style="width: 150px;">[ภาษาไทย] Category</th> -->
@@ -116,6 +127,7 @@ if (isset($_POST["apply"])) {
                 <th style="width:100px">Image</th>
                 <th>Date</th>
                 <th>Action</th>
+                <th><input type='checkbox' id='selectAllBoxes' onclick="selectAll(this)"></th>
             </tr>
             <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
             <script>
@@ -139,8 +151,62 @@ if (isset($_POST["apply"])) {
         </thead>
         <tbody>
             <?php
-            $query = "SELECT * FROM tbl_posts";
-            $fetch_posts_data = mysqli_query($connection, $query);
+            $query_page = "SELECT COUNT('post_id') FROM tbl_posts";
+            $result_page = mysqli_query($connection, $query_page);
+            $row = mysqli_fetch_row($result_page);
+            $rows = $row[0];
+            $page_rows = 10;
+            if (isset($_POST['page_rows']) && is_numeric($_POST['page_rows'])) {
+                $page_rows = intval($_POST['page_rows']);
+            }
+            $last = ceil($rows / $page_rows);
+            if ($last < 1) {
+                $last = 1;
+            }
+            $pagenum = 1;
+            if (isset($_GET['pn'])) {
+                $pagenum = preg_replace('#[^0-9]#', '', $_GET['pn']);
+            }
+            if ($pagenum < 1) {
+                $pagenum = 1;
+            } else if ($pagenum > $last) {
+                $pagenum = $last;
+            }
+            $limit = 'LIMIT ' . ($pagenum - 1) * $page_rows . ',' . $page_rows;
+            $nquery = "SELECT * FROM tbl_posts ORDER BY post_id DESC $limit";
+            $nresult = mysqli_query($connection, $nquery);
+            $pagiantionCtrls = '';
+            if ($last != 1) {
+                // if ($pagenum > 1) {
+                //     $previous = $pagenum - 1;
+                //     $pagiantionCtrls .= '<a href="' . $_SERVER['PHP_SELF'] . '?pn=' . $previous . '"
+                //     class="btn btn-info">Previous</a>&nbsp &nbsp';
+                for ($i = $pagenum - 5; $i < $pagenum; $i++) {
+                    if ($i > 0) {
+                        $pagiantionCtrls .= '<a href="' . $_SERVER['PHP_SELF'] . '?pn=' . $i . '"
+                            class="btn btn-primary rounded-3">' . $i . '</a>&nbsp ';
+                    }
+                }
+                // }
+
+
+                $pagiantionCtrls .= '' . $pagenum . '&nbsp';
+                for ($i = $pagenum + 1; $i <= $last; $i++) {
+                    $pagiantionCtrls .= '<a href="' . $_SERVER['PHP_SELF'] . '?pn=' . $i . '"
+                            class="btn btn-primary">' . $i . '</a>&nbsp ';
+                    if ($i >= $pagenum + 5) {
+                        break;
+                    }
+                }
+                // if ($pagenum != $last) {
+                //     $next = $pagenum + 1;
+                //     $pagiantionCtrls .= '&nbsp &nbsp<a href="' . $_SERVER['PHP_SELF'] . '?pn=' . $next . '"
+                // class="btn btn-info">Next</a>';
+                // }
+            }
+
+            $fetch_posts_data = mysqli_query($connection, $nquery);
+            $count = 1;
             while ($Row = mysqli_fetch_assoc($fetch_posts_data)) {
                 $the_post_id = $Row['post_id'];
                 $the_post_image = $Row['post_image'];
@@ -148,19 +214,13 @@ if (isset($_POST["apply"])) {
                 $the_post_title = base64_decode($Row['post_title']);
                 $the_post_title_thai = base64_decode($Row['post_title_thai']);
                 $the_post_title_china = base64_decode($Row['post_title_china']);
-                $datetime_from_db = $Row['post_date'];
 
-                $date = new DateTime($datetime_from_db);
-                $date_time = $date->format("d/m/Y");
-                ?>
-                <td><input type='checkbox' name='checkBoxArray[]' value='<?php echo $the_post_id ?>'></td>
+                echo "<tr>"; ?>
             <?php
-                echo "<td>$the_post_id</td>
-                    <td><a href='../post.php?lang=en&p_id=$the_post_id'><i class='bi bi-search'></i>
-</i>
-$the_post_title</a><br>
-                     <a href='../post.php?lang=th&p_id=$the_post_id'><i class='bi bi-search'></i>$the_post_title_thai</a><br>
-                    <a href='../post.php?lang=cn&p_id=$the_post_id'><i class='bi bi-search'></i>$the_post_title_china</a></td>";
+                echo "<td>{$count}</td>
+                    <td><a href='../post.php?lang=en&p_id=$the_post_id'>{$the_post_title}</a>
+                     / <a href='../post.php?lang=th&p_id=$the_post_id'>{$the_post_title_thai}</a>
+                    / <a href='../post.php?lang=cn&p_id=$the_post_id'>{$the_post_title_china}</a></td>";
 
                 $cat_id = $Row['post_category_id'];
                 $query = "SELECT * FROM tbl_categories WHERE cat_id=$cat_id";
@@ -181,15 +241,34 @@ $the_post_title</a><br>
                     echo "<td></td>";
                 }
 
-                echo "<td><img src='../images/$the_post_image ' alt='image' width='150px' height='auto' style='object-fit: contain; text-align:center; '></td>
-                    <td>$date_time</td>
+                echo "<td><img src='../images/{$Row['post_image']}' alt='image' width='150px' height='65px' style='object-fit: cover; text-align:center;'></td>
+                    <td>{$Row['post_date']}</td>
                     <td class='text-center'>
                         <a href='posts.php?source=edit_post&p_id=$the_post_id'><i class='fa fa-pencil-square-o fa-lg' aria-hidden='true'></i></a> | 
                         <a onClick=\"javascript: return confirm('Are you sure you want to delete'); \" href='posts.php?deletePost=$the_post_id&image=$the_post_image'><i class='fa fa-trash-o fa-lg' aria-hidden='true'></i></a> 
                     </td>
+                    <td><input type='checkbox' name='checkBoxArray[]' value='{$the_post_id}'></td>
                 </tr>";
+                $count++;
             }
             ?>
+            <tr>
+                <td colspan="9">
+                    <div style="display: flex; align-items: center;">
+                        <label for="filter" style="margin-right: 10px;">Filter:</label>
+                        <form action="" method="post" style="display: inline-block; margin-left: 10px;">
+                            <select class="form-control text-center" style="height:30px; width:7%; padding:4px 2px;" name="page_rows" onchange="this.form.submit()">
+                                <option value="10" <?php echo (isset($_POST['page_rows']) && $_POST['page_rows'] == '10') ? 'selected' : ''; ?>>10</option>
+                                <option value="20" <?php echo (isset($_POST['page_rows']) && $_POST['page_rows'] == '20') ? 'selected' : ''; ?>>20</option>
+                                <option value="30" <?php echo (isset($_POST['page_rows']) && $_POST['page_rows'] == '30') ? 'selected' : ''; ?>>30</option>
+                                <option value="40" <?php echo (isset($_POST['page_rows']) && $_POST['page_rows'] == '40') ? 'selected' : ''; ?>>40</option>
+                                <option value="50" <?php echo (isset($_POST['page_rows']) && $_POST['page_rows'] == '50') ? 'selected' : ''; ?>>50</option>
+                            </select>
+                        </form>
+                        <span style="margin-left: 20px;"><?php echo $pagiantionCtrls ?></span>
+                    </div>
+                </td>
+            </tr>
         </tbody>
     </table>
 </form>

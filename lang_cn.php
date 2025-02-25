@@ -7,7 +7,7 @@ define('address', 'SSP Tower 2, 19层, Na Ranong Road, Klongtoey Bangkok, 泰国
 define('page_footer_1','联系方式');
 define('page_footer_2','泰国春苑路109 / 39号, 10村，曼谷加朗，曼谷府，11140');
 define('page_footer_3','095-795-6695');
-define('page_footer_4','@email.com');
+define('page_footer_4','axw.international@gmail.com');
 
 define('page_footer_5', '地址');
 define('page_footer_6', '快速链接');
