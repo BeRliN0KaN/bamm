@@ -89,7 +89,7 @@ function topFunction() {
             ?>
 
            <div class="text-center mx-auto wow fadeInUp section-title mt-5" data-wow-delay="0.1s" style="max-width: 800px;">
-                <h2 class="display-5 mb-4"><?php// echo constant('page_activity_2') ?></h2>
+                <h2 class="display-5 mb-4"><?php // echo constant('page_activity_2') ?></h2>
                 <p class="mb-0 fs-5"><?php //=echo $the_activity_title ?></p>
          </div>
             <div class="rounded-4 service-item text-center p-4 flex-column align-items-center mt-5">

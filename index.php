@@ -1,6 +1,8 @@
-<?php
-include "includes/header.php";
-?>
+<!-- header start -->
+<?php include "includes/header.php"; ?>
+<!-- header end -->
+
+
 <section id="main-banner " class="padding-medium position-relative margin-medium">
   <div class="container" data-aos="fade-up">
     <div class="row g-md-5 d-flex justify-content-center align-items-center timer">
@@ -261,4 +263,6 @@ include "includes/header.php";
   </section>
   <!--  end-->
 
-  <?php include "includes/footer.php"; ?>
+<!-- footer start -->
+<?php include "includes/footer.php"; ?>
+<!-- footter end -->

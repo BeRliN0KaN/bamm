@@ -148,8 +148,8 @@ define('page_itsupport_6', 'A system used for multi-party phone or video confere
 define('page_itsupport_7', 'A system that records all phone calls, which can be used for future reference or auditing purposes.');
 define('page_itsupport_8', 'Software used to create a VOIP-based telephone system (similar to an IPBX) within an organization, including features like conferencing, voice recording, and call management.');
 define('page_itsupport_9', 'Broadcasting radio signals over the internet instead of traditional radio waves, allowing radio stations to reach a global audience.');
-define('page_itsupport_10', 'COMMUNICATION');
-define('page_itsupport_11', 'The central system that switches and routes calls between telephone networks and VoIP users. This specific system will evaluate the best way to route multiple simultaneous calls. Its efficiency allows business users to share limited resources.');
+define('page_itsupport_10', 'IT SERVICES');
+define('page_itsupport_11', "Our technology consulting services don't just help your business grow efficiently. It also reduces the risk of choosing the wrong technology, which will lead to good results in the long run.");
 
 //security.php
 define('page_security_1', 'We provide CCTV, Firewall, Fingerprint scan, Face scan, Palm scan, and Fire Alarm systems.');

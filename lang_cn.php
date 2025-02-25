@@ -138,8 +138,8 @@ define('page_itsupport_6', '一个用于多人电话或视频会议的系统，�
 define('page_itsupport_7', '一个记录所有电话通话的系统，可用于未来参考或审计目的。');
 define('page_itsupport_8', '用于创建基于VOIP的电话系统（类似于IPBX）的软件，包含会议、语音录音和通话管理等功能。');
 define('page_itsupport_9', '通过互联网广播无线电信号，而不是传统的无线电波，使广播电台能够接触全球观众。');
-define('page_itsupport_10', '通信');
-define('page_itsupport_11', '一个中央系统，用于在电话网络和VoIP用户之间切换和路由电话。此系统将评估多通话同时路由的最佳方式。其高效性使企业用户可以共享有限的资源。');
+define('page_itsupport_10', '信息技术服务');
+define('page_itsupport_11', '我们的技术咨询服务不仅可以帮助您的企业高效发展。' ."<br>". '它还降低了选择错误技术的风险，从长远来看，这将带来良好的结果。');
 
 //security.php
 define('page_security_1', '我们提供闭路电视（CCTV）、防火墙、指纹扫描、人脸扫描、掌纹扫描和火灾警报系统。');

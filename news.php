@@ -1,4 +1,6 @@
-<?php include"includes/header.php"; ?>
+<!-- header start -->
+<?php include "includes/header.php"; ?>
+<!-- header end -->
 
  <!-- Page Header Start -->
 <section id="intro" class="jarallax" style="background: none;" data-jarallax-original-styles="background: url(images/call-to-action.jpg);" >
@@ -20,4 +22,6 @@
 <!-- Page Header End -->
 
 
-    <?php include"includes/footer.php"; ?>
+<!-- footer start -->
+<?php include "includes/footer.php"; ?>
+<!-- footter end -->

@@ -191,4 +191,6 @@
 </section>
 <!--  end-->
 
+<!-- footer start -->
 <?php include "includes/footer.php"; ?>
+<!-- footter end -->
