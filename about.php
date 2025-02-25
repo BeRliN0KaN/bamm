@@ -87,7 +87,7 @@
               </div>
             </div>
             <div class="col-md-5 wow fadeInUp" data-wow-delay="0.1s">
-              <img class="img-fluid rounded" src="<?php echo "admin//images/" . $the_post_image; ?>">
+              <img class="img-fluid rounded" src="<?php echo "admin/images/" . $the_post_image; ?>">
             </div>
           </div>
         </div>
@@ -135,7 +135,7 @@
         }
       ?>
         <div class="col-md-3 mb-4 mt-4">
-          <a href="blog-single.html"><img src="<?php echo "admin//images/" . $the_post_image; ?>" alt="image" class="img-fluid rounded-3 h-100"></a>
+          <a href="blog-single.html"><img src="<?php echo "admin/images/" . $the_post_image; ?>" alt="image" class="img-fluid rounded-3 h-100 " ></a>
           <p class="blog text-capitalize mt-3 fw-semibold"><?php echo $the_post_subtitle ?></p>
           <h4 class="blog-heading fw-semibold"><a href="blog-single.html"><?php echo $the_post_title ?></a></h4>
         </div>
