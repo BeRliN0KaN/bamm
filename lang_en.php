@@ -141,13 +141,13 @@ define('page_outsource_5', 'We proudly support over 200 outsource licenses, help
 //itsupport.php
 define('page_itsupport_1', 'IT SUPPORT');
 define('page_itsupport_2', 'We provide products and technologies tailored to various businesses, along with the best services for our customers.');
-define('page_itsupport_3', 'A system that connects mobile phones to an internal telephone system (PBX), allowing calls to be made and received through mobile networks, which helps reduce communication costs.');
-define('page_itsupport_4', 'A telephone system that uses the internet to transmit voice instead of traditional phone lines, enabling cheaper and more convenient calls.');
-define('page_itsupport_5', 'A telephone system that uses IP (Internet Protocol) technology to manage internal phone calls within an organization, making it easier and more affordable to make and receive calls.');
-define('page_itsupport_6', 'A system used for multi-party phone or video conferences, allowing multiple participants to join a meeting at the same time.');
-define('page_itsupport_7', 'A system that records all phone calls, which can be used for future reference or auditing purposes.');
-define('page_itsupport_8', 'Software used to create a VOIP-based telephone system (similar to an IPBX) within an organization, including features like conferencing, voice recording, and call management.');
-define('page_itsupport_9', 'Broadcasting radio signals over the internet instead of traditional radio waves, allowing radio stations to reach a global audience.');
+define('page_itsupport_3', 'The selection of appropriate technology.');
+define('page_itsupport_4', 'We provide guidance in selecting technology that aligns with the needs of businesses to enhance operational efficiency and enable businesses to compete effectively in the market.');
+define('page_itsupport_5', 'IT Development Planning');
+define('page_itsupport_6', 'We assist in planning a strategic development of IT systems that align with the direction and vision of the business, ensuring that investments in technology yield valuable and sustainable returns.');
+define('page_itsupport_7', 'Process improvement through the use of technology.');
+define('page_itsupport_8', 'We assist in enhancing existing business processes to be more efficient by utilizing appropriate technologies, such as the use of Robotic Process Automation (RPA) or implementing Cloud Computing systems to increase flexibility and reduce costs.');
+define('page_itsupport_9',' ');
 define('page_itsupport_10', 'IT SERVICES');
 define('page_itsupport_11', "Our technology consulting services don't just help your business grow efficiently. It also reduces the risk of choosing the wrong technology, which will lead to good results in the long run.");
 

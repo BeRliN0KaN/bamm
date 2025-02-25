@@ -131,13 +131,13 @@ define('page_outsource_5', '我们自豪地支持超过200个外包许可证，�
 //itsupport.php
 define('page_itsupport_1', 'IT支持');
 define('page_itsupport_2', '我们为各种企业提供量身定制的产品和技术，并为客户提供最佳服务。');
-define('page_itsupport_3', '一个将手机连接到内部电话系统（PBX）的系统，允许通过移动网络拨打和接听电话，从而帮助减少通信成本。');
-define('page_itsupport_4', '一个使用互联网传输语音而不是传统电话线路的电话系统，使通话更便宜、更方便。');
-define('page_itsupport_5', '一个使用IP（互联网协议）技术来管理组织内部电话通话的电话系统，使拨打和接听电话更容易且更具成本效益。');
-define('page_itsupport_6', '一个用于多人电话或视频会议的系统，允许多个参与者同时加入会议。');
-define('page_itsupport_7', '一个记录所有电话通话的系统，可用于未来参考或审计目的。');
-define('page_itsupport_8', '用于创建基于VOIP的电话系统（类似于IPBX）的软件，包含会议、语音录音和通话管理等功能。');
-define('page_itsupport_9', '通过互联网广播无线电信号，而不是传统的无线电波，使广播电台能够接触全球观众。');
+define('page_itsupport_3','选择合适的技术');
+define('page_itsupport_4','我们提供选择符合企业需求的技术的建议，以提高运营效率，并帮助企业在市场中有效竞争。');
+define('page_itsupport_5','信息技术发展规划');
+define('page_itsupport_6','我们帮助制定与业务方向和愿景相适应的信息技术发展战略，确保技术投资获得有价值和可持续的回报。');
+define('page_itsupport_7','通过使用技术改进流程');
+define('page_itsupport_8','我们帮助改善现有的业务流程，以提高效率，采用合适的技术，例如使用自动化软件（RPA）或云计算系统，以增加灵活性并降低成本。');
+define('page_itsupport_9',' ');
 define('page_itsupport_10', '信息技术服务');
 define('page_itsupport_11', '我们的技术咨询服务不仅可以帮助您的企业高效发展。' ."<br>". '它还降低了选择错误技术的风险，从长远来看，这将带来良好的结果。');
 
