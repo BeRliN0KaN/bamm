@@ -75,13 +75,13 @@ define('page_about_4','');
 define('page_about_5',''); 
 define('page_about_6','');
 
-//solution.php
-define('page_solution_1','บริการของเรา');
-define('page_solution_2','โซลูชันที่ใช้ในการบริหารจัดการหรือสนับสนุนด้านเทคโนโลยีสารสนเทศต่างๆ ');
-define('page_solution_3','บริการโซลูชัน');
-define('page_solution_4','บริการโซลูชันที่เรามี');
-define('page_solution_5','บริการโซลูชันที่เรามี');
-define('page_solution_6','บริการโซลูชันที่เรามี');
+//43_finan_dd.php
+define('page_finan_1','บริการด้านการเงิน');
+define('page_finan_2','');
+define('page_finan_3','');
+define('page_finan_4','');
+define('page_finan_5','');
+define('page_finan_6','');
 
 //service.php
 define('page_service_1', 'บริการที่เรามอบให้');

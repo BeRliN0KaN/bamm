@@ -1188,3 +1188,27 @@ iconify-icon.services-icon {
   list-style: none;
 }
 
+.service-item {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.blog-img img {
+  border-radius: 8px;
+}
+
+.service-content h6 {
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.service-content p {
+  font-size: 1rem;
+  color: #666;
+}

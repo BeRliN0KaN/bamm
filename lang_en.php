@@ -78,13 +78,13 @@ define('page_about_6', ' ');
 
 
 
-//solution.php
-define('page_solution_1', 'Our Solutions');
-define('page_solution_2', 'Solution used for managing or supporting various information technology (IT) aspects.');
-define('page_solution_3', 'Logistics');
-define('page_solution_4', 'Outsourcing');
-define('page_solution_5', 'IT Support');
-define('page_solution_6', 'Security');
+//43_finan_dd.php
+define('page_finan_1', 'Financial services');
+define('page_finan_2', '');
+define('page_finan_3', '');
+define('page_finan_4', '');
+define('page_finan_5', '');
+define('page_finan_6', '');
 
 
 //vision.php

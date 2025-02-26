@@ -1,15 +1,15 @@
-<?php include "includes/header.php"; 
-    include('project_one_page.php');?>
-<?php         $lang = $_SESSION['lang'];  ?>
+<?php include "includes/header.php";
+include('project_one_page.php'); ?>
+<?php $lang = $_SESSION['lang'];  ?>
 
-   <script type="text/javascript">
-    //JK Popup Window Script (version 3.0)- By JavaScript Kit (http://www.javascriptkit.com)
-    //Visit JavaScriptKit.com for free JavaScripts
-    //This notice must stay intact for legal use
-    function openpopup(popurl){
-    var winpops=window.open(popurl,"","width=auto,height=auto,status,scrollbars,resizable,modal")
-    }
-    </script>   
+<script type="text/javascript">
+  //JK Popup Window Script (version 3.0)- By JavaScript Kit (http://www.javascriptkit.com)
+  //Visit JavaScriptKit.com for free JavaScripts
+  //This notice must stay intact for legal use
+  function openpopup(popurl) {
+    var winpops = window.open(popurl, "", "width=auto,height=auto,status,scrollbars,resizable,modal")
+  }
+</script>
 <!-- Page Header Start -->
 <section id="intro" class="jarallax" style="background: none;" data-jarallax-original-styles="background: url(images/call-to-action.jpg);">
   <div class="container-sm pt-5 aos-init aos-animate">
@@ -38,7 +38,7 @@
         <h2 class="text-uppercase mb-3  left-pattern  "><span class=""></span> OUR PROJECTS</h2>
       </div>
       <h3 class="text-titlecase  d-flex  justify-content-center"><?php echo constant('page_project_1') ?></h3>
-   <div class="projects-flters d-flex flex-wrap justify-content-center my-5">
+      <div class="projects-flters d-flex flex-wrap justify-content-center my-5">
         <div class="d-flex flex-wrap justify-content-between">
           <div class="projects-flters d-flex flex-wrap">
 
@@ -47,7 +47,7 @@
             $fetch_data = $connection->query($sql);
             if ($fetch_data->num_rows > 0) {
               while ($row_project = $fetch_data->fetch_assoc()) {
-                $id_project= $row_project['id_project'];
+                $id_project = $row_project['id_project'];
                 $filter_name = $row_project['filter_name'];
                 $filter_name_sec = $row_project['filter_name_sec'];
                 $lang = $_SESSION['lang'];
@@ -65,17 +65,16 @@
                     $title_name_sec = $row_project['title_name_sec_th'];
                     break;
                 }
-                ?>
+            ?>
 
-               <?php
+            <?php
                 if ($filter_name == "*") {
-                     echo"<a href='projects_one.php?page=$id_project'  class='filter-button border-0 bg-transparent me-3 mb-3 fs-5' >$title_name  </a>";
+                  echo "<a href='projects_one.php?page=$id_project'  class='filter-button border-0 bg-transparent me-3 mb-3 fs-5' >$title_name  </a>";
                 } elseif (isset($filter_name_sec)) {
-                     echo "<a href='projects_one.php?page=$id_project'  class='filter-button border-0 bg-transparent me-3 mb-3 fs-5' >$title_name&$title_name_sec</a>";  
+                  echo "<a href='projects_one.php?page=$id_project'  class='filter-button border-0 bg-transparent me-3 mb-3 fs-5' >$title_name&$title_name_sec</a>";
                 } else {
-                         echo"<a href='projects_one.php?page=$id_project'  class='filter-button border-0 bg-transparent me-3 mb-3 fs-5' >$title_name  </a>";
+                  echo "<a href='projects_one.php?page=$id_project'  class='filter-button border-0 bg-transparent me-3 mb-3 fs-5' >$title_name  </a>";
                 }
-             
               }
             }
             ?>
@@ -83,27 +82,27 @@
         </div>
       </div>
       <div class="row isotope-container">
-          
-          
-          
-          
-        <?php
-        
-           if (isset($_GET["page"])) {
-                  $page = $_GET['page'];
-           }else{
-     //             $page = 1;            
-           }
 
-  
-          while($Row = mysqli_fetch_array($nquery)){
-       
-      //  $counter = 1; // ตัวแปรสำหรับนับลูป
-    //    while ($Row = mysqli_fetch_assoc($fetch_data)) {  
-    
+
+
+
+        <?php
+
+        if (isset($_GET["page"])) {
+          $page = $_GET['page'];
+        } else {
+          //             $page = 1;            
+        }
+
+
+        while ($Row = mysqli_fetch_array($nquery)) {
+
+          //  $counter = 1; // ตัวแปรสำหรับนับลูป
+          //    while ($Row = mysqli_fetch_assoc($fetch_data)) {  
+
           $the_project_id = $Row['project_id'];
           $the_project_image = $Row['project_image'];
-   
+
           switch ($lang) {
             case 'en':
               $the_project_title = base64_decode($Row['project_title']);
@@ -118,23 +117,23 @@
 
         ?>
 
-           <div class="col-lg-4 col-md-6 item <?php echo $the_project_subtitle ?>">
+          <div class="col-lg-4 col-md-6 item <?php echo $the_project_subtitle ?>">
             <div class="projects-content mx-auto">
-           <a  href="javascript:openpopup('service-project.php?lan=<?php echo   $_SESSION['lang']  ?>&id=<?php echo $the_project_id?>')">
+              <a href="javascript:openpopup('service-project.php?lan=<?php echo   $_SESSION['lang']  ?>&id=<?php echo $the_project_id ?>')">
                 <img src="<?php echo "admin//projects/" . $the_project_image; ?>" class="rounded-3 " alt="building" />
               </a>
             </div>
             <h3 class="fs-3 text-center mt-3 mb-5">
-              <a  href="javascript:openpopup('service-project.php?lan=<?php echo   $_SESSION['lang']  ?>&id=<?php echo $the_project_id?>')"><?php echo $the_project_title ?></a>
+              <a href="javascript:openpopup('service-project.php?lan=<?php echo   $_SESSION['lang']  ?>&id=<?php echo $the_project_id ?>')"><?php echo $the_project_title ?></a>
             </h3>
           </div>
-         
+
         <?php } ?>
-          
+
       </div>
-            <div id="pagination_controls"><?php echo $paginationCtrls; ?></div>
+      <div id="pagination_controls"><?php echo $paginationCtrls; ?></div>
     </div>
-        
+
   </div>
 
 </section>
