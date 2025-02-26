@@ -61,11 +61,15 @@
                 </ul>
             </li>
             <li>
-                <a style="padding-left: 21px;" href="categories.php">
-                    <i class="fa fa-folder"></i> Categories
+                <a style="padding-left: 21px;" href="categories_project.php">
+                    <i class="fa fa-folder"></i> Categories Project
                 </a>
             </li>
-
+            <li>
+                <a style="padding-left: 21px;" href="categories_post.php">
+                    <i class="fa fa-folder"></i> Categories Post
+                </a>
+            </li>
             <li>
                 <a style="padding-left:22px;" href="javascript:;" data-toggle="collapse" data-target="#users-dropdown">
                     <i class="fa fa-user"></i> Users <i class="fa fa-fw fa-caret-down"></i>

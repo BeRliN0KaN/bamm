@@ -81,10 +81,13 @@ if (isset($_POST['create_post'])) {
             while ($Row = mysqli_fetch_assoc($fetch_data)) {
                 $cat_id = $Row["id_project"];
                 $cat_title = $Row["title_name"];
-                if (isset($cat_title)) {
+                $cat_title_sec = $Row["title_name_sec"];
+                if (empty($cat_title_sec)) {
                     ?>
-                    <option value='<?php echo $cat_id ; ?>'><?php echo $cat_title; ?></option>
+                    <option value='<?php echo $cat_id ; ?>'><?php echo $cat_title;?></option>
                     <?php
+                }else{
+                    echo "<option value='{$cat_id}'>{$cat_title} & {$cat_title_sec}</option>";
                 }
             }
             ?>

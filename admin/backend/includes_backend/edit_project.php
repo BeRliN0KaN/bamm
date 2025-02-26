@@ -131,9 +131,12 @@ if (isset($_GET['p_id'])) {
                         $cat_title = $Row["title_name"];
                         $cat_title_thai = $Row["title_name_th"];
                         $cat_title_cn = $Row["title_name_cn"];
+                        $cat_title_sec = $Row["title_name_sec"];
                         $selected = ($cat_id == $project_category_id) ? 'selected' : '';
-                        if (isset($cat_title)) {
+                        if (empty($cat_title_sec)) {
                             echo "<option value='" . $cat_id . "' " . $selected . ">" . $cat_title . "</option>";
+                        }else{
+                            echo "<option value='" . $cat_id . "' " . $selected . ">" . $cat_title ." & ".$cat_title_sec. "</option>";
                         }
                     }
                     ?>

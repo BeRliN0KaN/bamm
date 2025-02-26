@@ -68,6 +68,7 @@ if (isset($_POST["apply"])) {
     }
 }
 ?>
+
 <form action="" method="POST">
     <table class="table table-bordered table-hover" id="viewposts">
         <div class="row">
@@ -88,37 +89,34 @@ if (isset($_POST["apply"])) {
         </div>
         <thead>
             <tr>
+                <th colspan="8">
+                    <div style="display: flex; align-items: center; ">
+                        <label for="filter" style="margin-right: 10px;">Show:</label>
+                        <form action="" method="post" style="display: inline-block; margin-left: 10px;">
+                            <select class="form-control text-center" style="height:30px; width:7%; padding:4px 4px;" name="page_rows" onchange="this.form.submit()">
+                                <option value="10" <?php echo (isset($_POST['page_rows']) && $_POST['page_rows'] == '10') ? 'selected' : ''; ?>>10</option>
+                                <option value="20" <?php echo (isset($_POST['page_rows']) && $_POST['page_rows'] == '20') ? 'selected' : ''; ?>>20</option>
+                                <option value="30" <?php echo (isset($_POST['page_rows']) && $_POST['page_rows'] == '30') ? 'selected' : ''; ?>>30</option>
+                                <option value="40" <?php echo (isset($_POST['page_rows']) && $_POST['page_rows'] == '40') ? 'selected' : ''; ?>>40</option>
+                                <option value="50" <?php echo (isset($_POST['page_rows']) && $_POST['page_rows'] == '50') ? 'selected' : ''; ?>>50</option>
+                            </select>
+                        </form>
+                    </div>
+                </th>
+            </tr>
+            <tr>
                 <th><input type='checkbox' id='selectAllBoxes' onclick="selectAll(this)"></th>
-                <th style="width:40px;padding-right:0;"><a href="#" id="sort-asc-id">ID <i class="fa fa-sort-asc " aria-hidden="true"></i></a><a href="#" id="sort-desc-id" style="display: none;">ID <i class="fa fa-sort-desc " aria-hidden="true"></i></a></th>
+                <th style="width:40px;padding-right:0;">ID </th>
                 <th style="width: 300px;">Title[EN] / Title[TH]</th>
                 <!-- <th style="width: 150px;">[ภาษาไทย] Title</th> -->
                 <th style="width: 300px;">Category[EN] / Category[TH]</th>
                 <!-- <th style="width: 150px;">[ภาษาไทย] Category</th> -->
-                <th><a href="#" id="sort-asc-status">Status <i class="fa fa-sort-asc " aria-hidden="true"></i></a><a href="#" id="sort-desc-status" style="display: none;">Status <i class="fa fa-sort-desc " aria-hidden="true"></i></a></th>
-                <th style="width:48px ;padding-right:0;"><a href="#" id="sort-asc-pin">Pin <i class="fa fa-sort-asc " aria-hidden="true"></i></a><a href="#" id="sort-desc-pin" style="display: none;">Pin <i class="fa fa-sort-desc " aria-hidden="true"></i></a></th>
+                <th>Status </th>
+                <!-- <th style="width:48px ;padding-right:0;">Pin </th> -->
                 <th style="width:100px">Image</th>
                 <th>Date</th>
                 <th>Action</th>
             </tr>
-            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-            <script>
-                // Sort asc and sort desc
-                $(document).ready(function() {
-                    const toggleSort = (ascId, descId) => {
-                        $(`#${ascId}`).on('click', function() {
-                            $(this).hide();
-                            $(`#${descId}`).show();
-                        });
-                        $(`#${descId}`).on('click', function() {
-                            $(this).hide();
-                            $(`#${ascId}`).show();
-                        });
-                    };
-                    toggleSort('sort-asc-id', 'sort-desc-id');
-                    toggleSort('sort-asc-status', 'sort-desc-status');
-                    toggleSort('sort-asc-pin', 'sort-desc-pin');
-                });
-            </script>
         </thead>
         <tbody>
             <?php
@@ -126,7 +124,7 @@ if (isset($_POST["apply"])) {
             $result_page = mysqli_query($connection, $query_page);
             $row = mysqli_fetch_row($result_page);
             $rows = $row[0];
-            $page_rows = 10;
+            $page_rows = 2;
             if (isset($_POST['page_rows']) && is_numeric($_POST['page_rows'])) {
                 $page_rows = intval($_POST['page_rows']);
             }
@@ -144,43 +142,43 @@ if (isset($_POST["apply"])) {
                 $pagenum = $last;
             }
             $limit = 'LIMIT ' . ($pagenum - 1) * $page_rows . ',' . $page_rows;
-            $nquery = "SELECT * FROM tbl_projects ORDER BY project_id DESC $limit";             ;
+            $nquery = "SELECT * FROM tbl_projects ORDER BY project_id DESC $limit";;
             $nresult = mysqli_query($connection, $nquery);
             $pagiantionCtrls = '';
             if ($last != 1) {
-                // if ($pagenum > 1) {
-                //     $previous = $pagenum - 1;
-                //     $pagiantionCtrls .= '<a href="' . $_SERVER['PHP_SELF'] . '?pn=' . $previous . '"
-                //     class="btn btn-info">Previous</a>&nbsp &nbsp';
-                for ($i = $pagenum - 5; $i < $pagenum; $i++) {
-                    if ($i > 0) {
-                        $pagiantionCtrls .= '<a href="' . $_SERVER['PHP_SELF'] . '?pn=' . $i . '"
-                            class="btn btn-primary rounded-3">' . $i . '</a>&nbsp ';
-                    }
+                if ($pagenum > 1) {
+                    $previous = $pagenum - 1;
+                    $pagiantionCtrls .= '<a href="' . $_SERVER['PHP_SELF'] . '?pn=' . $previous . '"
+                    class="btn btn-info ">Previous</a>&nbsp';
+                    // for ($i = $pagenum - 5; $i < $pagenum; $i++) {
+                    //     if ($i > 0) {
+                    //         $pagiantionCtrls .= '<a href="' . $_SERVER['PHP_SELF'] . '?pn=' . $i . '"
+                    //             class="btn btn-primary rounded-3">' . $i . '</a>&nbsp ';
+                    //     }
+                    // }
                 }
+                $pagiantionCtrls .= '<a href="' . $_SERVER['PHP_SELF'] . '?pn=' . $pagenum . '"
+                             class="btn btn-primary rounded-3">' . $pagenum . '</a> ';
+
+                // $pagiantionCtrls .= '' . $pagenum . '&nbsp';
+                // for ($i = $pagenum + 1; $i <= $last; $i++) {
+                //     $pagiantionCtrls .= '<a href="' . $_SERVER['PHP_SELF'] . '?pn=' . $i . '"
+                //             class="btn btn-primary">' . $i . '</a>&nbsp ';
+                //     if ($i >= $pagenum + 5) {
+                //         break;
+                //     }
                 // }
-
-
-                $pagiantionCtrls .= '' . $pagenum . '&nbsp';
-                for ($i = $pagenum + 1; $i <= $last; $i++) {
-                    $pagiantionCtrls .= '<a href="' . $_SERVER['PHP_SELF'] . '?pn=' . $i . '"
-                            class="btn btn-primary">' . $i . '</a>&nbsp ';
-                    if ($i >= $pagenum + 5) {
-                        break;
-                    }
+                if ($pagenum != $last) {
+                    $next = $pagenum + 1;
+                    $pagiantionCtrls .= '<a href="' . $_SERVER['PHP_SELF'] . '?pn=' . $next . '"
+                class="btn btn-info">Next</a>';
                 }
-                // if ($pagenum != $last) {
-                //     $next = $pagenum + 1;
-                //     $pagiantionCtrls .= '&nbsp &nbsp<a href="' . $_SERVER['PHP_SELF'] . '?pn=' . $next . '"
-                // class="btn btn-info">Next</a>';
-                // }
             }
             $count = 1;
-            $fetch_projects_data = mysqli_query($connection, $nquery);
-            while ($Row = mysqli_fetch_assoc($fetch_projects_data)) {
+            while ($Row = mysqli_fetch_assoc($nresult)) {
                 $the_project_id = $Row['project_id'];
                 $the_project_image = $Row['project_image'];
-                $the_project_pin = $Row['project_pin'];
+                // $the_project_pin = $Row['project_pin'];
                 $the_project_title = base64_decode($Row['project_title']);
                 $the_project_title_thai = base64_decode($Row['project_title_thai']);
                 $the_project_title_china = base64_decode($Row['project_title_china']);
@@ -203,7 +201,7 @@ if (isset($_POST["apply"])) {
                 while ($Cat = mysqli_fetch_assoc($fetch_cat_data)) {
                     $cat_title = $Cat["title_name"];
                     $cat_title_thai = $Cat["title_name_th"];
-                    $cat_title_china = $Cat["title_name_cn"]; 
+                    $cat_title_china = $Cat["title_name_cn"];
                     if (isset($cat_title)) {
                         echo "<td>$cat_title / $cat_title_thai/ $cat_title_china </td>";
                         // echo "<td>$cat_title_thai</td>";
@@ -211,11 +209,11 @@ if (isset($_POST["apply"])) {
                 }
                 echo "<td>{$Row['project_status']}</td>";
 
-                if ($the_project_pin === "1") {
-                    echo "<td><img src='../projects/pin.png' alt='image'  width='20px' height='20px'></td>";
-                } else {
-                    echo "<td></td>";
-                }
+                // if ($the_project_pin === "1") {
+                //     echo "<td><img src='../projects/pin.png' alt='image'  width='20px' height='20px'></td>";
+                // } else {
+                //     echo "<td></td>";
+                // }
 
                 echo "<td><img src='../projects/$the_project_image ' alt='image' width='150px' height='auto' style='object-fit: contain; text-align:center; '></td>
                     <td>$date_time</td>
@@ -224,22 +222,16 @@ if (isset($_POST["apply"])) {
                         <a onClick=\"javascript: return confirm('Are you sure you want to delete'); \" href='projects.php?deleteProject=$the_project_id&image=$the_project_image'><i class='fa fa-trash-o fa-lg' aria-hidden='true'></i></a> 
                     </td>
                 </tr>";
-                $count ++;
+                $footer_table = "Show $pagenum to $last of $count entries (filtered from $rows tatol entries)";
+                $count++;
             }
             ?>
             <tr>
-                <td colspan="9">
-                    <div style="display: flex; align-items: center;">
-                        <label for="filter" style="margin-right: 10px;">Filter:</label>
-                        <form action="" method="post" style="display: inline-block; margin-left: 10px;">
-                            <select class="form-control text-center" style="height:30px; width:7%; padding:4px 2px;" name="page_rows" onchange="this.form.submit()">
-                                <option value="10" <?php echo (isset($_POST['page_rows']) && $_POST['page_rows'] == '10') ? 'selected' : ''; ?>>10</option>
-                                <option value="20" <?php echo (isset($_POST['page_rows']) && $_POST['page_rows'] == '20') ? 'selected' : ''; ?>>20</option>
-                                <option value="30" <?php echo (isset($_POST['page_rows']) && $_POST['page_rows'] == '30') ? 'selected' : ''; ?>>30</option>
-                                <option value="40" <?php echo (isset($_POST['page_rows']) && $_POST['page_rows'] == '40') ? 'selected' : ''; ?>>40</option>
-                                <option value="50" <?php echo (isset($_POST['page_rows']) && $_POST['page_rows'] == '50') ? 'selected' : ''; ?>>50</option>
-                            </select>
-                        </form>
+                <td colspan="8">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <!-- Filter ที่อยู่ซ้าย -->
+                        <h6><?php echo  $footer_table; ?></h6>
+                        <!-- Pagination Controls ที่อยู่ขวา -->
                         <span style="margin-left: 20px;"><?php echo $pagiantionCtrls ?></span>
                     </div>
                 </td>
