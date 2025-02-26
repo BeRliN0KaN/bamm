@@ -15,7 +15,7 @@ if (isset($_POST["submit"])) {
     $filter_name_sec = $_POST['filter_name_sec'];
     if (!empty($title_name) || $title_name != "") {
         $query = "INSERT INTO tbl_project_cat (title_name,title_name_th,title_name_cn,filter_name,title_name_sec,title_name_sec_th,title_name_sec_cn,filter_name_sec) ";
-        $query .= "VALUES('$title_name','$title_name_th',$title_name_cn,'$filter_name ','$title_name_sec','$title_name_sec_th',$title_name_sec_cn,'$filter_name_sec '); ";
+        $query .= "VALUES('$title_name','$title_name_th','$title_name_cn','$filter_name ','$title_name_sec','$title_name_sec_th','$title_name_sec_cn','$filter_name_sec'); ";
         $create_query = mysqli_query($connection, $query);
         if (!$create_query) {
             die("Query Failed: " . mysqli_error($connection));
