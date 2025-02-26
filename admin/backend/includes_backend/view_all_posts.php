@@ -191,7 +191,7 @@ if (isset($_POST["apply"])) {
                 echo "<tr>"; ?>
             <?php
                 echo " <td><input type='checkbox' name='checkBoxArray[]' value='{$the_post_id}'></td>
-                    <td>{$the_post_id}</td>
+                    <td>{$count}</td>
                     <td><a href='../post.php?lang=en&p_id=$the_post_id'><i class='bi bi-search'></i>
                     </i>
                     $the_post_title</a><br>
