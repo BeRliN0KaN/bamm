@@ -2,7 +2,7 @@
 if (isset($_GET["page"])) {
       $page = $_GET['page'];
       if ($page == 1) { //All
-            echo "<script>location.href='projects.php';</script>";
+            echo "<script>location.href='3_projects.php';</script>";
       }
 } else {
       $page = 1;
