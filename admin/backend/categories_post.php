@@ -33,7 +33,7 @@ if (isset($_GET["delete"])) {
         if($exist==0){
             $query = "DELETE FROM tbl_categories WHERE cat_id=$cat_id";
             $delete_query = mysqli_query($connection, $query);
-            header("Location: categories.php");
+            header("Location: categories_post.php");
             if (!$delete_query) {
                 die("Query Failed: " . mysqli_error($connection));
             }
