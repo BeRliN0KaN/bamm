@@ -143,7 +143,7 @@ include "includes/db.php";
                                         default:
                                             $menu_titile = $row['menuTH'];
                                     }
-                                    $sql_sub = "SELECT * FROM tbl_menu_dd WHERE id_menu = '$id_menu' AND active=1";
+                                    $sql_sub = "SELECT * FROM tbl_menu_dd WHERE id_menu = '$id_menu' AND active='1'";
                                     $fetch_sub = $connection->query($sql_sub);
                                     if ($fetch_sub->num_rows == 0) {
                                         // ไม่มีเมนูย่อย
