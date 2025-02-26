@@ -188,7 +188,7 @@ if (isset($_POST["apply"])) {
                 $date_time = $date->format("d/m/Y");
 
                 echo "<td><input type='checkbox' name='checkBoxArray[]' value='{$the_project_id}'></td>
-                    <td>$count</td>
+                    <td>{$the_project_id}</td>
                     <td><a href='../project.php?lang=en&p_id=$the_project_id'><i class='bi bi-search'></i>
                     </i>
                     $the_project_title</a><br>
