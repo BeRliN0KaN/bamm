@@ -74,8 +74,8 @@ if (isset($_GET["edit"], $_POST["update_category"])) {
         <div class="row">
             <!-- จัดการ Add Category และ Edit Category -->
             <div class="col-xs-6">
-                <div style="border: 2px solid gray;">
-                    <h3>&nbsp;Add Category</h3>
+                <div style="border: 2px solid gray; padding:10px;">
+                    <h3>&nbsp;Add Category Post</h3>
                     <form action="" method="POST">
                         <div class="form-group">
                             <label for="cat_title">&nbsp;&nbsp;Category</label>
@@ -109,7 +109,7 @@ if (isset($_GET["edit"], $_POST["update_category"])) {
                             $cat_page = $Row["cat_page"];
                             if (isset($cat_title)) {
                                 ?>
-                                <div style="border: 2px solid gray;">
+                                <div style="border: 2px solid gray; padding: 10px;margin-bottom:10px;">
                                     <h3>&nbsp;Edit Category</h3>
                                     <div class="form-group">
                                         <label for="cat_title">&nbsp;&nbsp;Category</label>
@@ -162,8 +162,8 @@ if (isset($_GET["edit"], $_POST["update_category"])) {
                                     <td>{$Row['cat_title_thai']}</td>
                                     <td>{$Row['cat_page']}</td>
                                     <td>
-                                        <a href='categories.php?edit={$Row['cat_id']}'><i class='fa fa-pencil-square-o fa-lg' aria-hidden='true'></i></a> |
-                                        <a onClick=\"javascript: return confirm('Please confirm deletion');\"href='categories.php?delete={$Row['cat_id']}'><i class='fa fa-trash-o fa-lg' aria-hidden='true'></i></a>
+                                        <a href='categories_post.php?edit={$Row['cat_id']}'><i class='fa fa-pencil-square-o fa-lg' aria-hidden='true'></i></a> |
+                                        <a onClick=\"javascript: return confirm('Please confirm deletion');\"href='categories_post.php?delete={$Row['cat_id']}'><i class='fa fa-trash-o fa-lg' aria-hidden='true'></i></a>
                                     </td>
                                 </tr>";
                         }

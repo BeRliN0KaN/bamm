@@ -112,7 +112,7 @@ if (isset($_POST["apply"])) {
                 <th style="width: 300px;">Category[EN] / Category[TH]</th>
                 <!-- <th style="width: 150px;">[ภาษาไทย] Category</th> -->
                 <th>Status
-                <!-- <th style="width:48px ;padding-right:0;">Pin</th> -->
+                    <!-- <th style="width:48px ;padding-right:0;">Pin</th> -->
                 <th style="width:100px">Image</th>
                 <th>Date</th>
                 <th>Action</th>
@@ -192,9 +192,11 @@ if (isset($_POST["apply"])) {
             <?php
                 echo " <td><input type='checkbox' name='checkBoxArray[]' value='{$the_post_id}'></td>
                     <td>{$count}</td>
-                    <td><a href='../post.php?lang=en&p_id=$the_post_id'>{$the_post_title}</a>
-                     / <a href='../post.php?lang=th&p_id=$the_post_id'>{$the_post_title_thai}</a>
-                    / <a href='../post.php?lang=cn&p_id=$the_post_id'>{$the_post_title_china}</a></td>";
+                    <td><a href='../post.php?lang=en&p_id=$the_post_id'><i class='bi bi-search'></i>
+                    </i>
+                    $the_post_title</a><br>
+                     <a href='../post.php?lang=th&p_id=$the_post_id'><i class='bi bi-search'></i>$the_post_title_thai</a><br>
+                    <a href='../post.php?lang=cn&p_id=$the_post_id'><i class='bi bi-search'></i>$the_post_title_china</a></td>";
 
                 $cat_id = $Row['post_category_id'];
                 $query = "SELECT * FROM tbl_categories WHERE cat_id=$cat_id";
@@ -216,7 +218,7 @@ if (isset($_POST["apply"])) {
                 // }
 
                 echo "<td><img src='../images/{$the_post_image}' alt='image' width='150px' height='65px' style='object-fit: cover; text-align:center;'></td>
-                    <td>{$date_time }</td>
+                    <td>{$date_time}</td>
                     <td class='text-center'>
                         <a href='posts.php?source=edit_post&p_id=$the_post_id'><i class='fa fa-pencil-square-o fa-lg' aria-hidden='true'></i></a> | 
                         <a onClick=\"javascript: return confirm('Are you sure you want to delete'); \" href='posts.php?deletePost=$the_post_id&image=$the_post_image'><i class='fa fa-trash-o fa-lg' aria-hidden='true'></i></a> 
