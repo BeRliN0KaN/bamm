@@ -4,7 +4,7 @@
 
 
 <!-- Solution content Start -->
-<div class="container">
+<div class="container" style="margin-top: 10rem;">
     <?php
     $query = "SELECT * FROM tbl_posts inner join tbl_categories on tbl_categories.cat_id = tbl_posts.post_category_id where tbl_categories.cat_page=4 AND tbl_categories.cat_id=4 AND tbl_posts.post_status='Published'";
     $fetch_posts_data = mysqli_query($connection, $query);

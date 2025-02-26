@@ -4,12 +4,12 @@
 
 
 <!-- Blog Start -->
-<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" style="margin-top: 5rem;">
     <div class="container py-5">
         <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
-            <h2 class="mb-0">PRODUCT</h2>
+            <h2 class="mb-0 me-5">PRODUCT</h2>
             <p class="p-1 fs-5">by</p>
-            <h5 class="fw-bold text-primary text-uppercase mt-1">wisepaq</h5>
+            <h5 class="fw-bold text-primary text-uppercase mt-1">A.X.W</h5>
         </div>
         <div class="row g-5">
 

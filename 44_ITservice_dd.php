@@ -16,7 +16,7 @@
                 <!-- GSM Gateway System -->
                 <div class="col-md-6 col-lg-4 col-xl-4 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="text-center p-1">
-                        <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle mb-3" style="width: 100px; height: 100px;"><i class="bi bi-router fs-1"></i></div>
+                        <div class="d-inline-flex align-items-center justify-content-center  mb-3 me-5" style="width: 100px; height: 100px;"><i class="bi bi-router fs-1"></i></div>
                         <div class="feature-content">
                             <a href="#" class="h4"><?php echo constant('page_itsupport_3') ?></a>
                             <p class="mt-4 mb-0"><?php echo constant('page_itsupport_4') ?></p>
@@ -26,7 +26,7 @@
                 <!-- VOIP System -->
                 <div class="col-md-6 col-lg-4 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="text-center p-1">
-                        <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle mb-3" style="width: 100px; height: 100px;"><i class="bi bi-phone-vibrate fs-1"></i></div>
+                        <div class="d-inline-flex align-items-center justify-content-center mb-3 me-5" style="width: 100px; height: 100px;"><i class="bi bi-phone-vibrate fs-1"></i></div>
                         <div class="feature-content">
                             <a href="#" class="h4"><?php echo constant('page_itsupport_5') ?></a>
                             <p class="mt-4 mb-0"><?php echo constant('page_itsupport_6') ?></p>
@@ -36,7 +36,7 @@
                 <!-- IPBX -->
                 <div class="col-md-6 col-lg-4 col-xl-4 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="text-center p-1 ">
-                        <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle mb-3" style="width: 100px; height: 100px;"><i class="bi bi-pci-card-network fs-1"></i></div>
+                        <div class="d-inline-flex align-items-center justify-content-center mb-3 me-5" style="width: 100px; height: 100px;"><i class="bi bi-pci-card-network fs-1"></i></div>
                         <div class="feature-content">
                             <a href="#" class="h4"><?php echo constant('page_itsupport_7') ?></a>
                             <p class="mt-4 mb-0"><?php echo constant('page_itsupport_8') ?></p>

@@ -1,5 +1,5 @@
 <?php include("./includes/header.php") ?>
-
+<div style="margin-top: 10rem;"></div>
 <div class="text-center mx-auto wow fadeInUp section-title mt-5" data-wow-delay="0.1s" style="max-width: 800px;">
     <h2 class="display-5 mb-4"><?php echo constant('page_finan_1') ?></h2>
 </div>
