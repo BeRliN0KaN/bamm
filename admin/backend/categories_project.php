@@ -30,7 +30,7 @@ if (isset($_GET["delete"])) {
     $id_project = $_GET['delete'];
     // Check exist user.
     $exist = -1;
-    $queryExist = "SELECT EXISTS(SELECT * FROM tbl_posts WHERE post_category_id = $id_project) as exist";
+    $queryExist = "SELECT EXISTS(SELECT * FROM tbl_projects WHERE project_category_id = $id_project) as exist";
     $fetch_data = mysqli_query($connection, $queryExist);
     while ($Row = mysqli_fetch_assoc($fetch_data)) {
         $exist = $Row['exist'];
