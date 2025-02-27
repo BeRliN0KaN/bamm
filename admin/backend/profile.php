@@ -32,7 +32,7 @@ if (isset($_POST['update_profile'], $_SESSION['username'])) {
     if (!$update_user_query) {
         die("Query Failed: " . mysqli_error($connection));
     }
-    header("Location: ../backend/index.php");
+    header("Location: ../backend/users.php");
 }
 
 ?>

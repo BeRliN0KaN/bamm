@@ -21,11 +21,11 @@ include "includes_backend/navigation.php";
         <div class="row">
             <!-- Chart -->
             <div class="col-lg-6 col-md-6">
-                <div id="myChart" style="max-width:700px; height:400px"></div>
+                <div id="myChart" style="max-width:700px; height:400px; "></div>
             </div>
             <!-- Widgets Cards -->
             <div class="col-lg-6 col-md-6">
-            <div class="col-lg-12" style="padding-top: 50px;">
+                <div class="col-lg-12" style="padding-top: 50px;">
                     <div class="col-lg-6 col-md-6">
                         <div class="panel panel-primary ">
                             <div class="panel-heading">
@@ -54,7 +54,7 @@ include "includes_backend/navigation.php";
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-12" >
+                <div class="col-lg-12">
                     <div class="col-lg-6 col-md-6">
                         <div class="panel panel-red">
                             <div class="panel-heading">
@@ -207,7 +207,9 @@ include "includes_backend/navigation.php";
                 ]);
 
                 var options = {
-                    title: 'Summary'
+                    title: 'Summary',
+                    width: 800, // ปรับความกว้าง
+                    height: 600, // ปรับความสูง
                 };
 
                 var chart = new google.visualization.PieChart(document.getElementById('myChart'));

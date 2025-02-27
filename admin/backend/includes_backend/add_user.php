@@ -15,22 +15,24 @@ if (isset($_POST['add_user'])) {
              }   
         
     if($user==0){
-    
-        // Add new user.
-        $query = "INSERT INTO tbl_users(user_firstname, user_lastname, user_name, user_password, user_email) ";
-        $query .= "VALUES('{$user_firstname}', '{$user_lastname}', '{$user_name}', '{$user_password}', '{$user_email}')";
+        if(!empty($user_firstname) && !empty($user_lastname) && !empty($user_name) && !empty($user_password) && !empty($user_email)){
+           // Add new user.
+            $query = "INSERT INTO tbl_users(user_firstname, user_lastname, user_name, user_password, user_email) ";
+             $query .= "VALUES('{$user_firstname}', '{$user_lastname}', '{$user_name}', '{$user_password}', '{$user_email}')";
 
-        $create_user_query = mysqli_query($connection, $query);
-        if (!$create_user_query) {
-            die("Query Failed: " . mysqli_error($connection));
+            $create_user_query = mysqli_query($connection, $query);
+            if (!$create_user_query) {
+                die("Query Failed: " . mysqli_error($connection));
+             }
+            header("Location: ../backend/users.php");
+            echo "User Created " . "<a href='users.php'>View Users</a>"; 
+        } else{
+            echo "<script>alert('The information entered is incomplete!');window.history.go(-1);</script>";
         }
-        header("Location: ../backend/index.php");
-        echo "User Created " . "<a href='users.php'>View Users</a>";
+        
     }else{
           echo "<script>alert('This user already in the system!');window.history.go(-1);</script>";           
     }
-    
-    
 }
 
 

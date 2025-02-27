@@ -1,26 +1,28 @@
 <?php
 // Delete User.
 if (isset($_GET["delete"])) {
-            $user_id = mysqli_real_escape_string($connection, $_GET['delete']);
-            $query = "DELETE FROM tbl_users WHERE user_id=$user_id";
-            $delete_query = mysqli_query($connection, $query);
-            header("Location: users.php");
-            if (!$delete_query) {
-                die("Query Failed: " . mysqli_error($connection));
-            }
+    $user_id = mysqli_real_escape_string($connection, $_GET['delete']);
+    $query = "DELETE FROM tbl_users WHERE user_id=$user_id";
+    $delete_query = mysqli_query($connection, $query);
+    header("Location: users.php");
+    if (!$delete_query) {
+        die("Query Failed: " . mysqli_error($connection));
+    }
 }
 
 ?>
-
+<div style="margin: 10px 0 20px 40px;">
+    <a href="users.php?source=add_user" class="btn btn-primary " style="width: 9rem; height:4rem; font-size:1.5rem;">Add User</a>
+</div>
 <table class="table table-bordered table-hover text-center">
-    <thead >
-        <tr >
+    <thead>
+        <tr>
             <th class="text-center">ID</th>
             <th class="text-center">Username</th>
             <th class="text-center">Firstname</th>
             <th class="text-center">Lastname</th>
             <th class="text-center">Email</th>
-             <th class="text-center">Action</th>           
+            <th class="text-center">Action</th>
         </tr>
     </thead>
     <tbody>
