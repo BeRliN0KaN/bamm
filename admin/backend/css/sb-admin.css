@@ -260,6 +260,40 @@ ul.alert-dropdown {
 .panel-yellow a:hover {
   color: #df8a13;
 }
+.panel-purple {
+  border-color: rgb(153, 0, 153);
+}
+
+.panel-purple .panel-heading {
+  border-color: rgb(153, 0, 153);
+  color: #fff;
+  background-color: rgb(153, 0, 153);
+}
+
+.panel-purple a {
+  color: rgb(153, 0, 153);
+}
+
+.panel-purple a:hover {
+  color: rgb(123, 2, 123);
+}
+.panel-green{
+  border-color: rgb(16, 150, 24);
+}
+
+.panel-green .panel-heading {
+  border-color: rgb(16, 150, 24);
+  color: #fff;
+  background-color: rgb(16, 150, 24);
+}
+
+.panel-green a {
+  color: rgb(16, 150, 24);
+}
+
+.panel-green a:hover {
+  color: rgb(13, 118, 20);
+}
 .upload-icon{
   font-weight: 400;
   cursor: pointer;
