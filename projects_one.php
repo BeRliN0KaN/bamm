@@ -70,7 +70,7 @@ include('project_one_page.php'); ?>
             <?php
                 if ($filter_name == "*") {
                   echo "<a href='projects_one.php?page=$id_project'  class='filter-button border-0 bg-transparent me-3 mb-3 fs-5' >$title_name  </a>";
-                } elseif (isset($filter_name_sec)) {
+                } elseif (!empty($filter_name_sec)) {
                   echo "<a href='projects_one.php?page=$id_project'  class='filter-button border-0 bg-transparent me-3 mb-3 fs-5' >$title_name&$title_name_sec</a>";
                 } else {
                   echo "<a href='projects_one.php?page=$id_project'  class='filter-button border-0 bg-transparent me-3 mb-3 fs-5' >$title_name  </a>";

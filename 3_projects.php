@@ -95,7 +95,7 @@
                    //    </button>";
                      echo"<a href='projects_one.php?page=$id_project'  class='filter-button border-0 bg-transparent me-3 mb-3 fs-5' >$title_name  </a>";
 
-                } elseif (isset($filter_name_sec)) {
+                } elseif (!empty($filter_name_sec)) {
                  // echo "<button class='filter-button border-0 bg-transparent me-3 mb-3 fs-5' data-filter='.{$filter_name},.{$filter_name_sec}'>
                   //        {$title_name} & {$title_name_sec}
                    //     </button>";

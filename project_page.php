@@ -30,12 +30,12 @@ $paginationCtrls = '';
 if ($last != 1) {
 
 	if ($pagenum > 1) {
-		$previous = $pagenum - 1;
-		$paginationCtrls .= '<a href="' . $_SERVER['PHP_SELF'] . '?pn=' . $previous . '" class="btn btn-default"><i class="fa-solid fa-angle-left"></i></a> &nbsp; &nbsp; ';
+		// $previous = $pagenum - 1;
+		// $paginationCtrls .= '<a href="' . $_SERVER['PHP_SELF'] . '?pn=' . $previous . '" class="btn btn-primary"><i class="fa-solid fa-angle-left"></i></a> &nbsp; &nbsp; ';
 
 		for ($i = $pagenum - 3; $i < $pagenum; $i++) {
 			if ($i > 0) {
-				$paginationCtrls .= '<a href="' . $_SERVER['PHP_SELF'] . '?pn=' . $i . '" class="btn btn-default">' . $i . '</a> &nbsp; ';
+				$paginationCtrls .= '<a href="' . $_SERVER['PHP_SELF'] . '?pn=' . $i . '" class="btn btn-primary">' . $i . '</a> &nbsp; ';
 			}
 		}
 	}
@@ -43,14 +43,14 @@ if ($last != 1) {
 	$paginationCtrls .= '' . $pagenum . ' &nbsp; ';
 
 	for ($i = $pagenum + 1; $i <= $last; $i++) {
-		$paginationCtrls .= '<a href="' . $_SERVER['PHP_SELF'] . '?pn=' . $i . '" class="btn btn-default">' . $i . '</a> &nbsp; ';
+		$paginationCtrls .= '<a href="' . $_SERVER['PHP_SELF'] . '?pn=' . $i . '" class="btn btn-primary">' . $i . '</a> &nbsp; ';
 		if ($i >= $pagenum + 3) {
 			break;
 		}
 	}
 
-	if ($pagenum != $last) {
-		$next = $pagenum + 1;
-		$paginationCtrls .= ' &nbsp; &nbsp; <a href="' . $_SERVER['PHP_SELF'] . '?pn=' . $next . '" class="btn btn-default"><i class="fa-solid fa-angle-right"></i></a> ';
-	}
+	// if ($pagenum != $last) {
+	// 	$next = $pagenum + 1;
+	// 	$paginationCtrls .= ' &nbsp; &nbsp; <a href="' . $_SERVER['PHP_SELF'] . '?pn=' . $next . '" class="btn btn-default"><i class="fa-solid fa-angle-right"></i></a> ';
+	// }
 }
