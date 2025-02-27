@@ -13,7 +13,7 @@
         <p class="fs-5 mt-3">
         <?php echo constant('page_index_slide_2') ?>
         </p>
-        <a href="projects.php" class="btn-slide btn-medium btn-dark hover-slide-right my-5">
+        <a href="3_projects.php" class="btn-slide btn-medium btn-dark hover-slide-right my-5">
           <span class="text-titlecase"><?php echo constant('page_index_button_3') ?>
             <svg class="btn-arrow text-white" width="18" height="18">
               <use xlink:href="#btn-arrow"></use>
@@ -157,7 +157,7 @@
         <p class="fs-5 mt-2">
         <?php echo constant('page_index_about_4') ?>
         </p>
-        <a href="about.php" class="btn-slide btn-medium btn-dark hover-slide-right my-3">
+        <a href="2_about.php" class="btn-slide btn-medium btn-dark hover-slide-right my-3">
           <span class="text-titlecase"><?php echo constant('page_index_button_2') ?>
             <svg class="btn-arrow text-white" width="18" height="18">
               <use xlink:href="#btn-arrow"></use>

@@ -40,7 +40,7 @@
         <div id="featuresCarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <?php
-                $query = "SELECT * FROM tbl_posts inner join tbl_categories on tbl_categories.cat_id = tbl_posts.post_category_id where tbl_categories.cat_page=4 AND tbl_categories.cat_id=25 AND tbl_posts.post_status='Published'";
+                $query = "SELECT * FROM tbl_posts inner join tbl_categories on tbl_categories.cat_id = tbl_posts.post_category_id where tbl_categories.cat_page=4 AND tbl_categories.cat_id=12 AND tbl_posts.post_status='Published'";
                 $fetch_posts_data = mysqli_query($connection, $query);
                 $count = 0;
 
@@ -90,7 +90,7 @@
 <!-- Solution content Start -->
 <div class="container">
     <?php
-    $query = "SELECT * FROM tbl_posts inner join tbl_categories on tbl_categories.cat_id = tbl_posts.post_category_id where tbl_categories.cat_page=4 AND tbl_categories.cat_id=22 AND tbl_posts.post_status='Published'";
+    $query = "SELECT * FROM tbl_posts inner join tbl_categories on tbl_categories.cat_id = tbl_posts.post_category_id where tbl_categories.cat_page=4 AND tbl_categories.cat_id=10 AND tbl_posts.post_status='Published'";
     $fetch_posts_data = mysqli_query($connection, $query);
     $counter = 1; // ตัวแปรสำหรับนับลูป
     while ($Row = mysqli_fetch_assoc($fetch_posts_data)) {
@@ -166,7 +166,7 @@
         <div class="row g-4 justify-content-center">
 
             <?php
-            $query = "SELECT * FROM tbl_posts inner join tbl_categories on tbl_categories.cat_id = tbl_posts.post_category_id   where tbl_categories.cat_page=4 and tbl_categories.cat_id=28 AND tbl_posts.post_status='Published'";
+            $query = "SELECT * FROM tbl_posts inner join tbl_categories on tbl_categories.cat_id = tbl_posts.post_category_id   where tbl_categories.cat_page=4 and tbl_categories.cat_id=13 AND tbl_posts.post_status='Published'";
             $fetch_posts_data = mysqli_query($connection, $query);
             while ($Row = mysqli_fetch_assoc($fetch_posts_data)) {
                 $the_post_id = $Row['post_id'];

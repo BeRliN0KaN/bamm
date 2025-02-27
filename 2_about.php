@@ -112,7 +112,7 @@
     </div>
     <div class="row mt-5 mt-lg-0">
       <?php
-      $query = "SELECT * FROM tbl_posts inner join tbl_categories on tbl_categories.cat_id = tbl_posts.post_category_id   where tbl_categories.cat_page=2 and tbl_categories.cat_id=19 AND tbl_posts.post_status='Published'";
+      $query = "SELECT * FROM tbl_posts inner join tbl_categories on tbl_categories.cat_id = tbl_posts.post_category_id   where tbl_categories.cat_page=2 and tbl_categories.cat_id=7 AND tbl_posts.post_status='Published'";
       $fetch_posts_data = mysqli_query($connection, $query);
       while ($Row = mysqli_fetch_assoc($fetch_posts_data)) {
         $the_post_id = $Row['post_id'];
@@ -144,7 +144,7 @@
       <?php } ?>
     </div>
     <div class="btn d-flex justify-content-center">
-      <a href="services.php" class="btn-slide btn-medium btn-dark hover-slide-right mt-5">
+      <a href="4_services.php" class="btn-slide btn-medium btn-dark hover-slide-right mt-5">
         <span class="text-titlecase"><?php echo constant('page_index_button_4') ?>
           <svg class="btn-arrow text-white" width="18" height="18">
             <use xlink:href="#btn-arrow"></use>

@@ -5,7 +5,7 @@
       <div class="col-lg-3 col-md-6 col-sm-6 pb-3">
         <div class="footer-menu ">
           <img src="images/logo-文字版.png" style="height:100px; width:160px; object-fit:cover;" alt="footer logo" class="pb-2 mx-auto d-block" />
-          <p class="fw-semibold text-center" style="font-size: 1rem;">บริการรับเหมาก่อสร้าง <br> บริษัท เอ.เอ็กซ์.ดับบลิว อินเตอร์เนชันแนล จํากัด <br> A.X.W INTERNATIONAL CO.,LTD.</p>
+          <p class="fw-semibold text-center" style="font-size: 1rem;"><?php echo constant('page_index_about_2'); ?> <br><?php echo constant('page_index_about_3'); ?></p>
         </div>
       </div>
       <div class="col-lg-2 col-md-6 col-sm-6 pb-3">
@@ -79,7 +79,7 @@
               <svg class="text-primary" width="25" height="20" aria-hidden="true">
                 <use xlink:href="#location"></use>
               </svg>
-              เลขที 109 / 39 หมู่บ้าน มายอิสระ ราชพฤกษ์ หมู่ที 10 ตําบลบางกร่าง อําเภอเมืองนนทบุรี จังหวัด นนทบุรี 11140
+                 <?php echo constant('page_footer_2'); ?>
             </li>
             <li class="pb-2 fw-bold text-capitalize">
               <svg class="text-primary" width="25" height="20" aria-hidden="true">
