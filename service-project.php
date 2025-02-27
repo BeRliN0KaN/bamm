@@ -28,7 +28,10 @@ body {
 </style>
 
 <body class="service-details-page" onblur="self.close();">
-<a href="JavaScript:window.close()">Close[X]</a>
+  <!-- ใช้ Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<a href="JavaScript:window.close()" style="position: fixed; right:15px;"><i class="fa-solid fa-rectangle-xmark fa-3x" style="color:red;"></i></a>
 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
 <script>
