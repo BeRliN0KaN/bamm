@@ -5,7 +5,7 @@ define('address', 'SSP Tower 2, 19th Floor, Na Ranong Road, Klongtoey Bangkok, T
 
 //footer
 define('page_footer_1','Contact');
-define('page_footer_2','109 / 39 My Isara Village, Ratchaphruek Road, Moo 10, Bang Krang Subdistrict, Mueang Nonthaburi District, Nonthaburi Province, 11140');
+define('page_footer_2','109 / 39 My Isara Village, Ratchaphruek Road, Moo 10, Bang Krang Subdistrict, Mueang Nonthaburi District, Nonthaburi Province, 11000');
 define('page_footer_3','095-795-6695');
 define('page_footer_4','axw.international@gmail.com');
 
