@@ -104,13 +104,13 @@
 <!-- Solution content End -->
 
 
-<section id="blog" class="padding-large position-relative">
+<section id="blog" class="padding-large position-relative ">
   <div class="container">
     <div class="section-header col-lg-6">
       <h2 class="text-uppercase mb-3 left-pattern">Our Services</h2>
       <h3 class="text-titlecase"><?php echo constant('page_about_3') ?></h3>
     </div>
-    <div class="row mt-5 mt-lg-0">
+    <div class="row mt-5 mt-lg-0 ">
       <?php
       $query = "SELECT * FROM tbl_posts inner join tbl_categories on tbl_categories.cat_id = tbl_posts.post_category_id   where tbl_categories.cat_page=2 and tbl_categories.cat_id=7 AND tbl_posts.post_status='Published'";
       $fetch_posts_data = mysqli_query($connection, $query);
@@ -136,10 +136,12 @@
             break;
         }
       ?>
-        <div class="col-md-3 mb-4 mt-4">
-          <a href="blog-single.html"><img src="<?php echo "admin/images/" . $the_post_image; ?>" alt="image" class="img-fluid rounded-3 h-100 " ></a>
-          <p class="blog text-capitalize mt-3 fw-semibold"><?php echo $the_post_subtitle ?></p>
-          <h4 class="blog-heading fw-semibold"><a href="blog-single.html"><?php echo $the_post_title ?></a></h4>
+        <div class="col-md-3 mb-4 ">
+          <div class="shadow-lg pt-4 px-3 h-100 " style="padding-bottom: 5rem; border-radius:10px;">
+            <img src="<?php echo "admin/images/" . $the_post_image; ?>" alt="image" class="img-fluid rounded-3 h-100 " style="object-fit: cover;">
+            <!-- <p class="blog text-capitalize mt-3 fw-semibold"><?php echo $the_post_subtitle ?></p> -->
+            <h4 class="blog-heading fw-semibold mt-3 text-center"><?php echo $the_post_title ?></h4>
+          </div>
         </div>
       <?php } ?>
     </div>
