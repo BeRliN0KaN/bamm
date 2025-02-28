@@ -32,6 +32,7 @@ define('page_index_button_54', '我们的团队');
 define('page_index_button_55', '客户评价');
 define('page_index_button_56', '404页面');
 define('page_index_button_6', '联系我们');
+define('page_index_button_7','我们的信息技术服务');
 
 define('page_index_top_1', 'D Power Three运输');
 define('page_index_top_2', '货物追踪');
@@ -56,6 +57,11 @@ define('page_index_about_1','服务业');
 define('page_index_about_2','施工承包');
 define('page_index_about_3','A.X.W. International Co., Ltd.');
 define('page_index_about_4','我们在国内外的高层建筑、商业建筑、工业工厂和公共基础设施项目等各个领域提供服务。我们专注于使用现代技术和建筑材料来确保每个项目的耐用性和安全性。');
+
+define('page_index_ser_it_1','服务业');
+define('page_index_ser_it_2','信息技术服务');
+define('page_index_ser_it_3','A.X.W. International Co., Ltd.');
+define('page_index_ser_it_4','我们的技术咨询服务不仅可以帮助您的企业高效发展。它还降低了选择错误技术的风险，从长远来看，这将带来良好的结果。');
 
 define('page_index_contact_1', '让我们共同建设未来。');
 define('page_index_contact_2', '让我们携手合作，创造新的机会，引领您的业务走向可持续成功，携手与我们一起成长。我们拥有帮助您突破界限的工具和解决方案。');

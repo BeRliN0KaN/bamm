@@ -8,10 +8,10 @@
     <div class="row g-md-5 d-flex justify-content-center align-items-center timer">
       <div class="col-lg-6">
         <h1 class="display-4 text-titlecase fw-bold text-black">
-        <?php echo constant('page_index_slide_1') ?>
+          <?php echo constant('page_index_slide_1') ?>
         </h1>
         <p class="fs-5 mt-3">
-        <?php echo constant('page_index_slide_2') ?>
+          <?php echo constant('page_index_slide_2') ?>
         </p>
         <a href="3_projects.php" class="btn-slide btn-medium btn-dark hover-slide-right my-5">
           <span class="text-titlecase"><?php echo constant('page_index_button_3') ?>
@@ -155,7 +155,7 @@
         <img src="images/about2.jpg" alt="" class="img-fluid rounded-3">
         <h5 class="mt-3"><?php echo constant('page_index_about_3') ?></h5>
         <p class="fs-5 mt-2">
-        <?php echo constant('page_index_about_4') ?>
+          <?php echo constant('page_index_about_4') ?>
         </p>
         <a href="2_about.php" class="btn-slide btn-medium btn-dark hover-slide-right my-3">
           <span class="text-titlecase"><?php echo constant('page_index_button_2') ?>
@@ -177,91 +177,123 @@
   </div>
 </section>
 
-  <!-- start -->
-  <section id="our-achievement" class="padding-large">
-    <div class="container" data-aos="fade-up">
-      <div class="row g-4">
-        <div class="col-lg-3 col-md-6 col-sm-6">
-          <div class="counter-info text-center align-items-end">
-            <div class="counter-number align-items-center">
-              <h4 class="timer fw-bold m-0" data-to="100" data-speed="1000">
-                100+
-              </h4>
-            </div>
-            <h2 class="counter-description text-uppercase ps-2 fw-semibold">
-              Projects done
-            </h2>
+<!-- start -->
+<section id="our-achievement" >
+  <div class="container" data-aos="fade-up">
+    <div class="row g-4">
+      <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="counter-info text-center align-items-end">
+          <div class="counter-number align-items-center">
+            <h4 class="timer fw-bold m-0" data-to="100" data-speed="1000">
+              100+
+            </h4>
           </div>
+          <h2 class="counter-description text-uppercase ps-2 fw-semibold">
+            Projects done
+          </h2>
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-6">
-          <div class="counter-info text-center align-items-end">
-            <div class="counter-number align-items-center">
-              <h4 class="timer fw-bold m-0" data-to="100" data-speed="1000">
-                20+
-              </h4>
-            </div>
-            <h2 class="counter-description text-uppercase ps-2 fw-semibold">
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="counter-info text-center align-items-end">
+          <div class="counter-number align-items-center">
+            <h4 class="timer fw-bold m-0" data-to="100" data-speed="1000">
+              20+
+            </h4>
+          </div>
+          <h2 class="counter-description text-uppercase ps-2 fw-semibold">
             Years Experience
-            </h2>
-          </div>
+          </h2>
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-6">
-          <div class="counter-info text-center align-items-end">
-            <div class="counter-number align-items-center">
-              <h4 class="timer fw-bold m-0" data-to="100" data-speed="1000">
-                627
-              </h4>
-            </div>
-            <h2 class="counter-description text-uppercase ps-2 fw-semibold">
-              Total members
-            </h2>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="counter-info text-center align-items-end">
+          <div class="counter-number align-items-center">
+            <h4 class="timer fw-bold m-0" data-to="100" data-speed="1000">
+              627
+            </h4>
           </div>
+          <h2 class="counter-description text-uppercase ps-2 fw-semibold">
+            Total members
+          </h2>
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-6">
-          <div class="counter-info text-center align-items-end">
-            <div class="counter-number align-items-center">
-              <h4 class="timer fw-bold m-0" data-to="10" data-speed="1000">
-                100+
-              </h4>
-            </div>
-            <h2 class="counter-description text-uppercase ps-2 fw-semibold">
-              Happy customers
-            </h2>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="counter-info text-center align-items-end">
+          <div class="counter-number align-items-center">
+            <h4 class="timer fw-bold m-0" data-to="10" data-speed="1000">
+              100+
+            </h4>
           </div>
+          <h2 class="counter-description text-uppercase ps-2 fw-semibold">
+            Happy customers
+          </h2>
         </div>
       </div>
     </div>
-  </section>
-  <!-- end -->
+  </div>
+</section>
+<!-- end -->
 
-  <!-- start -->
-  <section id="contact" class="jarallax d-flex align-items-center padding-large" style="
+<section id="about-us" class=" padding-large position-relative ">
+  <div class="container" data-aos="fade-up">
+    <div class="section-header col-lg-4">
+      <h2 class="text-uppercase mb-3 left-pattern"><?php echo constant('page_index_ser_it_1') ?></h2>
+      <h3 class="text-titlecase"><?php echo constant('page_index_ser_it_2') ?></h3>
+    </div>
+    <div class="row g-md-5 flex-row-reverse d-flex justify-content-center align-items-top mt-5">
+      <div class="col-lg-6 mt-0">
+        <img src="images/about1.jpg" alt="" class="img-fluid rounded-3">
+      </div>
+      <div class="col-lg-6 mt-0 justify-content-top">
+        <img src="images/about2.jpg" alt="" class="img-fluid rounded-3">
+        <h5 class="mt-3"><?php echo constant('page_index_ser_it_3') ?></h5>
+        <p class="fs-5 mt-2">
+          <?php echo constant('page_index_ser_it_4') ?>
+        </p>
+        <a href="44_ITservice_dd.php" class="btn-slide btn-medium btn-dark hover-slide-right my-3">
+          <span class="text-titlecase"><?php echo constant('page_index_button_7') ?>
+            <svg class="btn-arrow text-white" width="18" height="18">
+              <use xlink:href="#btn-arrow"></use>
+            </svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="bg-pattern position-absolute top-0 start-0">
+    <img src="images/bg-pattern2.png" alt="" class="img-fluid"
+      style="background-repeat: no-repeat; overflow: hidden;">
+  </div>
+  </div>
+</section>
+<!-- start -->
+<section id="contact" class="jarallax d-flex align-items-center padding-large" style="
           background-image: url(images/call-to-action.jpg);
           width: 100%;
           height: 567px;
           background-repeat: no-repeat;
           background-position: center;
         ">
-    <div class="container" data-aos="fade-up">
-      <div class="row justify-content-center">
-        <div class="col-md-8">
-          <h3 class=" display-2 text-center text-white text-titlecase ">
-            Are You Ready To Start Your Next Project?
-          </h3>
-          <div class="btn d-flex justify-content-center">
-            <a href="#" class="btn-slide btn-medium btn-light hover-slide-right mt-5">
-              <span class="text-titlecase">Get in touch
-                <svg class="btn-arrow" width="18" height="18">
-                  <use xlink:href="#btn-arrow"></use>
-                </svg>
-              </span>
-            </a>
-          </div>
+  <div class="container" data-aos="fade-up">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <h3 class=" display-2 text-center text-white text-titlecase ">
+          Are You Ready To Start Your Next Project?
+        </h3>
+        <div class="btn d-flex justify-content-center">
+          <a href="#" class="btn-slide btn-medium btn-light hover-slide-right mt-5">
+            <span class="text-titlecase">Get in touch
+              <svg class="btn-arrow" width="18" height="18">
+                <use xlink:href="#btn-arrow"></use>
+              </svg>
+            </span>
+          </a>
         </div>
       </div>
     </div>
-  </section>
-  <!--  end-->
+  </div>
+</section>
+<!--  end-->
 
 <!-- footer start -->
 <?php include "includes/footer.php"; ?>

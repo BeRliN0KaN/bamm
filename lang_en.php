@@ -36,6 +36,7 @@ define('page_index_button_54', 'Our Team');
 define('page_index_button_55', 'Testimonial');
 define('page_index_button_56', '404 Page');
 define('page_index_button_6', 'Contact');
+define('page_index_button_7','Our IT services');
 
 define('page_index_top_1', 'D Power Three Transport');
 define('page_index_top_2', 'Cargo Tracking');
@@ -60,6 +61,11 @@ define('page_index_about_1','Services');
 define('page_index_about_2','Construction Contracting');
 define('page_index_about_3','A.X.W. International Co., Ltd.');
 define('page_index_about_4','We provide services in various areas such as high-rise building construction, commercial buildings, industrial factories, and public infrastructure projects, both domestically and internationally. Our focus is on using modern technology and construction materials to ensure durability and safety in every project.');
+
+define('page_index_ser_it_1','Services');
+define('page_index_ser_it_2','IT Service');
+define('page_index_ser_it_3','A.X.W. International Co., Ltd.');
+define('page_index_ser_it_4',"Our technology consulting services don't just help your business grow efficiently. It also reduces the risk of choosing the wrong technology, which will lead to good results in the long run.");
 
 define('page_index_contact_1', "Let's build the future together.");
 define('page_index_contact_2', "Let's collaborate to create new opportunities that will lead your business to sustainable success, growing with us every step of the way. We have the tools and solutions that will help you break through boundaries.");
